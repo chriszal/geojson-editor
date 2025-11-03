@@ -394,7 +394,7 @@ const [sessionId] = useState(() => safeRandomUUID());
     };
 
     const change: ChangeEntry = {
-      id: crypto.randomUUID(),
+      id: safeRandomUUID(),
       ts: Date.now(),
       type: "merge",
       summary: `Merge ${other.properties.uid} → ${anchor.properties.uid}`,
@@ -422,7 +422,7 @@ const [sessionId] = useState(() => safeRandomUUID());
     after.geometry.coordinates = newLngLat;
 
     const change: ChangeEntry = {
-      id: crypto.randomUUID(),
+      id: safeRandomUUID(),
       ts: Date.now(),
       type: "move",
       summary: `Move ${uid} ${(f.properties.name?.[0] || "no name")}`,
@@ -454,7 +454,7 @@ const [sessionId] = useState(() => safeRandomUUID());
         };
 
         const change: ChangeEntry = {
-          id: crypto.randomUUID(),
+          id: safeRandomUUID(),
           ts: Date.now(),
           type: "create",
           summary: `Create ${uid}`,
@@ -476,7 +476,7 @@ const [sessionId] = useState(() => safeRandomUUID());
     const before = JSON.parse(JSON.stringify(f));
     const after: Feature = { ...before, properties: { ...nextProps, uid } };
     const change: ChangeEntry = {
-      id: crypto.randomUUID(),
+      id: safeRandomUUID(),
       ts: Date.now(),
       type: "edit",
       summary: `Edit ${uid}`,
