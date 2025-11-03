@@ -62,7 +62,7 @@ function haversineMeters(a: [number, number], b: [number, number]) {
   const R = 6371000;
   const dLat = toRad(lat2 - lat1);
   const dLng = toRad(lng2 - lng1);
-  const s = Math.sin(dLat/2)**2 + Math.cos(toRad(lat1))*Math.cos(toRad(lat2))*Math.sin(dLng/2)**2;
+  const s = Math.sin(dLat / 2) ** 2 + Math.cos(toRad(lat1)) * Math.cos(toRad(lat2)) * Math.sin(dLng / 2) ** 2;
   return 2 * R * Math.atan2(Math.sqrt(s), Math.sqrt(1 - s));
 }
 const asList = (v: any): any[] => Array.isArray(v) ? v : (v == null ? [] : [v]);
@@ -77,12 +77,12 @@ const mergeProps = (A: Properties, B: Properties): Properties => {
     const merged = dedupe([...asList(A[key]), ...asList(B[key])]);
     (out as any)[key] = merged;
   };
-  ["name","access_id","type_id","beach_org","depth_id","beach_amea","purpose"].forEach(k => union(k as any));
-  out.area_size = dedupe([...(A.area_size||[]), ...(B.area_size||[])]).map(Number).filter(Number.isFinite);
-  out.tags = { ...(A.tags||{}), ...(B.tags||{}) };
+  ["name", "access_id", "type_id", "beach_org", "depth_id", "beach_amea", "purpose"].forEach(k => union(k as any));
+  out.area_size = dedupe([...(A.area_size || []), ...(B.area_size || [])]).map(Number).filter(Number.isFinite);
+  out.tags = { ...(A.tags || {}), ...(B.tags || {}) };
   out.source = dedupe([...asList(A.source), ...asList(B.source)]);
   out.source_id = dedupe([...asList(A.source_id), ...asList(B.source_id)]);
-  out.merged_from_uids = dedupe([...(A.merged_from_uids||[]), ...(B.merged_from_uids||[]), ...(A.uid?[A.uid]:[]), ...(B.uid?[B.uid]:[])]);
+  out.merged_from_uids = dedupe([...(A.merged_from_uids || []), ...(B.merged_from_uids || []), ...(A.uid ? [A.uid] : []), ...(B.uid ? [B.uid] : [])]);
   return out;
 };
 
@@ -108,10 +108,10 @@ function safeRandomUUID(): string {
     buf[8] = (buf[8] & 0x3f) | 0x80;
     const toHex = (n: number) => n.toString(16).padStart(2, "0");
     const b = Array.from(buf, toHex).join("");
-    return `${b.slice(0,8)}-${b.slice(8,12)}-${b.slice(12,16)}-${b.slice(16,20)}-${b.slice(20)}`;
+    return `${b.slice(0, 8)}-${b.slice(8, 12)}-${b.slice(12, 16)}-${b.slice(16, 20)}-${b.slice(20)}`;
   }
   // Last-ditch fallback (not RFC-strong, but avoids crashes)
-  return `${Date.now().toString(36)}-${Math.random().toString(36).slice(2,10)}-${Math.random().toString(36).slice(2,10)}`;
+  return `${Date.now().toString(36)}-${Math.random().toString(36).slice(2, 10)}-${Math.random().toString(36).slice(2, 10)}`;
 }
 
 /* -------------------- UI Chip -------------------- */
@@ -138,17 +138,17 @@ type AuditEntry = {
   type: string;
   summary: string;
   uids: string[];
-  before?: Array<{ uid:string; name?:string; coords?:[number,number] }>;
-  after?:  Array<{ uid:string; name?:string; coords?:[number,number] }>;
+  before?: Array<{ uid: string; name?: string; coords?: [number, number] }>;
+  after?: Array<{ uid: string; name?: string; coords?: [number, number] }>;
   committed?: boolean;     // false until a Save commits the session
-  sessionId?: string; 
+  sessionId?: string;
 };
 
-function slimFeature(f:any) {
+function slimFeature(f: any) {
   return {
     uid: f?.properties?.uid,
     name: Array.isArray(f?.properties?.name) ? f.properties.name[0] : undefined,
-    coords: f?.geometry?.coordinates ? [f.geometry.coordinates[0], f.geometry.coordinates[1]] as [number,number] : undefined
+    coords: f?.geometry?.coordinates ? [f.geometry.coordinates[0], f.geometry.coordinates[1]] as [number, number] : undefined
   };
 }
 
@@ -160,12 +160,12 @@ function mkAuditFromChange(c: ChangeEntry, user: string): AuditEntry {
     summary: c.summary,
     uids: [
       ...new Set([
-        ...(c.before||[]).map((f:any)=>f?.properties?.uid).filter(Boolean),
-        ...(c.after||[]).map((f:any)=>f?.properties?.uid).filter(Boolean),
+        ...(c.before || []).map((f: any) => f?.properties?.uid).filter(Boolean),
+        ...(c.after || []).map((f: any) => f?.properties?.uid).filter(Boolean),
       ])
     ],
-    before: (c.before||[]).map(slimFeature),
-    after:  (c.after||[]).map(slimFeature),
+    before: (c.before || []).map(slimFeature),
+    after: (c.after || []).map(slimFeature),
   };
 }
 
@@ -174,11 +174,11 @@ function mkAuditFromChange(c: ChangeEntry, user: string): AuditEntry {
 /* ================================================================ */
 export default function MapEditor() {
   /* Core state */
-const [sessionId] = useState(() => safeRandomUUID());
+  const [sessionId] = useState(() => safeRandomUUID());
 
   const [fc, setFc] = useState<FC | null>(null);
   const [status, setStatus] = useState<string>("");
-  const [mode, setMode] = useState<"select"|"merge"|"delete"|"move"|"edit"|"create">("select");
+  const [mode, setMode] = useState<"select" | "merge" | "delete" | "move" | "edit" | "create">("select");
   const [anchorUid, setAnchorUid] = useState<string | null>(null);
   const [candidateUid, setCandidateUid] = useState<string | null>(null);
   const [historyStack, setHistoryStack] = useState<FC[]>([]);
@@ -208,7 +208,7 @@ const [sessionId] = useState(() => safeRandomUUID());
         if (payload.type === "state" || payload.type === "join" || payload.type === "leave") {
           setOnline(payload.users as PresenceUser[]);
         }
-      } catch {}
+      } catch { }
     };
     es.onerror = () => { /* ignore; auto-reconnect */ };
     return () => es.close();
@@ -256,18 +256,18 @@ const [sessionId] = useState(() => safeRandomUUID());
       const data: FC = await res.json();
       data.features.forEach(f => {
         const p = (f.properties ||= {});
-        ["name","access_id","type_id","beach_org","depth_id","beach_amea","purpose","source","source_id","merged_from_uids"]
+        ["name", "access_id", "type_id", "beach_org", "depth_id", "beach_amea", "purpose", "source", "source_id", "merged_from_uids"]
           .forEach(k => (p as any)[k] = asList((p as any)[k]));
-        p.area_size = toFloatList(p.area_size||[]);
+        p.area_size = toFloatList(p.area_size || []);
         p.tags ||= {};
-        if (!p.uid) p.uid = `all-${Math.random().toString(36).slice(2,8)}-${Date.now()}`;
+        if (!p.uid) p.uid = `all-${Math.random().toString(36).slice(2, 8)}-${Date.now()}`;
       });
       setFc(data);
       setStatus("");
       setAnchorUid(null);
       setCandidateUid(null);
       setEditingUid(null);
-    } catch (e:any) {
+    } catch (e: any) {
       setStatus("Failed to load GeoJSON: " + e.message);
     }
   }
@@ -315,7 +315,7 @@ const [sessionId] = useState(() => safeRandomUUID());
         if (!batch.length) return;
         const blob = new Blob([JSON.stringify(batch)], { type: "application/json" });
         navigator.sendBeacon("/api/audit/append", blob);
-      } catch {}
+      } catch { }
     };
     window.addEventListener("pagehide", onUnload);
     window.addEventListener("beforeunload", onUnload);
@@ -331,14 +331,14 @@ const [sessionId] = useState(() => safeRandomUUID());
     pushSnapshot();
     setFc({ ...fc, features: nextFeatures });
     if (change) {
-  setChanges(cs => [change, ...cs]);
-  pendingAudit.current.push({
-    ...mkAuditFromChange(change, username),
-    committed: false,
-    sessionId,
-  });
-  flushAudit();
-}
+      setChanges(cs => [change, ...cs]);
+      pendingAudit.current.push({
+        ...mkAuditFromChange(change, username),
+        committed: false,
+        sessionId,
+      });
+      flushAudit();
+    }
 
   };
 
@@ -352,14 +352,14 @@ const [sessionId] = useState(() => safeRandomUUID());
     };
     setFc(next);
     if (change) {
-  setChanges(cs => [change, ...cs]);
-  pendingAudit.current.push({
-    ...mkAuditFromChange(change, username),
-    committed: false,
-    sessionId,
-  });
-  flushAudit();
-}
+      setChanges(cs => [change, ...cs]);
+      pendingAudit.current.push({
+        ...mkAuditFromChange(change, username),
+        committed: false,
+        sessionId,
+      });
+      flushAudit();
+    }
 
   };
 
@@ -371,7 +371,7 @@ const [sessionId] = useState(() => safeRandomUUID());
       id: safeRandomUUID(),
       ts: Date.now(),
       type: "delete",
-      summary: `Delete ${uid} (${(victim.properties.name?.[0]||"no name")})`,
+      summary: `Delete ${uid} (${(victim.properties.name?.[0] || "no name")})`,
       before: [victim],
       after: []
     };
@@ -442,7 +442,7 @@ const [sessionId] = useState(() => safeRandomUUID());
       click(e) {
         if (mode !== "create" || !fc) return;
         const lat = e.latlng.lat, lng = e.latlng.lng;
-        const uid = `new-${Date.now()}-${Math.random().toString(36).slice(2,6)}`;
+        const uid = `new-${Date.now()}-${Math.random().toString(36).slice(2, 6)}`;
         const emptyProps: Properties = {
           uid, name: [], access_id: [], type_id: [], beach_org: [], depth_id: [], beach_amea: [],
           purpose: [], area_size: [], tags: {}, source: [], source_id: [], merged_from_uids: []
@@ -462,7 +462,7 @@ const [sessionId] = useState(() => safeRandomUUID());
           after: [JSON.parse(JSON.stringify(feat))]
         };
 
-        setFeatures([...(fc.features||[]), feat], change);
+        setFeatures([...(fc.features || []), feat], change);
         setEditingUid(uid);
         setMode("edit");
       }
@@ -537,12 +537,12 @@ const [sessionId] = useState(() => safeRandomUUID());
       if (!res.ok) throw new Error(data?.error || "Save failed");
 
       await fetch("/api/audit/commit", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ sessionId, user: username || "guest" }),
-    });
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ sessionId, user: username || "guest" }),
+      });
       setStatus(`Saved version ${data.versionId}`);
-    } catch (e:any) { setStatus("Save error: " + e.message); }
+    } catch (e: any) { setStatus("Save error: " + e.message); }
   };
 
   /* Supercluster index */
@@ -557,7 +557,7 @@ const [sessionId] = useState(() => safeRandomUUID());
   }, [fc]);
 
   /* Map view tracking */
-  const [view, setView] = useState<{bbox: [number, number, number, number] | null, zoom: number}>({ bbox: null, zoom: 7 });
+  const [view, setView] = useState<{ bbox: [number, number, number, number] | null, zoom: number }>({ bbox: null, zoom: 7 });
   const prevViewRef = useRef<typeof view | null>(null);
   const rafId = useRef<number | null>(null);
 
@@ -612,10 +612,10 @@ const [sessionId] = useState(() => safeRandomUUID());
 
   const pointIcon = (opts: { missing: boolean; isAnchor: boolean; isCandidate: boolean; isEditing: boolean; }) => {
     const border = opts.isEditing ? "#7c3aed"
-                 : opts.isAnchor ? "#f59e0b"
-                 : opts.isCandidate ? "#84cc16"
-                 : opts.missing ? "#e11d48"
-                 : "#0ea5e9";
+      : opts.isAnchor ? "#f59e0b"
+        : opts.isCandidate ? "#84cc16"
+          : opts.missing ? "#e11d48"
+            : "#0ea5e9";
     return new L.DivIcon({
       className: "custom-marker",
       html: `<div style="width:14px;height:14px;border-radius:50%;border:3px solid ${border};background:#fff"></div>`
@@ -646,8 +646,8 @@ const [sessionId] = useState(() => safeRandomUUID());
                 <td className={`align-top ${empty ? "text-rose-600" : ""}`}>
                   {Array.isArray(val) ? (val.length ? val.join(", ") : "(empty)")
                     : val == null ? "(empty)"
-                    : typeof val === "object" ? <pre className="whitespace-pre-wrap">{JSON.stringify(val, null, 2)}</pre>
-                    : String(val)}
+                      : typeof val === "object" ? <pre className="whitespace-pre-wrap">{JSON.stringify(val, null, 2)}</pre>
+                        : String(val)}
                 </td>
               </tr>
             );
@@ -802,7 +802,7 @@ const [sessionId] = useState(() => safeRandomUUID());
         />
         <VersionsPanel />
         {/* If you want to preview recent audit (optional):*/}
-            <AuditRecentPanel /> 
+        <AuditRecentPanel />
       </div>
     </div>
   );
@@ -810,19 +810,19 @@ const [sessionId] = useState(() => safeRandomUUID());
 
 /* -------------------- Top Bar -------------------- */
 function TopBar(props: {
-  mode: "select"|"merge"|"delete"|"move"|"edit"|"create";
-  setMode: (m:"select"|"merge"|"delete"|"move"|"edit"|"create")=>void;
-  onUndo: ()=>void;
-  onSave: ()=>void;
-  onReload: ()=>void;
+  mode: "select" | "merge" | "delete" | "move" | "edit" | "create";
+  setMode: (m: "select" | "merge" | "delete" | "move" | "edit" | "create") => void;
+  onUndo: () => void;
+  onSave: () => void;
+  onReload: () => void;
   status: string;
-  anchorUid: string|null;
-  candidateUid: string|null;
-  onClearSelection: ()=>void;
+  anchorUid: string | null;
+  candidateUid: string | null;
+  onClearSelection: () => void;
   total: number;
   username: string;
-  setUsername: (s: string)=>void;
-  saveUsername: ()=>void;
+  setUsername: (s: string) => void;
+  saveUsername: () => void;
   online: Array<{ id: string; username: string; ipMasked: string; since: number }>;
 }) {
   const { mode, setMode, onUndo, onSave, onReload, status, anchorUid, candidateUid, onClearSelection,
@@ -830,15 +830,15 @@ function TopBar(props: {
 
   const ModeBtn = ({ m, label }: { m: typeof mode, label: string }) => (
     <button
-      onClick={()=>setMode(m)}
-      className={`btn ${mode===m ? "is-active" : ""}`}
+      onClick={() => setMode(m)}
+      className={`btn ${mode === m ? "is-active" : ""}`}
       title={
-        m==="select" ? "View mode (safe) – no edits"
-        : m==="merge" ? "Select A then B to merge B into A"
-        : m==="delete" ? "Click a point to delete"
-        : m==="move"   ? "Drag a point to move"
-        : m==="edit"   ? "Click a point to edit in the right panel"
-        : "Click on map to create a new point"
+        m === "select" ? "View mode (safe) – no edits"
+          : m === "merge" ? "Select A then B to merge B into A"
+            : m === "delete" ? "Click a point to delete"
+              : m === "move" ? "Drag a point to move"
+                : m === "edit" ? "Click a point to edit in the right panel"
+                  : "Click on map to create a new point"
       }
     >
       {label}
@@ -847,12 +847,12 @@ function TopBar(props: {
 
   return (
     <div className="toolbar">
-      <span style={{fontWeight:600, marginRight:8}}>Mode:</span>
+      <span style={{ fontWeight: 600, marginRight: 8 }}>Mode:</span>
       <ModeBtn m="select" label="Select" />
-      <ModeBtn m="merge"  label="Merge"  />
+      <ModeBtn m="merge" label="Merge" />
       <ModeBtn m="delete" label="Delete" />
-      <ModeBtn m="move"   label="Move"   />
-      <ModeBtn m="edit"   label="Edit"   />
+      <ModeBtn m="move" label="Move" />
+      <ModeBtn m="edit" label="Edit" />
       <ModeBtn m="create" label="Create" />
 
       {mode === "merge" && (
@@ -865,24 +865,24 @@ function TopBar(props: {
 
       {/* Live counters & identity */}
       <div className="chips" style={{ marginLeft: 8 }}>
-        <span className="chip" style={{ background:"#0ea5e9" }}>Beaches: {total.toLocaleString()}</span>
-        <span className="chip" style={{ background:"#10b981" }}>Online: {online.length}</span>
+        <span className="chip" style={{ background: "#0ea5e9" }}>Beaches: {total.toLocaleString()}</span>
+        <span className="chip" style={{ background: "#10b981" }}>Online: {online.length}</span>
       </div>
 
       <div className="spacer" />
 
       {/* Presence pills */}
-      <div style={{ display:"flex", gap:6, alignItems:"center", marginRight:8, flexWrap:"wrap", maxWidth:340 }}>
+      <div style={{ display: "flex", gap: 6, alignItems: "center", marginRight: 8, flexWrap: "wrap", maxWidth: 340 }}>
         {online.map(u => (
           <Chip key={u.id} color="#374151">{u.username || "guest"} • {u.ipMasked}</Chip>
         ))}
       </div>
 
       {/* Username editor */}
-      <div style={{ display:"flex", gap:6, alignItems:"center", marginRight:8 }}>
+      <div style={{ display: "flex", gap: 6, alignItems: "center", marginRight: 8 }}>
         <input
           value={username}
-          onChange={e=>setUsername(e.target.value)}
+          onChange={e => setUsername(e.target.value)}
           placeholder="username"
           className="user-input"
           title="Used in presence and saved history"
@@ -905,8 +905,8 @@ function EditorPanel({
 }: {
   fc: FC | null;
   editingUid: string | null;
-  onClose: ()=>void;
-  onSave: (uid: string, props: Properties)=>void;
+  onClose: () => void;
+  onSave: (uid: string, props: Properties) => void;
 }) {
   if (!fc || !editingUid) {
     return (
@@ -923,18 +923,29 @@ function EditorPanel({
 
 function EditorForm({ feature, onClose, onSave }: {
   feature: Feature;
-  onClose: ()=>void;
-  onSave: (uid: string, props: Properties)=>void;
+  onClose: () => void;
+  onSave: (uid: string, props: Properties) => void;
 }) {
   const [draft, setDraft] = useState<Properties>(() => JSON.parse(JSON.stringify(feature.properties)));
   const listToCSV = (v?: any[]) => (Array.isArray(v) ? v.join(", ") : "");
-  const csvToList = (s: string) => s.split(",").map(x => x.trim()).filter(Boolean);
+  const csvToList = (s: string) =>
+    s.split(",").map(x => x.trim()).filter(x => x.length > 0); // keep this strict for SAVE time
+
+  // NEW: raw text buffer just for the 'name' field
+  const [nameText, setNameText] = useState<string>(() => listToCSV(draft.name));
+
+  useEffect(() => {
+    // if the feature changes, resync the buffer
+    setDraft(JSON.parse(JSON.stringify(feature.properties)));
+    setNameText(listToCSV(feature.properties?.name));
+  }, [feature]);
+
   const numCSVToList = (s: string) => s.split(",").map(x => x.trim()).map(x => Number(x.replace(",", "."))).filter(Number.isFinite);
   const setField = (k: keyof Properties, v: any) => setDraft(d => ({ ...d, [k]: v }));
-  const setCSV   = (k: keyof Properties) => (e: React.ChangeEvent<HTMLInputElement>) => setField(k, csvToList(e.target.value));
-  const setNumCSV= (k: keyof Properties) => (e: React.ChangeEvent<HTMLInputElement>) => setField(k, numCSVToList(e.target.value));
-  const setJSON  = (k: keyof Properties) => (e: React.ChangeEvent<HTMLTextAreaElement>) => {
-    const v = e.target.value; try { setField(k, v ? JSON.parse(v) : {}); } catch {}
+  const setCSV = (k: keyof Properties) => (e: React.ChangeEvent<HTMLInputElement>) => setField(k, csvToList(e.target.value));
+  const setNumCSV = (k: keyof Properties) => (e: React.ChangeEvent<HTMLInputElement>) => setField(k, numCSVToList(e.target.value));
+  const setJSON = (k: keyof Properties) => (e: React.ChangeEvent<HTMLTextAreaElement>) => {
+    const v = e.target.value; try { setField(k, v ? JSON.parse(v) : {}); } catch { }
   };
 
   return (
@@ -942,13 +953,18 @@ function EditorForm({ feature, onClose, onSave }: {
       <div className="title">Editor</div>
       <div className="field">
         <label>UID</label>
-        <input value={draft.uid || ""} onChange={e=>setField("uid", e.target.value)} />
+        <input value={draft.uid || ""} onChange={e => setField("uid", e.target.value)} />
       </div>
 
       <div className="field">
         <label>name (comma-separated)</label>
-        <input value={listToCSV(draft.name)} onChange={setCSV("name")} placeholder="e.g. Παραλία Χ, Beach X" />
+        <input
+          value={nameText}
+          onChange={(e) => setNameText(e.target.value)}   // no parsing while typing
+          placeholder="e.g. Παραλία X, Beach X"
+        />
       </div>
+
 
       <div className="grid2">
         <div className="field"><label>access_id</label><input value={listToCSV(draft.access_id)} onChange={setCSV("access_id")} /></div>
@@ -969,8 +985,8 @@ function EditorForm({ feature, onClose, onSave }: {
       </div>
 
       <div className="grid2">
-        <div className="field"><label>source</label><input value={listToCSV(asList(draft.source))} onChange={e=>setField("source", csvToList(e.target.value))} /></div>
-        <div className="field"><label>source_id</label><input value={listToCSV(asList(draft.source_id))} onChange={e=>setField("source_id", csvToList(e.target.value))} /></div>
+        <div className="field"><label>source</label><input value={listToCSV(asList(draft.source))} onChange={e => setField("source", csvToList(e.target.value))} /></div>
+        <div className="field"><label>source_id</label><input value={listToCSV(asList(draft.source_id))} onChange={e => setField("source_id", csvToList(e.target.value))} /></div>
       </div>
 
       <div className="field">
@@ -984,7 +1000,7 @@ function EditorForm({ feature, onClose, onSave }: {
           className="btn primary"
           onClick={() => onSave(draft.uid!, {
             ...draft,
-            name: dedupe(asList(draft.name)),
+            name: dedupe(csvToList(nameText)),   
             access_id: dedupe(asList(draft.access_id)),
             type_id: dedupe(asList(draft.type_id)),
             beach_org: dedupe(asList(draft.beach_org)),
@@ -1008,26 +1024,26 @@ function HistoryPanel({
   changes, onToggle, onRevert
 }: {
   changes: ChangeEntry[];
-  onToggle: (id: string)=>void;
-  onRevert: (c: ChangeEntry)=>void;
+  onToggle: (id: string) => void;
+  onRevert: (c: ChangeEntry) => void;
 }) {
   return (
     <div className="history">
       <div className="title">History (this session)</div>
-      {!changes.length && <div style={{color:"#6b7280"}}>No edits yet.</div>}
-      <div style={{display:"grid", gap:10}}>
+      {!changes.length && <div style={{ color: "#6b7280" }}>No edits yet.</div>}
+      <div style={{ display: "grid", gap: 10 }}>
         {changes.map((c) => (
           <div key={c.id} className="card">
             <div className="row">
-              <div style={{display:"flex", alignItems:"center", gap:8}}>
+              <div style={{ display: "flex", alignItems: "center", gap: 8 }}>
                 <span className="badge">{c.type}</span>
                 <span>{c.summary}</span>
               </div>
               <div className="actions">
-                <button onClick={() => onToggle(c.id)} className="btn" style={{padding:"4px 8px", fontSize:12}}>
+                <button onClick={() => onToggle(c.id)} className="btn" style={{ padding: "4px 8px", fontSize: 12 }}>
                   {c.expanded ? "Hide" : "Details"}
                 </button>
-                <button onClick={() => onRevert(c)} className="btn warn" style={{padding:"4px 8px", fontSize:12}}>
+                <button onClick={() => onRevert(c)} className="btn warn" style={{ padding: "4px 8px", fontSize: 12 }}>
                   Revert
                 </button>
               </div>
@@ -1042,7 +1058,7 @@ function HistoryPanel({
                     <div><b>coords:</b> {f.geometry.coordinates[1].toFixed(6)}, {f.geometry.coordinates[0].toFixed(6)}</div>
                   </div>
                 ))}
-                <div className="difflabel" style={{marginTop:8}}>After</div>
+                <div className="difflabel" style={{ marginTop: 8 }}>After</div>
                 {c.after.map((f, i) => (
                   <div key={`a-${i}`} className="diffblock">
                     <div><b>uid:</b> {f.properties.uid}</div>
@@ -1061,7 +1077,7 @@ function HistoryPanel({
 
 /* -------------------- Versions Panel -------------------- */
 function VersionsPanel() {
-  const [items, setItems] = useState<Array<{ id:string; ts:number; message:string; user?:string; size:number; features:number }>>([]);
+  const [items, setItems] = useState<Array<{ id: string; ts: number; message: string; user?: string; size: number; features: number }>>([]);
   const [loading, setLoading] = useState(true);
   const [err, setErr] = useState<string>("");
 
@@ -1069,11 +1085,11 @@ function VersionsPanel() {
     (async () => {
       setLoading(true); setErr("");
       try {
-        const res = await fetch("/api/versions", { cache:"no-store" });
+        const res = await fetch("/api/versions", { cache: "no-store" });
         const data = await res.json();
         if (!res.ok) throw new Error(data?.error || "Failed to load versions");
         setItems(data.items || []);
-      } catch (e:any) { setErr(e.message); }
+      } catch (e: any) { setErr(e.message); }
       setLoading(false);
     })();
   }, []);
@@ -1082,19 +1098,19 @@ function VersionsPanel() {
     <div className="history" style={{ borderTop: "1px solid #e5e7eb" }}>
       <div className="title">Saved Versions</div>
       {loading && <div className="muted">Loading…</div>}
-      {err && <div className="muted" style={{ color:"#ef4444" }}>{err}</div>}
-      <div style={{display:"grid", gap:10}}>
+      {err && <div className="muted" style={{ color: "#ef4444" }}>{err}</div>}
+      <div style={{ display: "grid", gap: 10 }}>
         {items.map(v => (
           <div key={v.id} className="card">
             <div className="row">
-              <div style={{display:"flex", flexDirection:"column"}}>
+              <div style={{ display: "flex", flexDirection: "column" }}>
                 <div><b>{new Date(v.ts).toLocaleString()}</b> — {v.message || "(no message)"} {v.user ? `• by ${v.user}` : ""}</div>
-                <div className="muted" style={{ fontSize:12 }}>
-                  {v.features.toLocaleString()} features • {(v.size/1024).toFixed(1)} KB
+                <div className="muted" style={{ fontSize: 12 }}>
+                  {v.features.toLocaleString()} features • {(v.size / 1024).toFixed(1)} KB
                 </div>
               </div>
               <div className="actions">
-                <a className="btn" style={{padding:"4px 8px", fontSize:12}} href={`/api/version/${encodeURIComponent(v.id)}`} target="_blank" rel="noreferrer">Download</a>
+                <a className="btn" style={{ padding: "4px 8px", fontSize: 12 }} href={`/api/version/${encodeURIComponent(v.id)}`} target="_blank" rel="noreferrer">Download</a>
               </div>
             </div>
           </div>
@@ -1109,7 +1125,7 @@ function AuditRecentPanel() {
   const [items, setItems] = useState<any[]>([]);
   useEffect(() => {
     (async () => {
-      const r = await fetch("/api/audit/recent?limit=200&committed=1", { cache:"no-store" });
+      const r = await fetch("/api/audit/recent?limit=200&committed=1", { cache: "no-store" });
       const j = await r.json();
       setItems(j.items || []);
     })();
@@ -1117,14 +1133,14 @@ function AuditRecentPanel() {
   return (
     <div className="history" style={{ borderTop: "1px solid #e5e7eb" }}>
       <div className="title">Recent Audit</div>
-      <div style={{display:"grid", gap:10}}>
-        {items.map((x,i)=>(
+      <div style={{ display: "grid", gap: 10 }}>
+        {items.map((x, i) => (
           <div key={i} className="card">
-            <div className="row" style={{alignItems:"flex-start"}}>
+            <div className="row" style={{ alignItems: "flex-start" }}>
               <div>
                 <div><b>{new Date(x.ts).toLocaleString()}</b> • {x.user}</div>
-                <div className="muted" style={{fontSize:12}}>{x.type} — {x.summary}</div>
-                <div className="muted" style={{fontSize:12}}>uids: {x.uids?.join(", ")}</div>
+                <div className="muted" style={{ fontSize: 12 }}>{x.type} — {x.summary}</div>
+                <div className="muted" style={{ fontSize: 12 }}>uids: {x.uids?.join(", ")}</div>
               </div>
             </div>
           </div>
