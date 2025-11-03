@@ -89,6 +89,30 @@ const mergeProps = (A: Properties, B: Properties): Properties => {
 /* -------------------- Clustering -------------------- */
 const CLUSTER_RADIUS_PX = 50;
 const DETAIL_ZOOM = 13;
+/* --------- UUID helper that works everywhere --------- */
+function safeRandomUUID(): string {
+  // Modern browsers + Node >= 14.17
+  // (Works when `crypto.randomUUID` exists)
+  // @ts-ignore
+  if (typeof crypto !== "undefined" && typeof crypto.randomUUID === "function") {
+    // @ts-ignore
+    return crypto.randomUUID();
+  }
+  // RFC4122 v4 via getRandomValues (widely supported)
+  const g = (typeof self !== "undefined" ? self : globalThis) as any;
+  if (g?.crypto?.getRandomValues) {
+    const buf = new Uint8Array(16);
+    g.crypto.getRandomValues(buf);
+    // Per RFC 4122: set version and variant bits
+    buf[6] = (buf[6] & 0x0f) | 0x40;
+    buf[8] = (buf[8] & 0x3f) | 0x80;
+    const toHex = (n: number) => n.toString(16).padStart(2, "0");
+    const b = Array.from(buf, toHex).join("");
+    return `${b.slice(0,8)}-${b.slice(8,12)}-${b.slice(12,16)}-${b.slice(16,20)}-${b.slice(20)}`;
+  }
+  // Last-ditch fallback (not RFC-strong, but avoids crashes)
+  return `${Date.now().toString(36)}-${Math.random().toString(36).slice(2,10)}-${Math.random().toString(36).slice(2,10)}`;
+}
 
 /* -------------------- UI Chip -------------------- */
 const Chip = ({ color, children }: { color: string, children: React.ReactNode }) => (
@@ -150,7 +174,7 @@ function mkAuditFromChange(c: ChangeEntry, user: string): AuditEntry {
 /* ================================================================ */
 export default function MapEditor() {
   /* Core state */
-  const [sessionId] = useState(() => crypto.randomUUID());
+const [sessionId] = useState(() => safeRandomUUID());
 
   const [fc, setFc] = useState<FC | null>(null);
   const [status, setStatus] = useState<string>("");
@@ -344,7 +368,7 @@ export default function MapEditor() {
     const victim = byUid(uid);
     if (!victim) return;
     const change: ChangeEntry = {
-      id: crypto.randomUUID(),
+      id: safeRandomUUID(),
       ts: Date.now(),
       type: "delete",
       summary: `Delete ${uid} (${(victim.properties.name?.[0]||"no name")})`,
