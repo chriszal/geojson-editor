@@ -1,7 +1,7 @@
 import { NextResponse } from "next/server";
 import fs from "node:fs/promises";
 import path from "node:path";
-import { dataDir } from "../../_utils/fs";
+import { dataDir } from "../_utils/fs";
 export const runtime = "nodejs";
 
 const CHANGES_PATH = path.join(dataDir, "proposed_changes.json");

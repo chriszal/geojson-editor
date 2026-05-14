@@ -1,6 +1,6 @@
 import path from "node:path";
 import fs from "node:fs/promises";
-import { dataDir } from "../../../../_utils/fs";
+import { dataDir } from "../../../_utils/fs";
 export const runtime = "nodejs";
 
 const TILE_DIR = path.join(dataDir, "tile_cache");
