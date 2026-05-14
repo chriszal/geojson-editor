@@ -15,6 +15,13 @@
 
 
 /data/*
+/data_new/tile_cache/
+/data_new/tile_cache_p2/
+/data_new/tile_cache_p4/
+/data_new/cluster_results/
+/data_new/cluster_results_p2/
+/data_new/cluster_results_p3/
+/data_new/cluster_results_p4/
 # next.js
 /.next/
 /out/
@@ -41,3 +48,7 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# python
+__pycache__/
+*.pyc

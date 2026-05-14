@@ -9,6 +9,7 @@ import {
 import L, { Map as LeafletMap } from "leaflet";
 import Supercluster from "supercluster";
 import FileUploader from "./FileUploader";
+import ReviewPanel, { type ReviewChange } from "./ReviewPanel";
 import "leaflet/dist/leaflet.css";
 import "./map-editor.css";
 
@@ -185,6 +186,13 @@ export default function MapEditor() {
   const [changes, setChanges] = useState<ChangeEntry[]>([]);
   const [editingUid, setEditingUid] = useState<string | null>(null);
   const mapRef = useRef<LeafletMap | null>(null);
+  const [rightMode, setRightMode] = useState<"editor" | "review">("editor");
+  const [satellite, setSatellite] = useState(false);
+  const [reviewHighlight, setReviewHighlight] = useState<{
+    primary: string | null;
+    discards: Set<string>;
+    neutral: Set<string>;
+  } | null>(null);
 
   /* Username / identity (saved locally) */
   const [username, setUsername] = useState<string>("");
@@ -522,6 +530,101 @@ export default function MapEditor() {
     }
   };
 
+  /* Apply a change from the AI review queue to the live FC */
+  const applyReviewChange = (change: ReviewChange) => {
+    if (!fc) return;
+
+    // Phase 4 LONG_SECTIONS: rename section points + delete confirmed duplicates
+    if (change.phase === 4 && change.proposed_action === "REVIEW_SECTIONS" && change.suggested_sections && change.suggested_sections.length > 0) {
+      const discardSet  = new Set(change.discard_uids ?? []);
+      const beforeFeats: Feature[] = [];
+      const afterFeats:  Feature[] = [];
+
+      // Build uid → suggested_name map from sections
+      const uidToName: Record<string, string> = {};
+      for (const sec of change.suggested_sections) {
+        if (!sec.suggested_name) continue;
+        for (const uid of sec.uids) {
+          if (!discardSet.has(uid)) uidToName[uid] = sec.suggested_name;
+        }
+      }
+
+      const nextFeatures = fc.features
+        .filter(f => {
+          const uid = f.properties.uid!;
+          if (discardSet.has(uid)) {
+            beforeFeats.push(JSON.parse(JSON.stringify(f)));
+            return false;
+          }
+          return true;
+        })
+        .map(f => {
+          const uid  = f.properties.uid!;
+          const name = uidToName[uid];
+          if (!name) return f;
+          const updated: Feature = {
+            ...f,
+            properties: { ...f.properties, name: [name] },
+          };
+          beforeFeats.push(JSON.parse(JSON.stringify(f)));
+          afterFeats.push(JSON.parse(JSON.stringify(updated)));
+          return updated;
+        });
+
+      const changeEntry: ChangeEntry = {
+        id:      safeRandomUUID(),
+        ts:      Date.now(),
+        type:    "merge",
+        summary: `AI review (p4 sections): renamed ${Object.keys(uidToName).length} points, removed ${discardSet.size} duplicates`,
+        before:  beforeFeats,
+        after:   afterFeats,
+      };
+
+      setFeatures(nextFeatures, changeEntry);
+      return;
+    }
+
+    // Standard merge: keep primary, delete discards
+    if (!change.primary_uid || !change.discard_uids?.length) return;
+
+    const primaryFeat = fc.features.find(f => f.properties.uid === change.primary_uid);
+    if (!primaryFeat) {
+      setStatus(`Review: primary point ${change.primary_uid} not found in current data.`);
+      return;
+    }
+
+    let mergedProps = JSON.parse(JSON.stringify(primaryFeat.properties));
+    const beforeFeatures: Feature[] = [JSON.parse(JSON.stringify(primaryFeat))];
+
+    for (const discardUid of change.discard_uids) {
+      const discardFeat = fc.features.find(f => f.properties.uid === discardUid);
+      if (!discardFeat) continue;
+      beforeFeatures.push(JSON.parse(JSON.stringify(discardFeat)));
+      mergedProps = mergeProps(mergedProps, discardFeat.properties);
+    }
+
+    const mergedFeature: Feature = {
+      ...primaryFeat,
+      properties: { ...mergedProps, uid: change.primary_uid },
+    };
+
+    const discardSet = new Set(change.discard_uids);
+    const nextFeatures = fc.features
+      .filter(f => !discardSet.has(f.properties.uid!))
+      .map(f => f.properties.uid === change.primary_uid ? mergedFeature : f);
+
+    const changeEntry: ChangeEntry = {
+      id:      safeRandomUUID(),
+      ts:      Date.now(),
+      type:    "merge",
+      summary: `AI review: merge ${change.discard_uids.join(", ")} → ${change.primary_uid}`,
+      before:  beforeFeatures,
+      after:   [JSON.parse(JSON.stringify(mergedFeature))],
+    };
+
+    setFeatures(nextFeatures, changeEntry);
+  };
+
   /* Save current FC to disk (with username + message) */
   const save = async () => {
     if (!fc) return;
@@ -610,15 +713,25 @@ export default function MapEditor() {
       html: `<div style="width:28px;height:28px;border-radius:50%;background:#111;color:#fff;display:flex;align-items:center;justify-content:center;font-weight:700;border:2px solid #0ea5e9">${count}</div>`,
     });
 
-  const pointIcon = (opts: { missing: boolean; isAnchor: boolean; isCandidate: boolean; isEditing: boolean; }) => {
-    const border = opts.isEditing ? "#7c3aed"
-      : opts.isAnchor ? "#f59e0b"
-        : opts.isCandidate ? "#84cc16"
-          : opts.missing ? "#e11d48"
-            : "#0ea5e9";
+  const pointIcon = (opts: {
+    missing: boolean; isAnchor: boolean; isCandidate: boolean; isEditing: boolean;
+    reviewRole?: "primary" | "discard" | "neutral";
+  }) => {
+    const size  = opts.reviewRole ? 18 : 14;
+    const border = opts.isEditing    ? "#7c3aed"
+      : opts.reviewRole === "primary"  ? "#22c55e"
+      : opts.reviewRole === "discard"  ? "#f97316"
+      : opts.reviewRole === "neutral"  ? "#eab308"
+      : opts.isAnchor                  ? "#f59e0b"
+      : opts.isCandidate               ? "#84cc16"
+      : opts.missing                   ? "#e11d48"
+      :                                  "#0ea5e9";
+    const ring = opts.reviewRole
+      ? `box-shadow:0 0 0 3px ${border}55;`
+      : "";
     return new L.DivIcon({
       className: "custom-marker",
-      html: `<div style="width:14px;height:14px;border-radius:50%;border:3px solid ${border};background:#fff"></div>`
+      html: `<div style="width:${size}px;height:${size}px;border-radius:50%;border:3px solid ${border};background:#fff;${ring}"></div>`
     });
   };
 
@@ -677,12 +790,15 @@ export default function MapEditor() {
           anchorUid={anchorUid}
           candidateUid={candidateUid}
           onClearSelection={() => { setAnchorUid(null); setCandidateUid(null); }}
-          /* NEW */
           total={fc?.features?.length || 0}
           username={username}
           setUsername={setUsername}
           saveUsername={saveUsername}
           online={online}
+          rightMode={rightMode}
+          onToggleReview={() => { setRightMode(m => m === "review" ? "editor" : "review"); setReviewHighlight(null); }}
+          satellite={satellite}
+          onToggleSatellite={() => setSatellite(s => !s)}
         />
 
         <div className="topstrip">
@@ -702,12 +818,23 @@ export default function MapEditor() {
             setView({ bbox: [b.getWest(), b.getSouth(), b.getEast(), b.getNorth()], zoom: m.getZoom() });
           }}
         >
-          <TileLayer
-            url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-            maxNativeZoom={19}
-            maxZoom={22}
-            attribution="&copy; OpenStreetMap"
-          />
+          {satellite ? (
+            <TileLayer
+              key="satellite"
+              url="https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}"
+              maxNativeZoom={19}
+              maxZoom={22}
+              attribution="&copy; Esri &mdash; Esri, i-cubed, USDA, AeroGRID, IGN"
+            />
+          ) : (
+            <TileLayer
+              key="osm"
+              url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+              maxNativeZoom={19}
+              maxZoom={22}
+              attribution="&copy; OpenStreetMap"
+            />
+          )}
           <MapEvents />
           <MapCreateEvents />
 
@@ -730,11 +857,18 @@ export default function MapEditor() {
             const uid = p.uid!;
             const hasMissing = ["name", "purpose", "area_size"].some(k => isEmptyVal((p as any)[k]));
             const draggable = mode === "move" && view.zoom >= DETAIL_ZOOM;
+            const reviewRole = reviewHighlight
+              ? reviewHighlight.primary === uid  ? "primary"
+              : reviewHighlight.discards.has(uid) ? "discard"
+              : reviewHighlight.neutral.has(uid)  ? "neutral"
+              : undefined
+              : undefined;
             const icon = pointIcon({
               missing: hasMissing,
               isAnchor: anchorUid === uid,
               isCandidate: candidateUid === uid,
               isEditing: editingUid === uid,
+              reviewRole,
             });
             const override = jitterPosByUid.get(uid);
             const [renderLng, renderLat] = override ?? [lng, lat];
@@ -784,25 +918,72 @@ export default function MapEditor() {
               </Marker>
             );
           })}
+
+          {/* Review highlight overlay — always visible, bypasses Supercluster */}
+          {reviewHighlight && fc?.features
+            .filter(f => {
+              const uid = f.properties.uid!;
+              return reviewHighlight.primary === uid
+                || reviewHighlight.discards.has(uid)
+                || reviewHighlight.neutral.has(uid);
+            })
+            .map(f => {
+              const uid = f.properties.uid!;
+              const [lng, lat] = f.geometry.coordinates;
+              const role = reviewHighlight.primary === uid ? "primary"
+                : reviewHighlight.discards.has(uid) ? "discard"
+                : "neutral";
+              const icon = pointIcon({
+                missing: false, isAnchor: false, isCandidate: false, isEditing: false,
+                reviewRole: role,
+              });
+              return (
+                <Marker key={`review-hl-${uid}`} position={[lat, lng]} icon={icon as any} zIndexOffset={1000}>
+                  <Popup maxWidth={340}>
+                    <div style={{ fontSize: 13 }}>
+                      <div style={{ fontWeight: 700, marginBottom: 4 }}>
+                        {f.properties.name?.[0] || "(no name)"}
+                        {role === "primary" && <span style={{ color: "#22c55e", marginLeft: 6 }}>→ keep</span>}
+                        {role === "discard" && <span style={{ color: "#f97316", marginLeft: 6 }}>→ remove</span>}
+                      </div>
+                      <div style={{ color: "#6b7280", fontSize: 11 }}>{uid}</div>
+                    </div>
+                  </Popup>
+                </Marker>
+              );
+            })
+          }
         </MapContainer>
       </div>
 
-      {/* RIGHT: Editor + History + Versions */}
+      {/* RIGHT: Editor panels OR Review queue */}
       <div className="right">
-        <EditorPanel
-          fc={fc}
-          editingUid={editingUid}
-          onClose={() => setEditingUid(null)}
-          onSave={saveEdits}
-        />
-        <HistoryPanel
-          changes={changes}
-          onToggle={(id) => setChanges(cs => cs.map(c => c.id === id ? { ...c, expanded: !c.expanded } : c))}
-          onRevert={(chg) => revertChange(chg)}
-        />
-        <VersionsPanel />
-        {/* If you want to preview recent audit (optional):*/}
-        <AuditRecentPanel />
+        {rightMode === "review" ? (
+          <ReviewPanel
+            mapRef={mapRef}
+            onApplyChange={applyReviewChange}
+            onHighlight={(primary, discards, neutral) =>
+              setReviewHighlight({ primary, discards: new Set(discards), neutral: new Set(neutral) })
+            }
+            onClearHighlight={() => setReviewHighlight(null)}
+          />
+        ) : (
+          <>
+            <EditorPanel
+              fc={fc}
+              editingUid={editingUid}
+              onClose={() => setEditingUid(null)}
+              onSave={saveEdits}
+            />
+            <HistoryPanel
+              changes={changes}
+              onToggle={(id) => setChanges(cs => cs.map(c => c.id === id ? { ...c, expanded: !c.expanded } : c))}
+              onRevert={(chg) => revertChange(chg)}
+            />
+            <VersionsPanel />
+            <AuditRecentPanel />
+          </>
+        )}
       </div>
     </div>
   );
@@ -824,9 +1005,14 @@ function TopBar(props: {
   setUsername: (s: string) => void;
   saveUsername: () => void;
   online: Array<{ id: string; username: string; ipMasked: string; since: number }>;
+  rightMode: "editor" | "review";
+  onToggleReview: () => void;
+  satellite: boolean;
+  onToggleSatellite: () => void;
 }) {
   const { mode, setMode, onUndo, onSave, onReload, status, anchorUid, candidateUid, onClearSelection,
-    total, username, setUsername, saveUsername, online } = props;
+    total, username, setUsername, saveUsername, online, rightMode, onToggleReview,
+    satellite, onToggleSatellite } = props;
 
   const ModeBtn = ({ m, label }: { m: typeof mode, label: string }) => (
     <button
@@ -890,6 +1076,22 @@ function TopBar(props: {
         <button className="btn" onClick={saveUsername}>Use</button>
       </div>
 
+      <button
+        onClick={onToggleReview}
+        className={`btn${rightMode === "review" ? " is-active" : ""}`}
+        style={rightMode === "review" ? { background: "#7c3aed", color: "#fff", borderColor: "#7c3aed" } : { borderColor: "#7c3aed", color: "#7c3aed" }}
+        title="Toggle AI deduplication review queue"
+      >
+        {rightMode === "review" ? "✕ Close Review" : "🔍 Review"}
+      </button>
+      <button
+        onClick={onToggleSatellite}
+        className={`btn${satellite ? " is-active" : ""}`}
+        style={satellite ? { background: "#0ea5e9", color: "#fff", borderColor: "#0ea5e9" } : {}}
+        title="Toggle satellite imagery"
+      >
+        🛰 {satellite ? "Satellite" : "Map"}
+      </button>
       <button onClick={onUndo} className="btn">Undo</button>
       <button onClick={onSave} className="btn primary">Save version</button>
       <button onClick={onReload} className="btn">Reload</button>
