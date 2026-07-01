@@ -716,6 +716,7 @@ export default function MapEditor() {
   const pointIcon = (opts: {
     missing: boolean; isAnchor: boolean; isCandidate: boolean; isEditing: boolean;
     reviewRole?: "primary" | "discard" | "neutral";
+    isGmaps?: boolean;
   }) => {
     const size  = opts.reviewRole ? 18 : 14;
     const border = opts.isEditing    ? "#7c3aed"
@@ -724,6 +725,7 @@ export default function MapEditor() {
       : opts.reviewRole === "neutral"  ? "#eab308"
       : opts.isAnchor                  ? "#f59e0b"
       : opts.isCandidate               ? "#84cc16"
+      : opts.isGmaps                   ? "#ec4899"
       : opts.missing                   ? "#e11d48"
       :                                  "#0ea5e9";
     const ring = opts.reviewRole
@@ -863,12 +865,14 @@ export default function MapEditor() {
               : reviewHighlight.neutral.has(uid)  ? "neutral"
               : undefined
               : undefined;
+            const isGmaps = !!p.is_gmaps || uid.startsWith("gmaps-");
             const icon = pointIcon({
               missing: hasMissing,
               isAnchor: anchorUid === uid,
               isCandidate: candidateUid === uid,
               isEditing: editingUid === uid,
               reviewRole,
+              isGmaps,
             });
             const override = jitterPosByUid.get(uid);
             const [renderLng, renderLat] = override ?? [lng, lat];
