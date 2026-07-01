@@ -488,6 +488,7 @@ def check_via_playwright(
 # ── Main ──────────────────────────────────────────────────────────────────────
 
 def main():
+    global SEARCH_RADIUS_M
     ap = argparse.ArgumentParser()
     ap.add_argument("--limit",       type=int, default=0,   help="Max points to check (0 = all)")
     ap.add_argument("--cluster-ids", nargs="*", default=[],  help="Only check points in these phase-2 cluster IDs")
@@ -497,7 +498,11 @@ def main():
     ap.add_argument("--summary",     action="store_true",     help="Print summary of existing results and exit")
     ap.add_argument("--max-reviews",   type=int, default=10,  help="Max reviews to load per place (default: 10)")
     ap.add_argument("--skip-distance", type=float, default=0.0, help="Skip checking point if within X meters of an already checked point (default: 0 = disabled)")
+    ap.add_argument("--radius",        type=float, default=200.0, help="Search radius in meters for proximity checking (default: 200)")
+    ap.add_argument("--retry-not-found", action="store_true",  help="Retry checking points that were previously marked as not found")
     args = ap.parse_args()
+
+    SEARCH_RADIUS_M = args.radius
 
     # ── Summary mode ────────────────────────────────────────────────────────
     if args.summary:
@@ -520,7 +525,8 @@ def main():
             print("\nTop rated (by Google reviews):")
             for uid, r in top:
                 b = r["beaches"][0]
-                print(f"  {b['name']!r}  ⭐{b.get('rating','?')} ({b.get('user_ratings',0)} reviews)  uid={uid}")
+                safe_name = b['name'].encode('ascii', errors='replace').decode('ascii')
+                print(f"  {safe_name!r}  Rating: {b.get('rating','?')} ({b.get('user_ratings',0)} reviews)  uid={uid}")
         return
 
     # ── Load points to check ─────────────────────────────────────────────────
@@ -565,7 +571,11 @@ def main():
                     cached_places[b["href"]] = b
 
     # Filter out already checked points
-    pts_to_check = {uid: p for uid, p in pts_to_check.items() if uid not in existing}
+    if args.retry_not_found:
+        pts_to_check = {uid: p for uid, p in pts_to_check.items() if uid in existing and not existing[uid].get("found")}
+        print(f"Retrying {len(pts_to_check):,} previously 'not found' points with radius {SEARCH_RADIUS_M}m...")
+    else:
+        pts_to_check = {uid: p for uid, p in pts_to_check.items() if uid not in existing}
 
     # Proximity checking to skip and auto-resolve close points
     if args.skip_distance > 0:
