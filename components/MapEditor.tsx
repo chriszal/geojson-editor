@@ -4,7 +4,7 @@ import React, {
   useEffect, useMemo, useRef, useState, useCallback
 } from "react";
 import {
-  MapContainer, TileLayer, Marker, Popup, useMapEvents
+  Circle, MapContainer, Marker, Polyline, Popup, Rectangle, TileLayer, useMapEvents
 } from "react-leaflet";
 import L, { Map as LeafletMap } from "leaflet";
 import Supercluster from "supercluster";
@@ -38,6 +38,13 @@ type Properties = Record<string, any> & {
   source?: any[] | string;
   source_id?: any[] | string;
   merged_from_uids?: string[];
+  source_features?: Array<{ uid?: string; geometry?: any; properties?: Record<string, any> }>;
+  parent_beach_uid?: string;
+  child_beach_uids?: string[];
+  beach_group_id?: string;
+  beach_role?: "main" | "section";
+  is_hidden_beach?: boolean;
+  beach_access_type?: string;
 };
 type Feature = {
   type: "Feature";
@@ -45,7 +52,14 @@ type Feature = {
   properties: Properties;
 };
 type FC = { type: "FeatureCollection"; features: Feature[] };
-type ChangeType = "merge" | "move" | "delete" | "edit" | "create";
+type ChangeType = "merge" | "group" | "move" | "delete" | "edit" | "create";
+type Mode = "select" | "merge" | "bulkMerge" | "group" | "hidden" | "delete" | "move" | "edit" | "create";
+type SelectionShape = "box" | "circle";
+type SelectionDraft = {
+  shape: SelectionShape;
+  start: [number, number];
+  end: [number, number];
+};
 type ChangeEntry = {
   id: string;
   ts: number;
@@ -70,6 +84,24 @@ const asList = (v: any): any[] => Array.isArray(v) ? v : (v == null ? [] : [v]);
 const dedupe = (arr: any[]) => Array.from(new Map(arr.map(x => [JSON.stringify(x), x])).values());
 const toFloatList = (arr: any[]): number[] => dedupe(asList(arr)).map(x => Number(x)).filter(Number.isFinite);
 const isEmptyVal = (v: any) => v == null || (Array.isArray(v) ? v.length === 0 : String(v).trim() === "");
+const clone = <T,>(v: T): T => JSON.parse(JSON.stringify(v));
+const groupIdFor = (uid: string) => `beach-group-${uid}`;
+
+const sourceSnapshot = (f: Feature) => {
+  const properties = clone(f.properties || {});
+  delete properties.source_features;
+  return {
+    uid: f.properties?.uid,
+    geometry: clone(f.geometry),
+    properties,
+  };
+};
+
+const mergeSourceSnapshots = (existing: any[], features: Feature[]) =>
+  dedupe([
+    ...asList(existing),
+    ...features.map(sourceSnapshot),
+  ]);
 
 /** Merge two feature property bags */
 const mergeProps = (A: Properties, B: Properties): Properties => {
@@ -84,6 +116,7 @@ const mergeProps = (A: Properties, B: Properties): Properties => {
   out.source = dedupe([...asList(A.source), ...asList(B.source)]);
   out.source_id = dedupe([...asList(A.source_id), ...asList(B.source_id)]);
   out.merged_from_uids = dedupe([...(A.merged_from_uids || []), ...(B.merged_from_uids || []), ...(A.uid ? [A.uid] : []), ...(B.uid ? [B.uid] : [])]);
+  out.source_features = dedupe([...asList(A.source_features), ...asList(B.source_features)]);
   return out;
 };
 
@@ -179,7 +212,10 @@ export default function MapEditor() {
 
   const [fc, setFc] = useState<FC | null>(null);
   const [status, setStatus] = useState<string>("");
-  const [mode, setMode] = useState<"select" | "merge" | "delete" | "move" | "edit" | "create">("select");
+  const [mode, setMode] = useState<Mode>("select");
+  const [bulkShape, setBulkShape] = useState<SelectionShape>("box");
+  const [selectionDraft, setSelectionDraft] = useState<SelectionDraft | null>(null);
+  const selectionDraftRef = useRef<SelectionDraft | null>(null);
   const [anchorUid, setAnchorUid] = useState<string | null>(null);
   const [candidateUid, setCandidateUid] = useState<string | null>(null);
   const [historyStack, setHistoryStack] = useState<FC[]>([]);
@@ -264,7 +300,7 @@ export default function MapEditor() {
       const data: FC = await res.json();
       data.features.forEach(f => {
         const p = (f.properties ||= {});
-        ["name", "access_id", "type_id", "beach_org", "depth_id", "beach_amea", "purpose", "source", "source_id", "merged_from_uids"]
+        ["name", "access_id", "type_id", "beach_org", "depth_id", "beach_amea", "purpose", "source", "source_id", "merged_from_uids", "child_beach_uids", "source_features"]
           .forEach(k => (p as any)[k] = asList((p as any)[k]));
         p.area_size = toFloatList(p.area_size || []);
         p.tags ||= {};
@@ -395,6 +431,7 @@ export default function MapEditor() {
     if (!ok) { setCandidateUid(null); return; }
 
     const mergedProps = mergeProps(anchor.properties, other.properties);
+    mergedProps.source_features = mergeSourceSnapshots(mergedProps.source_features || [], [anchor, other]);
     const merged: Feature = {
       type: "Feature",
       geometry: { type: "Point", coordinates: anchor.geometry.coordinates },
@@ -420,6 +457,160 @@ export default function MapEditor() {
     if (editingUid === anchor.properties.uid || editingUid === other.properties.uid) {
       setEditingUid(merged.properties.uid!);
     }
+  };
+
+  const groupFeatureUnderAnchor = (parentUid: string, childUid: string) => {
+    if (!fc || parentUid === childUid) return;
+    const parent = byUid(parentUid);
+    const child = byUid(childUid);
+    if (!parent || !child) return;
+
+    const oldParentUid = child.properties.parent_beach_uid;
+    const oldParent = oldParentUid && oldParentUid !== parentUid ? byUid(oldParentUid) : null;
+    const before = [parent, child, ...(oldParent ? [oldParent] : [])].map(f => clone(f));
+    const groupId = parent.properties.beach_group_id || child.properties.beach_group_id || groupIdFor(parentUid);
+
+    const updatedParent: Feature = {
+      ...parent,
+      properties: {
+        ...parent.properties,
+        beach_role: "main",
+        beach_group_id: groupId,
+        child_beach_uids: dedupe([...(parent.properties.child_beach_uids || []), childUid]),
+      },
+    };
+    const updatedChild: Feature = {
+      ...child,
+      properties: {
+        ...child.properties,
+        beach_role: "section",
+        beach_group_id: groupId,
+        parent_beach_uid: parentUid,
+      },
+    };
+    const updatedOldParent: Feature | null = oldParent ? {
+      ...oldParent,
+      properties: {
+        ...oldParent.properties,
+        child_beach_uids: (oldParent.properties.child_beach_uids || []).filter(uid => uid !== childUid),
+      },
+    } : null;
+
+    const after = [updatedParent, updatedChild, ...(updatedOldParent ? [updatedOldParent] : [])].map(f => clone(f));
+    const change: ChangeEntry = {
+      id: safeRandomUUID(),
+      ts: Date.now(),
+      type: "group",
+      summary: `Group ${childUid} under ${parentUid}`,
+      before,
+      after,
+    };
+
+    const next = fc.features.map(f => {
+      if (f.properties.uid === parentUid) return updatedParent;
+      if (f.properties.uid === childUid) return updatedChild;
+      if (updatedOldParent && f.properties.uid === oldParentUid) return updatedOldParent;
+      return f;
+    });
+
+    setFeatures(next, change);
+    setCandidateUid(childUid);
+  };
+
+  const toggleHiddenBeach = (uid: string) => {
+    const f = byUid(uid);
+    if (!f) return;
+    const before = clone(f);
+    const nextHidden = !Boolean(f.properties.is_hidden_beach);
+    const after: Feature = {
+      ...f,
+      properties: {
+        ...f.properties,
+        is_hidden_beach: nextHidden,
+        beach_access_type: nextHidden ? "hidden_or_hard_to_access" : undefined,
+        tags: {
+          ...(f.properties.tags || {}),
+          hidden_or_hard_to_access: nextHidden || undefined,
+        },
+      },
+    };
+    const change: ChangeEntry = {
+      id: safeRandomUUID(),
+      ts: Date.now(),
+      type: "edit",
+      summary: `${nextHidden ? "Mark" : "Unmark"} hidden/hard access ${uid}`,
+      before: [before],
+      after: [clone(after)],
+    };
+    updateFeature(uid, () => after, change);
+  };
+
+  const mergeManyIntoAnchor = (anchorUidForMerge: string, mergeUids: string[], label: string) => {
+    if (!fc) return;
+    const anchor = byUid(anchorUidForMerge);
+    if (!anchor) return;
+    const uniqueMergeUids = dedupe(mergeUids).filter(uid => uid && uid !== anchorUidForMerge);
+    if (!uniqueMergeUids.length) {
+      setStatus("Bulk merge: no other beach pins inside the shape.");
+      return;
+    }
+    const mergeFeaturesList = uniqueMergeUids.map(uid => byUid(uid)).filter(Boolean) as Feature[];
+    if (!mergeFeaturesList.length) {
+      setStatus("Bulk merge: selected pins are no longer present.");
+      return;
+    }
+    const ok = confirm(`Merge ${mergeFeaturesList.length} selected beach pin(s) into ${anchorUidForMerge}?`);
+    if (!ok) return;
+
+    let mergedProps = clone(anchor.properties);
+    for (const f of mergeFeaturesList) mergedProps = mergeProps(mergedProps, f.properties);
+    mergedProps.source_features = mergeSourceSnapshots(mergedProps.source_features || [], [anchor, ...mergeFeaturesList]);
+
+    const mergedFeature: Feature = {
+      ...anchor,
+      properties: { ...mergedProps, uid: anchorUidForMerge },
+    };
+    const discardSet = new Set(mergeFeaturesList.map(f => f.properties.uid!));
+    const next = fc.features
+      .filter(f => !discardSet.has(f.properties.uid!))
+      .map(f => f.properties.uid === anchorUidForMerge ? mergedFeature : f);
+    const change: ChangeEntry = {
+      id: safeRandomUUID(),
+      ts: Date.now(),
+      type: "merge",
+      summary: `${label}: merge ${mergeFeaturesList.length} pin(s) into ${anchorUidForMerge}`,
+      before: [clone(anchor), ...mergeFeaturesList.map(f => clone(f))],
+      after: [clone(mergedFeature)],
+    };
+
+    setFeatures(next, change);
+    setAnchorUid(null);
+    setCandidateUid(null);
+  };
+
+  const featureUidsInSelection = (draft: SelectionDraft) => {
+    if (!fc) return [];
+    const [sLat, sLng] = draft.start;
+    const [eLat, eLng] = draft.end;
+    if (draft.shape === "box") {
+      const minLat = Math.min(sLat, eLat);
+      const maxLat = Math.max(sLat, eLat);
+      const minLng = Math.min(sLng, eLng);
+      const maxLng = Math.max(sLng, eLng);
+      return fc.features
+        .filter(f => {
+          const [lng, lat] = f.geometry.coordinates;
+          return lat >= minLat && lat <= maxLat && lng >= minLng && lng <= maxLng;
+        })
+        .map(f => f.properties.uid!)
+        .filter(Boolean);
+    }
+
+    const radius = haversineMeters([sLng, sLat], [eLng, eLat]);
+    return fc.features
+      .filter(f => haversineMeters([sLng, sLat], f.geometry.coordinates) <= radius)
+      .map(f => f.properties.uid!)
+      .filter(Boolean);
   };
 
   const moveFeatureTo = (uid: string, newLngLat: [number, number]) => {
@@ -512,6 +703,12 @@ export default function MapEditor() {
         clone.features[i] = orig;
         setFc(clone);
       }
+    } else if (chg.type === "group") {
+      const beforeByUid = new Map(chg.before.map(f => [f.properties.uid!, f]));
+      setFc({
+        ...clone,
+        features: clone.features.map(f => beforeByUid.get(f.properties.uid!) || f),
+      });
     } else if (chg.type === "merge") {
       const aBefore = chg.before[0];
       const bBefore = chg.before[1];
@@ -533,6 +730,60 @@ export default function MapEditor() {
   /* Apply a change from the AI review queue to the live FC */
   const applyReviewChange = (change: ReviewChange) => {
     if (!fc) return;
+
+    if (change.proposed_action === "CREATE_HIERARCHY" && change.primary_uid) {
+      const primaryUid = change.primary_uid;
+      const primaryFeat = fc.features.find(f => f.properties.uid === primaryUid);
+      if (!primaryFeat) {
+        setStatus(`Review: primary point ${primaryUid} not found in current data.`);
+        return;
+      }
+      const childUids = change.points.map(p => p.uid).filter(uid => uid !== primaryUid);
+      const childSet = new Set(childUids);
+      const beforeFeatures = fc.features
+        .filter(f => f.properties.uid === primaryUid || childSet.has(f.properties.uid!))
+        .map(f => clone(f));
+      const groupId = primaryFeat.properties.beach_group_id || groupIdFor(primaryUid);
+      const nextFeatures = fc.features.map(f => {
+        const uid = f.properties.uid!;
+        if (uid === primaryUid) {
+          return {
+            ...f,
+            properties: {
+              ...f.properties,
+              beach_role: "main" as const,
+              beach_group_id: groupId,
+              child_beach_uids: dedupe([...(f.properties.child_beach_uids || []), ...childUids]),
+            },
+          };
+        }
+        if (childSet.has(uid)) {
+          return {
+            ...f,
+            properties: {
+              ...f.properties,
+              beach_role: "section" as const,
+              beach_group_id: groupId,
+              parent_beach_uid: primaryUid,
+            },
+          };
+        }
+        return f;
+      });
+      const afterFeatures = nextFeatures
+        .filter(f => f.properties.uid === primaryUid || childSet.has(f.properties.uid!))
+        .map(f => clone(f));
+      const changeEntry: ChangeEntry = {
+        id: safeRandomUUID(),
+        ts: Date.now(),
+        type: "group",
+        summary: `AI review: group ${childUids.length} section(s) under ${primaryUid}`,
+        before: beforeFeatures,
+        after: afterFeatures,
+      };
+      setFeatures(nextFeatures, changeEntry);
+      return;
+    }
 
     // Phase 4 LONG_SECTIONS: rename section points + delete confirmed duplicates
     if (change.phase === 4 && change.proposed_action === "REVIEW_SECTIONS" && change.suggested_sections && change.suggested_sections.length > 0) {
@@ -602,6 +853,7 @@ export default function MapEditor() {
       beforeFeatures.push(JSON.parse(JSON.stringify(discardFeat)));
       mergedProps = mergeProps(mergedProps, discardFeat.properties);
     }
+    mergedProps.source_features = mergeSourceSnapshots(mergedProps.source_features || [], beforeFeatures);
 
     const mergedFeature: Feature = {
       ...primaryFeat,
@@ -700,6 +952,44 @@ export default function MapEditor() {
     return null;
   }
 
+  function MapSelectionEvents() {
+    useMapEvents({
+      mousedown(e) {
+        if (mode !== "bulkMerge" || !anchorUid) return;
+        const target = e.originalEvent.target as HTMLElement | null;
+        if (target?.closest(".leaflet-marker-icon")) return;
+        const m = e.target as L.Map;
+        m.dragging.disable();
+        const next: SelectionDraft = {
+          shape: bulkShape,
+          start: [e.latlng.lat, e.latlng.lng],
+          end: [e.latlng.lat, e.latlng.lng],
+        };
+        selectionDraftRef.current = next;
+        setSelectionDraft(next);
+      },
+      mousemove(e) {
+        const current = selectionDraftRef.current;
+        if (!current) return;
+        const next = { ...current, end: [e.latlng.lat, e.latlng.lng] as [number, number] };
+        selectionDraftRef.current = next;
+        setSelectionDraft(next);
+      },
+      mouseup(e) {
+        const current = selectionDraftRef.current;
+        if (!current) return;
+        const m = e.target as L.Map;
+        m.dragging.enable();
+        selectionDraftRef.current = null;
+        setSelectionDraft(null);
+        if (!anchorUid) return;
+        const uids = featureUidsInSelection(current).filter(uid => uid !== anchorUid);
+        mergeManyIntoAnchor(anchorUid, uids, `${current.shape === "box" ? "Box" : "Circle"} merge`);
+      },
+    });
+    return null;
+  }
+
   const items = useMemo(() => {
     if (!clusterIndex || !view.bbox) return [];
     return clusterIndex.getClusters(view.bbox, Math.round(view.zoom));
@@ -717,14 +1007,20 @@ export default function MapEditor() {
     missing: boolean; isAnchor: boolean; isCandidate: boolean; isEditing: boolean;
     reviewRole?: "primary" | "discard" | "neutral";
     isGmaps?: boolean;
+    isMain?: boolean;
+    isSection?: boolean;
+    isHidden?: boolean;
   }) => {
-    const size  = opts.reviewRole ? 18 : 14;
+    const size = opts.reviewRole ? 18 : opts.isMain ? 20 : opts.isSection ? 12 : 14;
     const border = opts.isEditing    ? "#7c3aed"
       : opts.reviewRole === "primary"  ? "#22c55e"
       : opts.reviewRole === "discard"  ? "#f97316"
       : opts.reviewRole === "neutral"  ? "#eab308"
       : opts.isAnchor                  ? "#f59e0b"
       : opts.isCandidate               ? "#84cc16"
+      : opts.isHidden                  ? "#a855f7"
+      : opts.isMain                    ? "#111827"
+      : opts.isSection                 ? "#7c3aed"
       : opts.isGmaps                   ? "#ec4899"
       : opts.missing                   ? "#e11d48"
       :                                  "#0ea5e9";
@@ -777,6 +1073,37 @@ export default function MapEditor() {
     ? [fc.features[0].geometry.coordinates[1], fc.features[0].geometry.coordinates[0]]
     : [37.98, 23.72];
 
+  const hierarchyLines = useMemo(() => {
+    if (!fc || view.zoom < 11) return [];
+    const byId = new Map(fc.features.map(f => [f.properties.uid!, f]));
+    return fc.features
+      .filter(f => Boolean(f.properties.parent_beach_uid))
+      .map(child => {
+        const parent = byId.get(child.properties.parent_beach_uid!);
+        if (!parent) return null;
+        const [pLng, pLat] = parent.geometry.coordinates;
+        const [cLng, cLat] = child.geometry.coordinates;
+        return {
+          key: `${parent.properties.uid}-${child.properties.uid}`,
+          positions: [[pLat, pLng], [cLat, cLng]] as [[number, number], [number, number]],
+        };
+      })
+      .filter(Boolean) as Array<{ key: string; positions: [[number, number], [number, number]] }>;
+  }, [fc, view.zoom]);
+
+  const selectionBounds = selectionDraft && selectionDraft.shape === "box"
+    ? [selectionDraft.start, selectionDraft.end] as [[number, number], [number, number]]
+    : null;
+  const selectionCircle = selectionDraft && selectionDraft.shape === "circle"
+    ? {
+      center: selectionDraft.start,
+      radius: haversineMeters(
+        [selectionDraft.start[1], selectionDraft.start[0]],
+        [selectionDraft.end[1], selectionDraft.end[0]]
+      ),
+    }
+    : null;
+
   /* Render */
   return (
     <div className="app">
@@ -784,7 +1111,16 @@ export default function MapEditor() {
       <div className="left">
         <TopBar
           mode={mode}
-          setMode={(m) => { setMode(m); setAnchorUid(null); setCandidateUid(null); if (m !== "edit") setEditingUid(null); }}
+          setMode={(m) => {
+            setMode(m);
+            setAnchorUid(null);
+            setCandidateUid(null);
+            setSelectionDraft(null);
+            selectionDraftRef.current = null;
+            if (m !== "edit") setEditingUid(null);
+          }}
+          bulkShape={bulkShape}
+          setBulkShape={setBulkShape}
           onUndo={undo}
           onSave={save}
           onReload={reload}
@@ -811,7 +1147,7 @@ export default function MapEditor() {
           center={center}
           zoom={7}
           preferCanvas
-          style={{ height: "calc(100vh - 112px)", width: "100%" }}
+          style={{ flex: 1, minHeight: 320, width: "100%" }}
           maxZoom={22}
           ref={(m) => { mapRef.current = m; }}
           whenReady={() => {
@@ -839,6 +1175,28 @@ export default function MapEditor() {
           )}
           <MapEvents />
           <MapCreateEvents />
+          <MapSelectionEvents />
+
+          {selectionBounds && (
+            <Rectangle
+              bounds={selectionBounds}
+              pathOptions={{ color: "#0ea5e9", weight: 2, fillColor: "#0ea5e9", fillOpacity: 0.12 }}
+            />
+          )}
+          {selectionCircle && (
+            <Circle
+              center={selectionCircle.center}
+              radius={selectionCircle.radius}
+              pathOptions={{ color: "#0ea5e9", weight: 2, fillColor: "#0ea5e9", fillOpacity: 0.12 }}
+            />
+          )}
+          {hierarchyLines.map(line => (
+            <Polyline
+              key={`hier-${line.key}`}
+              positions={line.positions}
+              pathOptions={{ color: "#7c3aed", weight: 2, opacity: 0.65, dashArray: "6 6" }}
+            />
+          ))}
 
           {items.map((it: any) => {
             const [lng, lat] = it.geometry.coordinates as [number, number];
@@ -873,6 +1231,9 @@ export default function MapEditor() {
               isEditing: editingUid === uid,
               reviewRole,
               isGmaps,
+              isMain: p.beach_role === "main" || Boolean(p.child_beach_uids?.length),
+              isSection: p.beach_role === "section" || Boolean(p.parent_beach_uid),
+              isHidden: Boolean(p.is_hidden_beach),
             });
             const override = jitterPosByUid.get(uid);
             const [renderLng, renderLat] = override ?? [lng, lat];
@@ -905,13 +1266,28 @@ export default function MapEditor() {
                           void mergeFeatures(anchor, candidate);
                         }
                       }
+                    } else if (mode === "bulkMerge" && view.zoom >= DETAIL_ZOOM) {
+                      setAnchorUid(anchorUid === uid ? null : uid);
+                      setStatus(anchorUid === uid ? "Bulk merge anchor cleared." : `Bulk merge anchor: ${uid}. Drag a ${bulkShape} around pins to merge.`);
+                    } else if (mode === "group" && view.zoom >= DETAIL_ZOOM) {
+                      if (!anchorUid) {
+                        setAnchorUid(uid);
+                        setStatus(`Group main beach: ${uid}. Click section pins to attach them.`);
+                      } else if (anchorUid === uid) {
+                        setAnchorUid(null);
+                        setCandidateUid(null);
+                      } else {
+                        groupFeatureUnderAnchor(anchorUid, uid);
+                      }
+                    } else if (mode === "hidden" && view.zoom >= DETAIL_ZOOM) {
+                      toggleHiddenBeach(uid);
                     } else if (mode === "edit" && view.zoom >= DETAIL_ZOOM) {
                       onPointClickForEdit(uid);
                     }
                   }
                 }}
               >
-                {view.zoom >= DETAIL_ZOOM && mode !== "edit" && (
+                {view.zoom >= DETAIL_ZOOM && (mode === "select" || mode === "move") && (
                   <Popup maxWidth={420}>
                     <div style={{ maxHeight: 320, overflowY: "auto" }}>
                       <div className="font-semibold mb-1">{(p.name && p.name[0]) || "(no name)"}</div>
@@ -995,8 +1371,10 @@ export default function MapEditor() {
 
 /* -------------------- Top Bar -------------------- */
 function TopBar(props: {
-  mode: "select" | "merge" | "delete" | "move" | "edit" | "create";
-  setMode: (m: "select" | "merge" | "delete" | "move" | "edit" | "create") => void;
+  mode: Mode;
+  setMode: (m: Mode) => void;
+  bulkShape: SelectionShape;
+  setBulkShape: (s: SelectionShape) => void;
   onUndo: () => void;
   onSave: () => void;
   onReload: () => void;
@@ -1016,7 +1394,7 @@ function TopBar(props: {
 }) {
   const { mode, setMode, onUndo, onSave, onReload, status, anchorUid, candidateUid, onClearSelection,
     total, username, setUsername, saveUsername, online, rightMode, onToggleReview,
-    satellite, onToggleSatellite } = props;
+    satellite, onToggleSatellite, bulkShape, setBulkShape } = props;
 
   const ModeBtn = ({ m, label }: { m: typeof mode, label: string }) => (
     <button
@@ -1025,6 +1403,9 @@ function TopBar(props: {
       title={
         m === "select" ? "View mode (safe) – no edits"
           : m === "merge" ? "Select A then B to merge B into A"
+            : m === "bulkMerge" ? "Select an anchor, then draw a shape to merge pins into it"
+              : m === "group" ? "Select main beach, then click section pins to attach them"
+                : m === "hidden" ? "Click a point to toggle hidden / hard-access beach"
             : m === "delete" ? "Click a point to delete"
               : m === "move" ? "Drag a point to move"
                 : m === "edit" ? "Click a point to edit in the right panel"
@@ -1040,15 +1421,24 @@ function TopBar(props: {
       <span style={{ fontWeight: 600, marginRight: 8 }}>Mode:</span>
       <ModeBtn m="select" label="Select" />
       <ModeBtn m="merge" label="Merge" />
+      <ModeBtn m="bulkMerge" label="Bulk Merge" />
+      <ModeBtn m="group" label="Group" />
+      <ModeBtn m="hidden" label="Hidden" />
       <ModeBtn m="delete" label="Delete" />
       <ModeBtn m="move" label="Move" />
       <ModeBtn m="edit" label="Edit" />
       <ModeBtn m="create" label="Create" />
 
-      {mode === "merge" && (
+      {(mode === "merge" || mode === "bulkMerge" || mode === "group") && (
         <div className="chips">
-          <span className="chip anchor">Anchor: {anchorUid ?? "—"}</span>
+          <span className="chip anchor">{mode === "group" ? "Main" : "Anchor"}: {anchorUid ?? "—"}</span>
           <span className="chip candidate">Candidate: {candidateUid ?? "—"}</span>
+          {mode === "bulkMerge" && (
+            <span className="shape-toggle" aria-label="Bulk merge shape">
+              <button className={`shape-btn ${bulkShape === "box" ? "is-active" : ""}`} onClick={() => setBulkShape("box")}>Box</button>
+              <button className={`shape-btn ${bulkShape === "circle" ? "is-active" : ""}`} onClick={() => setBulkShape("circle")}>Circle</button>
+            </span>
+          )}
           <button className="btn" onClick={onClearSelection} title="Clear selection">Clear</button>
         </div>
       )}
@@ -1195,6 +1585,26 @@ function EditorForm({ feature, onClose, onSave }: {
         <div className="field"><label>source_id</label><input value={listToCSV(asList(draft.source_id))} onChange={e => setField("source_id", csvToList(e.target.value))} /></div>
       </div>
 
+      <div className="grid2">
+        <div className="field"><label>parent_beach_uid</label><input value={draft.parent_beach_uid || ""} onChange={e => setField("parent_beach_uid", e.target.value || undefined)} /></div>
+        <div className="field"><label>child_beach_uids</label><input value={listToCSV(draft.child_beach_uids)} onChange={setCSV("child_beach_uids")} /></div>
+        <div className="field"><label>beach_group_id</label><input value={draft.beach_group_id || ""} onChange={e => setField("beach_group_id", e.target.value || undefined)} /></div>
+        <div className="field"><label>beach_role</label><input value={draft.beach_role || ""} onChange={e => setField("beach_role", e.target.value || undefined)} placeholder="main or section" /></div>
+      </div>
+
+      <label className="check-row">
+        <input
+          type="checkbox"
+          checked={Boolean(draft.is_hidden_beach)}
+          onChange={e => setDraft(d => ({
+            ...d,
+            is_hidden_beach: e.target.checked,
+            beach_access_type: e.target.checked ? "hidden_or_hard_to_access" : undefined,
+          }))}
+        />
+        Hidden / hard-access beach
+      </label>
+
       <div className="field">
         <label>tags (JSON)</label>
         <textarea defaultValue={JSON.stringify(draft.tags || {}, null, 2)} onChange={setJSON("tags")} rows={6} />
@@ -1216,6 +1626,8 @@ function EditorForm({ feature, onClose, onSave }: {
             area_size: toFloatList(draft.area_size || []),
             source: dedupe(asList(draft.source)),
             source_id: dedupe(asList(draft.source_id)),
+            child_beach_uids: dedupe(asList(draft.child_beach_uids)),
+            source_features: dedupe(asList(draft.source_features)),
           })}
         >
           Save edits

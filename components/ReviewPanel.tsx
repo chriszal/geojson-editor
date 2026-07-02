@@ -75,7 +75,6 @@ function confLabel(c: number) {
 /* ── Main component ─────────────────────────────────────────────────────────── */
 export default function ReviewPanel({
   mapRef,
-  onApplyChange,
   onHighlight,
   onClearHighlight,
 }: {
@@ -145,12 +144,6 @@ export default function ReviewPanel({
     } finally {
       setSaving(s => { const n = new Set(s); n.delete(id); return n; });
     }
-  };
-
-  const handleApprove = async (effective: ReviewChange) => {
-    onApplyChange(effective);
-    await patchStatus(effective.id, "approved");
-    onClearHighlight();
   };
 
   const handleReject = async (change: ReviewChange) => {
@@ -303,7 +296,6 @@ export default function ReviewPanel({
               showImage={expandedImages.has(change.id)}
               onToggleImage={() => toggleImage(change.id)}
               onFlyTo={(effective) => flyTo(effective)}
-              onApprove={(effective) => handleApprove(effective)}
               onReject={() => handleReject(change)}
             />
           ))}
@@ -330,14 +322,13 @@ export default function ReviewPanel({
 /* ── ChangeCard ──────────────────────────────────────────────────────────────── */
 function ChangeCard({
   change, isSaving, showImage,
-  onToggleImage, onFlyTo, onApprove, onReject,
+  onToggleImage, onFlyTo, onReject,
 }: {
   change: ReviewChange;
   isSaving: boolean;
   showImage: boolean;
   onToggleImage: () => void;
   onFlyTo: (effective: ReviewChange) => void;
-  onApprove: (effective: ReviewChange) => void;
   onReject: () => void;
 }) {
   // Local override: which point the user wants to keep
@@ -524,19 +515,6 @@ function ChangeCard({
                       {isPrimary ? "→ keep" : "→ remove"}
                     </span>
                   )}
-                  {!isTerminal && !isPrimary && (
-                    <button
-                      onClick={() => setOverridePrimary(pt.uid)}
-                      title="Make this the point that is kept"
-                      style={{
-                        fontSize: 10, padding: "1px 6px", borderRadius: 3, cursor: "pointer",
-                        background: "#eff6ff", color: "#1d4ed8",
-                        border: "1px solid #bfdbfe", fontWeight: 600,
-                      }}
-                    >
-                      ★ Keep this
-                    </button>
-                  )}
                 </div>
               </div>
               <div style={{ color: "#6b7280", marginTop: 2 }}>
@@ -626,16 +604,9 @@ function ChangeCard({
             ↗ Fly to
           </button>
           <button
-            onClick={() => onApprove(effective)}
-            disabled={isSaving}
-            style={{ ...actionBtn, flex: 1, background: "#dcfce7", color: "#166534" }}
-          >
-            {isSaving ? "…" : "✓ Apply"}
-          </button>
-          <button
             onClick={onReject}
             disabled={isSaving}
-            style={{ ...actionBtn, background: "#fee2e2", color: "#991b1b" }}
+            style={{ ...actionBtn, flex: 1, background: "#fee2e2", color: "#991b1b" }}
           >
             {isSaving ? "…" : "✗ Skip"}
           </button>
