@@ -11,6 +11,13 @@ let cachedGmapsMtime: number = 0;
 let cachedDeletedSet = new Set<string>();
 let cachedDeletedMtime: number = 0;
 
+const BAD_GMAPS_TITLE_RE = /(^|[\W_])(taverns?|tavernas?|tavernes?|houses?|homes?|hotels?)(?=$|[\W_])|ταβερν|ξενοδοχ/i;
+
+function hasBadGmapsTitle(name: unknown) {
+  const names = Array.isArray(name) ? name : [name];
+  return names.some((item) => BAD_GMAPS_TITLE_RE.test(String(item || "")));
+}
+
 export async function GET() {
   try {
     await fs.mkdir(dataDir, { recursive: true });
@@ -72,6 +79,8 @@ export async function GET() {
 
             // Stable hash/id based on name and coordinates
             const nameStr = beach.name || "Unknown Beach";
+            if (hasBadGmapsTitle(nameStr)) continue;
+
             let hash = 0;
             const hashInput = `${nameStr}_${lat.toFixed(5)}_${lon.toFixed(5)}`;
             for (let i = 0; i < hashInput.length; i++) {

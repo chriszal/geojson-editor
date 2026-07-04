@@ -53,7 +53,7 @@ type Feature = {
 };
 type FC = { type: "FeatureCollection"; features: Feature[] };
 type ChangeType = "merge" | "group" | "move" | "delete" | "edit" | "create";
-type Mode = "select" | "merge" | "bulkMerge" | "group" | "hidden" | "delete" | "move" | "edit" | "create";
+type Mode = "select" | "merge" | "bulkMerge" | "group" | "ungroup" | "hidden" | "delete" | "move" | "edit" | "create";
 type SelectionShape = "box" | "circle";
 type SelectionDraft = {
   shape: SelectionShape;
@@ -123,6 +123,8 @@ const mergeProps = (A: Properties, B: Properties): Properties => {
 /* -------------------- Clustering -------------------- */
 const CLUSTER_RADIUS_PX = 50;
 const DETAIL_ZOOM = 13;
+const UNDO_HISTORY_LIMIT = 3;
+const CHANGE_HISTORY_LIMIT = 80;
 /* --------- UUID helper that works everywhere --------- */
 function safeRandomUUID(): string {
   // Modern browsers + Node >= 14.17
@@ -316,8 +318,15 @@ export default function MapEditor() {
     }
   }
 
+  const rememberChange = (change: ChangeEntry) => {
+    setChanges(cs => [change, ...cs].slice(0, CHANGE_HISTORY_LIMIT));
+  };
+
   /* Undo stack */
-  const pushSnapshot = () => setHistoryStack(h => fc ? [...h, JSON.parse(JSON.stringify(fc))] : h);
+  const pushSnapshot = () => setHistoryStack(h => {
+    if (!fc) return h;
+    return [...h.slice(-(UNDO_HISTORY_LIMIT - 1)), JSON.parse(JSON.stringify(fc))];
+  });
   const undo = () =>
     setHistoryStack(h => {
       if (!h.length) return h;
@@ -375,7 +384,7 @@ export default function MapEditor() {
     pushSnapshot();
     setFc({ ...fc, features: nextFeatures });
     if (change) {
-      setChanges(cs => [change, ...cs]);
+      rememberChange(change);
       pendingAudit.current.push({
         ...mkAuditFromChange(change, username),
         committed: false,
@@ -396,7 +405,7 @@ export default function MapEditor() {
     };
     setFc(next);
     if (change) {
-      setChanges(cs => [change, ...cs]);
+      rememberChange(change);
       pendingAudit.current.push({
         ...mkAuditFromChange(change, username),
         committed: false,
@@ -515,6 +524,90 @@ export default function MapEditor() {
 
     setFeatures(next, change);
     setCandidateUid(childUid);
+  };
+
+  const ungroupFeature = (uid: string) => {
+    if (!fc) return;
+    const target = byUid(uid);
+    if (!target) return;
+    const childUids = asList(target.properties.child_beach_uids).filter(Boolean);
+    const isParent = childUids.length > 0;
+    const isChild = Boolean(target.properties.parent_beach_uid);
+    if (!isParent && !isChild) {
+      setStatus(`Ungroup: ${uid} is not grouped.`);
+      return;
+    }
+
+    const affectedUids = new Set<string>([uid]);
+    if (isParent) {
+      childUids.forEach(childUid => affectedUids.add(String(childUid)));
+    } else if (target.properties.parent_beach_uid) {
+      affectedUids.add(target.properties.parent_beach_uid);
+    }
+
+    const before = fc.features
+      .filter(f => affectedUids.has(f.properties.uid!))
+      .map(f => clone(f));
+
+    const nextFeatures = fc.features.map(f => {
+      const props = f.properties;
+      const currentUid = props.uid!;
+
+      if (isParent && currentUid === uid) {
+        const nextProps = { ...props };
+        delete nextProps.child_beach_uids;
+        delete nextProps.beach_group_id;
+        if (nextProps.beach_role === "main") delete nextProps.beach_role;
+        return { ...f, properties: nextProps };
+      }
+
+      if (isParent && childUids.includes(currentUid)) {
+        const nextProps = { ...props };
+        delete nextProps.parent_beach_uid;
+        delete nextProps.beach_group_id;
+        if (nextProps.beach_role === "section") delete nextProps.beach_role;
+        return { ...f, properties: nextProps };
+      }
+
+      if (isChild && currentUid === uid) {
+        const nextProps = { ...props };
+        delete nextProps.parent_beach_uid;
+        delete nextProps.beach_group_id;
+        if (nextProps.beach_role === "section") delete nextProps.beach_role;
+        return { ...f, properties: nextProps };
+      }
+
+      if (isChild && currentUid === target.properties.parent_beach_uid) {
+        const remainingChildren = asList(props.child_beach_uids).filter(childUid => childUid !== uid);
+        const nextProps: Properties = { ...props, child_beach_uids: remainingChildren };
+        if (!remainingChildren.length) {
+          delete nextProps.child_beach_uids;
+          delete nextProps.beach_group_id;
+          if (nextProps.beach_role === "main") delete nextProps.beach_role;
+        }
+        return { ...f, properties: nextProps };
+      }
+
+      return f;
+    });
+
+    const after = nextFeatures
+      .filter(f => affectedUids.has(f.properties.uid!))
+      .map(f => clone(f));
+
+    const change: ChangeEntry = {
+      id: safeRandomUUID(),
+      ts: Date.now(),
+      type: "group",
+      summary: isParent
+        ? `Ungroup ${childUids.length} section(s) from ${uid}`
+        : `Ungroup ${uid} from ${target.properties.parent_beach_uid}`,
+      before,
+      after,
+    };
+
+    setFeatures(nextFeatures, change);
+    setCandidateUid(uid);
   };
 
   const toggleHiddenBeach = (uid: string) => {
@@ -896,6 +989,8 @@ export default function MapEditor() {
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ sessionId, user: username || "guest" }),
       });
+      setHistoryStack([]);
+      setChanges([]);
       setStatus(`Saved version ${data.versionId}`);
     } catch (e: any) { setStatus("Save error: " + e.message); }
   };
@@ -1279,6 +1374,8 @@ export default function MapEditor() {
                       } else {
                         groupFeatureUnderAnchor(anchorUid, uid);
                       }
+                    } else if (mode === "ungroup" && view.zoom >= DETAIL_ZOOM) {
+                      ungroupFeature(uid);
                     } else if (mode === "hidden" && view.zoom >= DETAIL_ZOOM) {
                       toggleHiddenBeach(uid);
                     } else if (mode === "edit" && view.zoom >= DETAIL_ZOOM) {
@@ -1405,6 +1502,7 @@ function TopBar(props: {
           : m === "merge" ? "Select A then B to merge B into A"
             : m === "bulkMerge" ? "Select an anchor, then draw a shape to merge pins into it"
               : m === "group" ? "Select main beach, then click section pins to attach them"
+                : m === "ungroup" ? "Click a section to detach it, or a main beach to detach all sections"
                 : m === "hidden" ? "Click a point to toggle hidden / hard-access beach"
             : m === "delete" ? "Click a point to delete"
               : m === "move" ? "Drag a point to move"
@@ -1423,6 +1521,7 @@ function TopBar(props: {
       <ModeBtn m="merge" label="Merge" />
       <ModeBtn m="bulkMerge" label="Bulk Merge" />
       <ModeBtn m="group" label="Group" />
+      <ModeBtn m="ungroup" label="Ungroup" />
       <ModeBtn m="hidden" label="Hidden" />
       <ModeBtn m="delete" label="Delete" />
       <ModeBtn m="move" label="Move" />
