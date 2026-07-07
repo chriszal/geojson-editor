@@ -8,10 +8,11 @@ export const runtime = "nodejs";
 // In-memory cache for the Google Maps features to avoid heavy parsing on every request
 let cachedGmapsFeatures: any[] = [];
 let cachedGmapsMtime: number = 0;
+let cachedGmapsWideMtime: number = 0;
 let cachedDeletedSet = new Set<string>();
 let cachedDeletedMtime: number = 0;
 
-const BAD_GMAPS_TITLE_RE = /(^|[\W_])(taverns?|tavernas?|tavernes?|houses?|homes?|hotels?)(?=$|[\W_])|ταβερν|ξενοδοχ/i;
+const BAD_GMAPS_TITLE_RE = /(^|[\W_])(taverns?|tavernas?|tavernes?|houses?|homes?|hotels?|resorts?|bars?|clubs?|cafes?|kafes?|villas?|suites?|rooms?|apartments?|studios?|cottages?|campings?|camps?|parkings?|ports?|marinas?|yachts?|churches?|monasteries?|rentals?|cars?|motors?|surfs?|divings?|sports?|lagoon?|laguna?|lagun?)(?=$|[\W_])|ταβερν|ξενοδοχ|καφέ|μπαρ|καντίν|ενοικιαζ|ξενών|δωμάτ|βίλ|εστιατόρ|ψαροταβ|ψησταρ|φαγητ|λιμάν|μαρίν|πάρκινγ|ναός|εκκλησ|ξωκλήσ|μοναστήρ|λιμνοθάλασ/i;
 
 function hasBadGmapsTitle(name: unknown) {
   const names = Array.isArray(name) ? name : [name];
@@ -45,81 +46,106 @@ export async function GET() {
       // If file doesn't exist, we keep the empty/previous set
     }
 
-    // 3. Read and parse gmaps_verification.json with caching
+    // 3. Read and parse gmaps_verification.json and gmaps_verification_wide.json with caching
     const gmapsPath = path.join(dataDir, "gmaps_verification.json");
+    const gmapsWidePath = path.join(dataDir, "gmaps_verification_wide.json");
+    
+    let gmapsMtime = 0;
+    let gmapsWideMtime = 0;
+    
     try {
-      const stats = await fs.stat(gmapsPath);
-      if (stats.mtimeMs !== cachedGmapsMtime) {
-        const gmapsRaw = await fs.readFile(gmapsPath, "utf8");
-        const gmapsData = JSON.parse(gmapsRaw);
-        const tempFeatures: any[] = [];
-        const uniqueHrefs = new Set<string>();
-        const uniqueCoords = new Set<string>();
+      const stat = await fs.stat(gmapsPath);
+      gmapsMtime = stat.mtimeMs;
+    } catch (e) {}
+    
+    try {
+      const stat = await fs.stat(gmapsWidePath);
+      gmapsWideMtime = stat.mtimeMs;
+    } catch (e) {}
 
-        for (const [srcUid, result] of Object.entries(gmapsData)) {
-          const resObj = result as any;
-          if (!resObj.found || !resObj.beaches) continue;
+    if (gmapsMtime !== cachedGmapsMtime || gmapsWideMtime !== cachedGmapsWideMtime) {
+      const tempFeatures: any[] = [];
+      const uniqueHrefs = new Set<string>();
+      const uniqueCoords = new Set<string>();
 
-          for (const beach of resObj.beaches) {
-            const href = beach.href;
-            const lat = beach.latitude;
-            const lon = beach.longitude;
-            if (lat === undefined || lon === undefined) continue;
+      const filesToParse = [
+        { path: gmapsPath, exists: gmapsMtime > 0 },
+        { path: gmapsWidePath, exists: gmapsWideMtime > 0 }
+      ];
 
-            // Generate unique key
-            const key = href || `${lat.toFixed(5)},${lon.toFixed(5)}`;
-            if (href) {
-              if (uniqueHrefs.has(href)) continue;
-              uniqueHrefs.add(href);
-            } else {
-              const coordKey = `${lat.toFixed(5)},${lon.toFixed(5)}`;
-              if (uniqueCoords.has(coordKey)) continue;
-              uniqueCoords.add(coordKey);
-            }
+      for (const fileInfo of filesToParse) {
+        if (!fileInfo.exists) continue;
+        try {
+          const raw = await fs.readFile(fileInfo.path, "utf8");
+          const data = JSON.parse(raw);
+          
+          for (const [srcUid, result] of Object.entries(data)) {
+            const resObj = result as any;
+            if (!resObj.found || !resObj.beaches) continue;
 
-            // Stable hash/id based on name and coordinates
-            const nameStr = beach.name || "Unknown Beach";
-            if (hasBadGmapsTitle(nameStr)) continue;
+            for (const beach of resObj.beaches) {
+              const href = beach.href;
+              const lat = beach.latitude;
+              const lon = beach.longitude;
+              if (lat === undefined || lon === undefined) continue;
 
-            let hash = 0;
-            const hashInput = `${nameStr}_${lat.toFixed(5)}_${lon.toFixed(5)}`;
-            for (let i = 0; i < hashInput.length; i++) {
-              hash = (hash << 5) - hash + hashInput.charCodeAt(i);
-              hash |= 0;
-            }
-            const hashId = Math.abs(hash) % 1000000;
-            const uid = `gmaps-${String(hashId).padStart(6, "0")}`;
-
-            // Create feature without reviews to keep size lightweight
-            tempFeatures.push({
-              type: "Feature",
-              geometry: {
-                type: "Point",
-                coordinates: [lon, lat]
-              },
-              properties: {
-                uid,
-                name: [nameStr],
-                rating: beach.rating,
-                user_ratings: beach.user_ratings,
-                category: beach.category,
-                address: beach.address,
-                phone: beach.phone,
-                website: beach.website,
-                href: beach.href || "",
-                source: ["gmaps"],
-                source_id: [beach.href || ""],
-                is_gmaps: true,
-                merged_from_uids: []
+              // Generate unique key
+              const key = href || `${lat.toFixed(5)},${lon.toFixed(5)}`;
+              if (href) {
+                if (uniqueHrefs.has(href)) continue;
+                uniqueHrefs.add(href);
+              } else {
+                const coordKey = `${lat.toFixed(5)},${lon.toFixed(5)}`;
+                if (uniqueCoords.has(coordKey)) continue;
+                uniqueCoords.add(coordKey);
               }
-            });
+
+              // Stable hash/id based on name and coordinates
+              const nameStr = beach.name || "Unknown Beach";
+              if (hasBadGmapsTitle(nameStr)) continue;
+
+              let hash = 0;
+              const hashInput = `${nameStr}_${lat.toFixed(5)}_${lon.toFixed(5)}`;
+              for (let i = 0; i < hashInput.length; i++) {
+                hash = (hash << 5) - hash + hashInput.charCodeAt(i);
+                hash |= 0;
+              }
+              const hashId = Math.abs(hash) % 1000000;
+              const uid = `gmaps-${String(hashId).padStart(6, "0")}`;
+
+              // Create feature without reviews to keep size lightweight
+              tempFeatures.push({
+                type: "Feature",
+                geometry: {
+                  type: "Point",
+                  coordinates: [lon, lat]
+                },
+                properties: {
+                  uid,
+                  name: [nameStr],
+                  rating: beach.rating,
+                  user_ratings: beach.user_ratings,
+                  category: beach.category,
+                  address: beach.address,
+                  phone: beach.phone,
+                  website: beach.website,
+                  href: beach.href || "",
+                  source: ["gmaps"],
+                  source_id: [beach.href || ""],
+                  is_gmaps: true,
+                  merged_from_uids: []
+                }
+              });
+            }
           }
+        } catch (e) {
+          console.error(`Error parsing file ${fileInfo.path}:`, e);
         }
-        cachedGmapsFeatures = tempFeatures;
-        cachedGmapsMtime = stats.mtimeMs;
       }
-    } catch (e) {
-      // Ignore if file doesn't exist yet
+
+      cachedGmapsFeatures = tempFeatures;
+      cachedGmapsMtime = gmapsMtime;
+      cachedGmapsWideMtime = gmapsWideMtime;
     }
 
     // 4. Collect UIDs and Hrefs in current.json to avoid duplicates

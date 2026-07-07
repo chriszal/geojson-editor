@@ -1,0 +1,8209 @@
+{
+ "cluster20-000008": {
+  "name_el": "Αγιοφύλλι",
+  "name_en": "Aghiofili",
+  "aka": []
+ },
+ "cluster20-000030": {
+  "name_el": "Λαγανάς",
+  "name_en": "Laganas",
+  "aka": [
+   "Λαγανά",
+   "Lagana",
+   "Laganas - Ai Sostis 1",
+   "Λαγανάς – Άη Σώστης 1"
+  ]
+ },
+ "cluster20-000061": {
+  "name_el": "Μαυροβούνι",
+  "name_en": "Mavrovouni",
+  "aka": [
+   "Μαυροβουνίου"
+  ]
+ },
+ "cluster20-000078": {
+  "name_el": "Δήμητρα",
+  "name_en": "Dimitra",
+  "aka": [
+   "Agios Fokas"
+  ]
+ },
+ "cluster20-000081": {
+  "name_el": "Τιγκάκι",
+  "name_en": "Tigaki",
+  "aka": [
+   "Marmari - Tigkaki 2",
+   "Μαρμάρι – Τιγκάκι 2"
+  ]
+ },
+ "cluster20-000086": {
+  "name_el": "Λιβάδι",
+  "name_en": "Livadi",
+  "aka": [
+   "Λιβάδεια",
+   "Leivadi - Plystres",
+   "Λειβάδι – Πλύστρες"
+  ]
+ },
+ "cluster20-000108": {
+  "name_el": null,
+  "name_en": "Maleas",
+  "aka": []
+ },
+ "cluster20-000145": {
+  "name_el": "Μάλια",
+  "name_en": "Malia",
+  "aka": [
+   "Κλωντζάνη",
+   "Klontzani"
+  ]
+ },
+ "cluster20-000150": {
+  "name_el": "Πλατανιάς",
+  "name_en": "Platanias",
+  "aka": [
+   "Πλατανιά",
+   "Γεράνι"
+  ]
+ },
+ "cluster20-000156": {
+  "name_el": "Καβρός",
+  "name_en": "Kavros",
+  "aka": [
+   "Γεωργιούπολη",
+   "Κούρνα",
+   "Τζουγκάρη"
+  ]
+ },
+ "cluster20-000164": {
+  "name_el": "Πλακιάς",
+  "name_en": "Plakias",
+  "aka": [
+   "Πλακιά",
+   "Πλακιάς 1",
+   "Plakias 1",
+   "Παλίγκρεμνος"
+  ]
+ },
+ "cluster20-000167": {
+  "name_el": "Άγιος Παύλος",
+  "name_en": "Agios Pavlos",
+  "aka": [
+   "Αμμόλοφοι Αγίου Παύλου",
+   "Μέλισσα",
+   "Αλατσογκρεμνοί Άγιος Παύλος",
+   "Saktouria - Agios Pavlos",
+   "Σακτούρια - Άγιος Παύλος",
+   "Φοινικίδια"
+  ]
+ },
+ "cluster20-000174": {
+  "name_el": "Γομάτι",
+  "name_en": "Gomati",
+  "aka": []
+ },
+ "cluster20-000187": {
+  "name_el": "Δημοτική Πλαζ Αλεξανδρούπολης",
+  "name_en": "Dimotiki Plaz Alexandroupolis",
+  "aka": [
+   "Παραπλεύρως ΕΟΤ"
+  ]
+ },
+ "cluster20-000189": {
+  "name_el": "Νέα Χιλή",
+  "name_en": "Nea Chili",
+  "aka": [
+   "Ν. Χιλή"
+  ]
+ },
+ "cluster20-000225": {
+  "name_el": "Τρανή Αμμούδα",
+  "name_en": "Trani Ammouda",
+  "aka": [
+   "Σαρακήνα",
+   "Λιβροχιό",
+   "Livrochio",
+   "Λιβροχιό-7",
+   "Λιβροχιό-5",
+   "Λιβροχιό-4",
+   "Λιβροχιό-9"
+  ]
+ },
+ "cluster20-000228": {
+  "name_el": "Φούρκα",
+  "name_en": "Fourka",
+  "aka": []
+ },
+ "cluster20-000236": {
+  "name_el": "Ποταμός",
+  "name_en": "Potamos",
+  "aka": [
+   "Ποτάμι"
+  ]
+ },
+ "cluster20-000263": {
+  "name_el": "Παράδεισος",
+  "name_en": "Paradeisos",
+  "aka": [
+   "Μπούφα",
+   "Ραμνος"
+  ]
+ },
+ "cluster20-000309": {
+  "name_el": "Μικρό Καβούρι",
+  "name_en": "Mikro Kavouri",
+  "aka": [
+   "Άγιος Νικόλαος Μικρό Καβούρι",
+   "Καβούρι Βόρεια",
+   "Kavouri Voreia",
+   "Καβούρι Νότια",
+   "Kavouri Notia"
+  ]
+ },
+ "cluster20-000314": {
+  "name_el": "Βάρκιζα",
+  "name_en": "Varkiza",
+  "aka": [
+   "Yabanaki Βάρκιζας"
+  ]
+ },
+ "cluster20-000315": {
+  "name_el": null,
+  "name_en": null,
+  "aka": []
+ },
+ "cluster20-000318": {
+  "name_el": "Αρτέμιδα",
+  "name_en": "Artemida",
+  "aka": [
+   "Αρτέμιδος"
+  ]
+ },
+ "cluster20-000345": {
+  "name_el": "Άγιος Πέτρος",
+  "name_en": "Agios Petros",
+  "aka": [
+   "Αγίου Πέτρου",
+   "Αγ. Πέτρος",
+   "Άγιος Πέτρος-Κεντρικό Τμήμα",
+   "Άγιος Πέτρος-Θαλάσσια Σπορ",
+   "Άγιος Πέτρος-Νότιο Τμήμα",
+   "Άγιος Πέτρος-Βόρειο Τμήμα"
+  ]
+ },
+ "cluster20-000368": {
+  "name_el": "Πλιντρί",
+  "name_en": "Plintri",
+  "aka": [
+   "Πλυντρί",
+   "Super Paradise",
+   "Σούπερ Παραντάης"
+  ]
+ },
+ "cluster20-000376": {
+  "name_el": "Μικρή Βίγλα",
+  "name_en": "Mikri Vigla",
+  "aka": [
+   "Καστράκι",
+   "Καστράκι Νάξου 6",
+   "Μικρή Βίγλα Σαγκρίου",
+   "Mikri Vigla Liofagos",
+   "Μικρή Βίγλα Λιόφαγος",
+   "Καστράκι Σαγκρίου"
+  ]
+ },
+ "cluster20-000383": {
+  "name_el": "Χρυσή Ακτή",
+  "name_en": "Golden Beach",
+  "aka": [
+   "Νέα Χρυσή Ακτή",
+   "Χρυσή Ακτή Πάρου",
+   "Αγκάλη Χρυσής Ακτής",
+   "Μάρπησσα",
+   "Marpissa"
+  ]
+ },
+ "cluster20-000387": {
+  "name_el": "Κριός",
+  "name_en": "Krios",
+  "aka": [
+   "Μαρτσέλο",
+   "Κριός Πάρου",
+   "Κριός Μαρτσέλο",
+   "Martselo",
+   "Marcelo",
+   "Κριός Βούτημα Πάρου",
+   "Κριός Παροικίας Πάρου"
+  ]
+ },
+ "cluster20-000388": {
+  "name_el": "Καμάρι",
+  "name_en": "Kamari",
+  "aka": [
+   "Καμάρα Καμαρίου"
+  ]
+ },
+ "cluster20-000417": {
+  "name_el": "Σίμος",
+  "name_en": "Simos",
+  "aka": [
+   "Σαρακίνικο",
+   "Μικρή Σίμου",
+   "Σαρακίνικο-Σίμος 2",
+   "Σαρακίνικο-Σίμος 1",
+   "Μεγάλη Σίμου",
+   "Μεγάλος Σίμος Ελαφονήσου"
+  ]
+ },
+ "cluster20-000426": {
+  "name_el": "Οφρυνίου",
+  "name_en": "Ofryniou",
+  "aka": [
+   "Τούζλα",
+   "Οφρύνιο",
+   "Kariani - Touzla",
+   "Κάριανη – Τούζλα"
+  ]
+ },
+ "cluster20-000516": {
+  "name_el": "Αγκαθωπές",
+  "name_en": "Agkathopes",
+  "aka": []
+ },
+ "cluster20-000672": {
+  "name_el": "Άκολη",
+  "name_en": "Akoli",
+  "aka": [
+   "Άβυθος Ροδοδάφνης",
+   "Υαβανάκι",
+   "Avithos",
+   "Corrali",
+   "Ροδοδάφνη"
+  ]
+ },
+ "cluster20-000678": {
+  "name_el": "Γλύφα Πηνειού",
+  "name_en": "Glyfa Pineiou",
+  "aka": [
+   "Γλύφας"
+  ]
+ },
+ "cluster20-000694": {
+  "name_el": "Ιεράπετρα",
+  "name_en": "Ierapetra",
+  "aka": [
+   "Ιεράπετρα Δημοτική Πλαζ",
+   "Αποβάθρων"
+  ]
+ },
+ "cluster20-000710": {
+  "name_el": "ΚΑΑΥ Αγίου Ανδρέα",
+  "name_en": "KAAY Agiou Andrea",
+  "aka": []
+ },
+ "cluster20-000713": {
+  "name_el": "Αυλάκι",
+  "name_en": "Avlaki",
+  "aka": [
+   "Αγία Μαρίνα Χιλίστρα",
+   "Agia Marina Chilistra"
+  ]
+ },
+ "cluster20-000735": {
+  "name_el": "Δημοτικό Σχολείο Πυθαγορείου",
+  "name_en": "Dimotiko Scholeio Pythagoreiou",
+  "aka": []
+ },
+ "cluster20-000736": {
+  "name_el": null,
+  "name_en": "Paradiso",
+  "aka": []
+ },
+ "cluster20-000747": {
+  "name_el": "Πλαταμώνας",
+  "name_en": "Platamonas",
+  "aka": [
+   "Πλαταμών"
+  ]
+ },
+ "cluster20-000752": {
+  "name_el": null,
+  "name_en": "Ixia 1",
+  "aka": []
+ },
+ "cluster20-000757": {
+  "name_el": "Σκάλα Αγκιστρίου",
+  "name_en": "Skala Agistriou",
+  "aka": []
+ },
+ "cluster20-000760": {
+  "name_el": "Σητεία",
+  "name_en": "Sitia",
+  "aka": [
+   "Καλαμιά"
+  ]
+ },
+ "cluster20-000768": {
+  "name_el": "Κουτσουράς",
+  "name_en": "Koutsouras",
+  "aka": []
+ },
+ "cluster20-000772": {
+  "name_el": null,
+  "name_en": "Aqua Mare",
+  "aka": []
+ },
+ "cluster20-000786": {
+  "name_el": null,
+  "name_en": null,
+  "aka": []
+ },
+ "cluster20-000792": {
+  "name_el": "Νέα Χώρα",
+  "name_en": "Nea Chora",
+  "aka": [
+   "Κλαδισός",
+   "Elia",
+   "Απτέρα"
+  ]
+ },
+ "cluster20-000797": {
+  "name_el": "Σκάλα",
+  "name_en": "Skala",
+  "aka": [
+   "Σκάλα Αγκιστρίου",
+   "Skala Agkistriou",
+   "Laza",
+   "Stella Marina"
+  ]
+ },
+ "cluster20-000798": {
+  "name_el": "Τολοφώνας",
+  "name_en": "Tolofonas",
+  "aka": [
+   "Τολοφώνας 2",
+   "Tolofonas 2"
+  ]
+ },
+ "cluster20-000804": {
+  "name_el": "Κουνουπίτσα",
+  "name_en": "Kounoupitsa",
+  "aka": []
+ },
+ "cluster20-000805": {
+  "name_el": "Κουμίνδρι",
+  "name_en": "Koumindri",
+  "aka": []
+ },
+ "cluster20-000810": {
+  "name_el": "Βαρέα",
+  "name_en": "Varea",
+  "aka": [
+   "Στίκα"
+  ]
+ },
+ "cluster20-000816": {
+  "name_el": "Κουνουπίτσα",
+  "name_en": "Kounoupitsa",
+  "aka": []
+ },
+ "cluster20-000817": {
+  "name_el": "Κουνουπίτσα",
+  "name_en": "Kounoupitsa",
+  "aka": []
+ },
+ "cluster20-000818": {
+  "name_el": "Πούντες Πυθαγορείου",
+  "name_en": "Pountes Pythagoreiou",
+  "aka": []
+ },
+ "cluster20-000841": {
+  "name_el": "Παράγκα",
+  "name_en": "Paragka",
+  "aka": [
+   "Αγία Άννα Παράγκα",
+   "Αγία Άννα Δράπανος",
+   "Πλατύς Γιαλός 2",
+   "Platys Gialos 2"
+  ]
+ },
+ "cluster20-000842": {
+  "name_el": "Παράγκα",
+  "name_en": "Paragka",
+  "aka": [
+   "Αγία Άννα Παράγκα",
+   "Αγία Άννα Δράπανος",
+   "Πλατύς Γιαλός 2",
+   "Platys Gialos 2"
+  ]
+ },
+ "cluster20-000849": {
+  "name_el": "Κολούμπος Οίας",
+  "name_en": "Koloumpos Oias",
+  "aka": []
+ },
+ "cluster20-000850": {
+  "name_el": null,
+  "name_en": "Navarino Bay North, Costa Navarino",
+  "aka": []
+ },
+ "cluster20-000861": {
+  "name_el": "Ποταμάκι",
+  "name_en": "Potamaki",
+  "aka": [
+   "Νεροκράτημα",
+   "Nerokratima"
+  ]
+ },
+ "cluster20-000865": {
+  "name_el": "Καλύβες",
+  "name_en": "Kalyves",
+  "aka": [
+   "Μπάρα-Τσαΐρι Καλυβών-Πολυγύρου",
+   "Τσαΐρι Καλυβών-Πολυγύρου",
+   "Ανεμόμυλος",
+   "Στόμι"
+  ]
+ },
+ "cluster20-000871": {
+  "name_el": "Νότια του Οικισμού",
+  "name_en": "Notia tou Oikismou",
+  "aka": [
+   "Παράλιου Άστρους",
+   "Άστρος",
+   "Ζαφειροπούλου",
+   "Μελιγού - Παράλιο Άστρος"
+  ]
+ },
+ "cluster20-000876": {
+  "name_el": "Χρυσή",
+  "name_en": "Golden",
+  "aka": []
+ },
+ "cluster20-000900": {
+  "name_el": "Σκάλα Παναγίας",
+  "name_en": "Skala Panagias",
+  "aka": [
+   "Σκάλα Ποταμιάς",
+   "Ποταμιά",
+   "Χρυσή Ακτή",
+   "Χρυσή Αμμουδιά"
+  ]
+ },
+ "cluster20-000913": {
+  "name_el": "Πλάκα",
+  "name_en": "Plaka",
+  "aka": [
+   "Λιμάνι Πλάκας",
+   "Πλάκα Λεωνιδίου",
+   "Λεωνίδιο 1",
+   "Λεωνίδιο 2"
+  ]
+ },
+ "cluster20-000917": {
+  "name_el": "Πευκάρι",
+  "name_en": "Pefkari",
+  "aka": [
+   "Πευκάρι Λιμεναρίων",
+   "Πευκάρι Θεολόγου",
+   "Πευκάρι 1",
+   "Πευκάρι 2",
+   "Ποτός Θεολόγου",
+   "Αλεξάντρα"
+  ]
+ },
+ "cluster20-000930": {
+  "name_el": "Λεύκιππος",
+  "name_en": "Lefkippos",
+  "aka": []
+ },
+ "cluster20-000936": {
+  "name_el": "Τσιλιβή",
+  "name_en": "Tsilivi",
+  "aka": [
+   "Καμπίτση",
+   "Τσιλιβή - Καμπίτση"
+  ]
+ },
+ "cluster20-000941": {
+  "name_el": "Καλαμάκι",
+  "name_en": "Kalamaki",
+  "aka": []
+ },
+ "cluster20-000977": {
+  "name_el": "Επανωμή",
+  "name_en": "Epanomi",
+  "aka": []
+ },
+ "cluster20-000984": {
+  "name_el": null,
+  "name_en": "Angelbay",
+  "aka": []
+ },
+ "cluster20-000985": {
+  "name_el": "Αλεξανδρείας 18",
+  "name_en": "Alexandreias 18",
+  "aka": []
+ },
+ "cluster20-000987": {
+  "name_el": "Ζούμπερι",
+  "name_en": "Zoumperi",
+  "aka": [
+   "Ζούμπερι Νέας Μάκρης",
+   "Ζούμπερι Νότια",
+   "La Costa",
+   "Indianos",
+   "Divers"
+  ]
+ },
+ "cluster20-001006": {
+  "name_el": "Φάρος Πεταλιδίου",
+  "name_en": "Faros Petalidiou",
+  "aka": []
+ },
+ "cluster20-001011": {
+  "name_el": null,
+  "name_en": "Euphoria",
+  "aka": []
+ },
+ "cluster20-001012": {
+  "name_el": "Μαλιμπού",
+  "name_en": "Malibu",
+  "aka": []
+ },
+ "cluster20-001013": {
+  "name_el": "Ασπροβάλτα",
+  "name_en": "Asprovalta",
+  "aka": [
+   "Βουναλάκι",
+   "Ασπροβάλτα - Βρασνά 1",
+   "Regel",
+   "Totem",
+   "Avaton"
+  ]
+ },
+ "cluster20-001021": {
+  "name_el": "Πάλαιρος",
+  "name_en": "Palairos",
+  "aka": []
+ },
+ "cluster20-001034": {
+  "name_el": "Περιγιάλι Αγίας Μαρίνας Μικρολίμανου Κερατέας",
+  "name_en": "Perigiali Agias Marinas Mikrolimanou Kerateas",
+  "aka": []
+ },
+ "cluster20-001043": {
+  "name_el": "Με Άμμο",
+  "name_en": "Me Ammo",
+  "aka": []
+ },
+ "cluster20-001045": {
+  "name_el": "Μαραθώνα",
+  "name_en": "Marathona",
+  "aka": [
+   "Μαραθώνας 1"
+  ]
+ },
+ "cluster20-001048": {
+  "name_el": "Άγιος Παντελεήμων",
+  "name_en": "Agios Panteleimon",
+  "aka": [
+   "Μαραθώνα",
+   "Duende Marathon"
+  ]
+ },
+ "cluster20-001050": {
+  "name_el": "Ριζάρι Μαραθώνα",
+  "name_en": "Rizari Marathona",
+  "aka": [
+   "Παλαιό Πεδίο Βολής Μαραθώνα Σχινιάς",
+   "Rusty Cannon"
+  ]
+ },
+ "cluster20-001051": {
+  "name_el": "Φυτάρια",
+  "name_en": "Fytaria",
+  "aka": [
+   "Moraitis"
+  ]
+ },
+ "cluster20-001068": {
+  "name_el": "Σιλιβάνι",
+  "name_en": "Silivani",
+  "aka": []
+ },
+ "cluster20-001069": {
+  "name_el": null,
+  "name_en": "Time",
+  "aka": []
+ },
+ "cluster20-001072": {
+  "name_el": "Βαθυαβάλι",
+  "name_en": "Vathiavali",
+  "aka": [
+   "Ποταμάκι",
+   "Πογωνιά",
+   "Βαθυαβάλι 2"
+  ]
+ },
+ "cluster20-001078": {
+  "name_el": "Κουνέλια",
+  "name_en": "Kounelia",
+  "aka": [
+   "Ohana"
+  ]
+ },
+ "cluster20-001080": {
+  "name_el": "Λετρίνα",
+  "name_en": "Letrina",
+  "aka": []
+ },
+ "cluster20-001085": {
+  "name_el": "Χερώμες Καλυβίων",
+  "name_en": "Cheromes Kalyvion",
+  "aka": [
+   "Όαση Λαγονήσι"
+  ]
+ },
+ "cluster20-001087": {
+  "name_el": "Τρεχαντήρι Γαλάζια Ακτή",
+  "name_en": "Trechantiri Galazia Akti",
+  "aka": []
+ },
+ "cluster20-001089": {
+  "name_el": "Δασκαλειό",
+  "name_en": "Daskaleio",
+  "aka": [
+   "Β' Λιμανάκι Δασκαλείου",
+   "Cocoloco",
+   "1ο (Α') Λιμανάκι Δασκαλείου",
+   "Δασκαλειό Βόρεια",
+   "Daskaleio Voreia",
+   "Δασκαλειό Νότια",
+   "Daskaleio Notia"
+  ]
+ },
+ "cluster20-001091": {
+  "name_el": "Εγνατία",
+  "name_en": "Egnatia",
+  "aka": [
+   "Αλεξανδρούπολης"
+  ]
+ },
+ "cluster20-001094": {
+  "name_el": null,
+  "name_en": "Psalidi",
+  "aka": []
+ },
+ "cluster20-001098": {
+  "name_el": "Αλυκή",
+  "name_en": "Alyki",
+  "aka": [
+   "25ης Μαρτίου",
+   "25ης Μαρτίου - Άγιος Νικόλαος",
+   "Λούτσα Βόρεια 2",
+   "Loutsa Voreia 2"
+  ]
+ },
+ "cluster20-001109": {
+  "name_el": "Περικλέους Μαραθώνα",
+  "name_en": "Perikleous Marathona",
+  "aka": []
+ },
+ "cluster20-001110": {
+  "name_el": "Ίρις Αρτέμιδας",
+  "name_en": "Iris Artemidas",
+  "aka": [
+   "Τριαίνης 2",
+   "Artemis"
+  ]
+ },
+ "cluster20-001111": {
+  "name_el": "Σάντα Κρους Σχοινιάς",
+  "name_en": "Santa Krous Schinias",
+  "aka": []
+ },
+ "cluster20-001115": {
+  "name_el": "Καράβι",
+  "name_en": "Karavi",
+  "aka": [
+   "Σχινιάς",
+   "Schinias",
+   "Γαλάζια Ακτή Μαραθώνα",
+   "Delfini",
+   "Ριζάρι Μαραθώνα",
+   "Παλαιό Πεδίο Βολής"
+  ]
+ },
+ "cluster20-001120": {
+  "name_el": "Παράσχου Αναστασία",
+  "name_en": "Paraschou Anastasia",
+  "aka": [
+   "Alexander",
+   "Kiboko"
+  ]
+ },
+ "cluster20-001122": {
+  "name_el": null,
+  "name_en": "Makinia",
+  "aka": []
+ },
+ "cluster20-001129": {
+  "name_el": "Νυδρί",
+  "name_en": "Nydri",
+  "aka": [
+   "Μπολέικα",
+   "Κάβος",
+   "Νυδρί 1",
+   "Nydri 1",
+   "Νυδρί 2",
+   "Nydri 2"
+  ]
+ },
+ "cluster20-001136": {
+  "name_el": "Νεράτζας",
+  "name_en": "Neratzas",
+  "aka": [
+   "Douroplaz"
+  ]
+ },
+ "cluster20-001152": {
+  "name_el": "Άγιοι Απόστολοι",
+  "name_en": "Agioi Apostoloi",
+  "aka": [
+   "Άγιοι Απόστολοι Δυτικά",
+   "Agioi Apostoloi Dytika",
+   "Άγιοι Απόστολοι Καλάμου",
+   "Chubura"
+  ]
+ },
+ "cluster20-001158": {
+  "name_el": "Μέγας Λάκκος",
+  "name_en": "Megas Lakkos",
+  "aka": [
+   "Megas Lakos"
+  ]
+ },
+ "cluster20-001170": {
+  "name_el": "Κομήνα",
+  "name_en": "Komina",
+  "aka": []
+ },
+ "cluster20-001177": {
+  "name_el": "Χρυσή Ακτή Μαραθώνα",
+  "name_en": "Chrysi Akti Marathona",
+  "aka": [
+   "Αλαμάνας"
+  ]
+ },
+ "cluster20-001190": {
+  "name_el": "Λυγιάς",
+  "name_en": "Lygias",
+  "aka": []
+ },
+ "cluster20-001205": {
+  "name_el": "Αγκώνα",
+  "name_en": "Agkona",
+  "aka": [
+   "Άγιοι Απόστολοι",
+   "Αγκώνα Αγίων Αποστόλων Καλάμου",
+   "Κάλαμος",
+   "Άγιοι Απόστολοι Ανατολικά",
+   "Agioi Apostoloi Anatolika"
+  ]
+ },
+ "cluster20-001207": {
+  "name_el": "Λαγγάδα",
+  "name_en": "Laggada",
+  "aka": [
+   "Πευκούλια",
+   "Άγιος Νικήτας 2",
+   "Agios Nikitas 2"
+  ]
+ },
+ "cluster20-001212": {
+  "name_el": null,
+  "name_en": "Le Roi - Vlastos, Kalamos",
+  "aka": []
+ },
+ "cluster20-001220": {
+  "name_el": "Σαρακίνα",
+  "name_en": "Sarakina",
+  "aka": []
+ },
+ "cluster20-001235": {
+  "name_el": null,
+  "name_en": "Grand Elis",
+  "aka": []
+ },
+ "cluster20-001247": {
+  "name_el": "Αγία Παρασκευή",
+  "name_en": "Agia Paraskevi",
+  "aka": [
+   "Αγία Παρασκευή Μάκρης",
+   "Κυανή Ακτή",
+   "Kyani Akti",
+   "Nama"
+  ]
+ },
+ "cluster20-001249": {
+  "name_el": "Απολλωνιάδα",
+  "name_en": "Apolloniada",
+  "aka": []
+ },
+ "cluster20-001275": {
+  "name_el": "Σαβαλίων",
+  "name_en": "Savalion",
+  "aka": [
+   "Savalia",
+   "Παλαιοχωρίου",
+   "Palaiochoriou"
+  ]
+ },
+ "cluster20-001277": {
+  "name_el": "Αυλοσπήλος",
+  "name_en": "Avlospilos",
+  "aka": []
+ },
+ "cluster20-001289": {
+  "name_el": null,
+  "name_en": "Robinson",
+  "aka": []
+ },
+ "cluster20-001293": {
+  "name_el": "Τορώνη",
+  "name_en": "Toroni",
+  "aka": [
+   "Τορώνη 2",
+   "Τορώνη 4",
+   "Τορώνη 5",
+   "Καλαμίτσι 1",
+   "Καλαμίτσι 3",
+   "Γριάβα"
+  ]
+ },
+ "cluster20-001300": {
+  "name_el": "Βαρικό",
+  "name_en": "Varyko",
+  "aka": []
+ },
+ "cluster20-001305": {
+  "name_el": "Πύλα Δαιμονίας",
+  "name_en": "Pyla Daimonias",
+  "aka": [
+   "Pyla"
+  ]
+ },
+ "cluster20-001306": {
+  "name_el": "Πλύτρα",
+  "name_en": "Plytra",
+  "aka": [
+   "Παχιά Άμμος",
+   "Καραβοστάσι",
+   "Αρτάνη",
+   "Asopitan"
+  ]
+ },
+ "cluster20-001309": {
+  "name_el": "Λουρδάς",
+  "name_en": "Lourdas",
+  "aka": [
+   "Λουρδάτα"
+  ]
+ },
+ "cluster20-001311": {
+  "name_el": "Αχίλλειον",
+  "name_en": "Achilleion",
+  "aka": []
+ },
+ "cluster20-001312": {
+  "name_el": "Ακτή Όλους",
+  "name_en": "Akti Olous",
+  "aka": []
+ },
+ "cluster20-001313": {
+  "name_el": "Βούτη",
+  "name_en": "Vouti",
+  "aka": []
+ },
+ "cluster20-001330": {
+  "name_el": "Ματσίκας",
+  "name_en": "Matsikas",
+  "aka": []
+ },
+ "cluster20-001331": {
+  "name_el": "Ματσίκας",
+  "name_en": "Matsikas",
+  "aka": []
+ },
+ "cluster20-001333": {
+  "name_el": null,
+  "name_en": null,
+  "aka": []
+ },
+ "cluster20-001336": {
+  "name_el": "Λουρδάς",
+  "name_en": "Lourdas",
+  "aka": [
+   "Λουρδάτα"
+  ]
+ },
+ "cluster20-001352": {
+  "name_el": "Αμδες",
+  "name_en": "Amdes",
+  "aka": [
+   "Pounta"
+  ]
+ },
+ "cluster20-001355": {
+  "name_el": "Σκαφιδιά",
+  "name_en": "Skafidia",
+  "aka": [
+   "Λαύριο",
+   "Sol Y Mare"
+  ]
+ },
+ "cluster20-001356": {
+  "name_el": "Περί του Οικισμού Ελαφ",
+  "name_en": "Peri tou Oikismou Elaf",
+  "aka": []
+ },
+ "cluster20-001362": {
+  "name_el": "Νεοχωρίου",
+  "name_en": "Neochoriou",
+  "aka": [
+   "Παπανικολάου"
+  ]
+ },
+ "cluster20-001366": {
+  "name_el": "Σκάλα Ραχωνίου",
+  "name_en": "Skala Rachoniou",
+  "aka": [
+   "Arriba",
+   "Λίμνη Ραχωνίου",
+   "Blue Lake"
+  ]
+ },
+ "cluster20-001373": {
+  "name_el": "Λουρδάς",
+  "name_en": "Lourdas",
+  "aka": []
+ },
+ "cluster20-001418": {
+  "name_el": null,
+  "name_en": "Eretria North",
+  "aka": []
+ },
+ "cluster20-001419": {
+  "name_el": null,
+  "name_en": null,
+  "aka": []
+ },
+ "cluster20-001421": {
+  "name_el": "Αμαρύνθου",
+  "name_en": "Amarynthou",
+  "aka": [
+   "Προκυμαία Αμαρύνθου",
+   "Προκυμαία"
+  ]
+ },
+ "cluster20-001425": {
+  "name_el": "Κορτύρι",
+  "name_en": "Kortyri",
+  "aka": []
+ },
+ "cluster20-001426": {
+  "name_el": "Μουράγιο",
+  "name_en": "Mouragio",
+  "aka": [
+   "Ακτή ΝΟΣ",
+   "Akti NOS"
+  ]
+ },
+ "cluster20-001432": {
+  "name_el": "Τολό",
+  "name_en": "Tolo",
+  "aka": [
+   "Tolo 2"
+  ]
+ },
+ "cluster20-001434": {
+  "name_el": "Νέα Χιλή",
+  "name_en": "Nea Chili",
+  "aka": [
+   "Καλαμάκι",
+   "Kalamaki",
+   "Θάλασσα"
+  ]
+ },
+ "cluster20-001436": {
+  "name_el": "Μαγαζιά",
+  "name_en": "Magazia",
+  "aka": [
+   "Γιαλός",
+   "Gialos",
+   "Πετρούλα",
+   "Μώλος",
+   "Μαχαίρα Σκύρου"
+  ]
+ },
+ "cluster20-001450": {
+  "name_el": null,
+  "name_en": "Arogi",
+  "aka": [
+   "Boho Nature Seaside",
+   "Toucan Tiki"
+  ]
+ },
+ "cluster20-001478": {
+  "name_el": "Κορκόλη",
+  "name_en": "Korkoli",
+  "aka": [
+   "Γιαννιτσοχωρίου"
+  ]
+ },
+ "cluster20-001479": {
+  "name_el": null,
+  "name_en": "Vasia Village",
+  "aka": []
+ },
+ "cluster20-001493": {
+  "name_el": "Ακράτα",
+  "name_en": "Akrata",
+  "aka": [
+   "Συλιβαινιώτικα",
+   "Akrata 1",
+   "Ακράτα 1",
+   "Akrata 2"
+  ]
+ },
+ "cluster20-001518": {
+  "name_el": "Όρμος Τσερφό",
+  "name_en": "Ormos Tserfo",
+  "aka": []
+ },
+ "cluster20-001519": {
+  "name_el": "Δημοτική Αλεξανδρούπολης",
+  "name_en": "Alexandroupolis Municipal",
+  "aka": [
+   "Παραπλεύρως ΕΟΤ",
+   "Paraplevros Eot",
+   "ΕΟΤ Αλεξανδρούπολης",
+   "2ο Χλμ",
+   "1ο Χλμ",
+   "Reina"
+  ]
+ },
+ "cluster20-001522": {
+  "name_el": "Νημποριός",
+  "name_en": "Nimporios",
+  "aka": [
+   "Nimborio"
+  ]
+ },
+ "cluster20-001525": {
+  "name_el": null,
+  "name_en": null,
+  "aka": []
+ },
+ "cluster20-001547": {
+  "name_el": "Σιούρα",
+  "name_en": "Sioura",
+  "aka": []
+ },
+ "cluster20-001552": {
+  "name_el": "Βράχος",
+  "name_en": "Vrachos",
+  "aka": [
+   "Θέση Κοτσια"
+  ]
+ },
+ "cluster20-001586": {
+  "name_el": "Βαλοπούλα",
+  "name_en": "Valopoula",
+  "aka": [
+   "Βαλοπούλα Δροσιάς"
+  ]
+ },
+ "cluster20-001591": {
+  "name_el": "Κουμάνος",
+  "name_en": "Koumanos",
+  "aka": []
+ },
+ "cluster20-001595": {
+  "name_el": "Κονσολάτο",
+  "name_en": "Konsolato",
+  "aka": []
+ },
+ "cluster20-001596": {
+  "name_el": "Κερεντζά",
+  "name_en": "Kerentza",
+  "aka": [
+   "Όρμος του Οδυσσέα"
+  ]
+ },
+ "cluster20-001619": {
+  "name_el": "Τολοφώνας",
+  "name_en": "Tolofonas",
+  "aka": [
+   "Tolofonas 1",
+   "Τολοφώνας 1"
+  ]
+ },
+ "cluster20-001625": {
+  "name_el": "Πυργί",
+  "name_en": "Pyrgi",
+  "aka": []
+ },
+ "cluster20-001645": {
+  "name_el": "Άμμος",
+  "name_en": "Ammos",
+  "aka": []
+ },
+ "cluster20-001651": {
+  "name_el": "Τολοφώνα",
+  "name_en": "Tolofona",
+  "aka": []
+ },
+ "cluster20-001655": {
+  "name_el": null,
+  "name_en": "Haven Bay",
+  "aka": []
+ },
+ "cluster20-001657": {
+  "name_el": null,
+  "name_en": null,
+  "aka": []
+ },
+ "cluster20-001663": {
+  "name_el": null,
+  "name_en": "Azul",
+  "aka": []
+ },
+ "cluster20-001673": {
+  "name_el": "Βατερά",
+  "name_en": "Vatera",
+  "aka": [
+   "Hola",
+   "Blue Macao"
+  ]
+ },
+ "cluster20-001677": {
+  "name_el": null,
+  "name_en": null,
+  "aka": []
+ },
+ "cluster20-001684": {
+  "name_el": "Κάβος Λιχαδάς",
+  "name_en": "Kavos Lichadas",
+  "aka": []
+ },
+ "cluster20-001690": {
+  "name_el": "Καλογήρου Λάκος",
+  "name_en": "Kalogirou Lakos",
+  "aka": [
+   "Kaloeros"
+  ]
+ },
+ "cluster20-001694": {
+  "name_el": "Πευκοχώρι 3-Αμπαρίτσα",
+  "name_en": "Pefkochori 3-Amparitsa",
+  "aka": [
+   "Παλιούρι 1- Καναπίτσα “Ρέμα Στενό” Δεξιά",
+   "White"
+  ]
+ },
+ "cluster20-001696": {
+  "name_el": "Κυανή Ακτή",
+  "name_en": "Kyani Akti",
+  "aka": [
+   "Νέα Καλλικράτεια",
+   "Nea Kallikratia",
+   "Ν. Φλογητά"
+  ]
+ },
+ "cluster20-001699": {
+  "name_el": "Κοβιού",
+  "name_en": "Koviou",
+  "aka": [
+   "Κορτέσσα",
+   "Ακτή Κοβιού"
+  ]
+ },
+ "cluster20-001717": {
+  "name_el": "Βεργιά-Νέα Τρίγλια",
+  "name_en": "Vergia-Nea Triglia",
+  "aka": [
+   "Pueblo"
+  ]
+ },
+ "cluster20-001718": {
+  "name_el": "Νέα Μουδανιά",
+  "name_en": "Nea Moudania",
+  "aka": [
+   "Ελαιώνες",
+   "Diamond",
+   "Anassa"
+  ]
+ },
+ "cluster20-001727": {
+  "name_el": "Αγιάσματακι",
+  "name_en": "Agiasmataki",
+  "aka": []
+ },
+ "cluster20-001735": {
+  "name_el": "Καλαμίτσι",
+  "name_en": "Kalamitsi",
+  "aka": [
+   "Καλαμίτσι 1",
+   "Καλαμίτσι 4",
+   "Καλαμίτσι 5",
+   "Καλαμίτσι 6",
+   "Καλαμίτσι 7",
+   "Καλαμίτσι 8",
+   "Καλαμίτσι 9",
+   "Καλαμίτσι 10",
+   "Τορώνη 7"
+  ]
+ },
+ "cluster20-001742": {
+  "name_el": "Ψιλές Αμούδες",
+  "name_en": "Psiles Amoudes",
+  "aka": [
+   "Achlada"
+  ]
+ },
+ "cluster20-001755": {
+  "name_el": "Τρεις Μύλοι",
+  "name_en": "Treis Myloi",
+  "aka": []
+ },
+ "cluster20-001760": {
+  "name_el": "Τρίκορφο",
+  "name_en": "Trikorfo",
+  "aka": [
+   "Τρίκορφο Γερακινής"
+  ]
+ },
+ "cluster20-001775": {
+  "name_el": "Πολύχρονο",
+  "name_en": "Polychrono",
+  "aka": [
+   "Πολύχρονο 2"
+  ]
+ },
+ "cluster20-001781": {
+  "name_el": "Νέος Παντελεήμονας",
+  "name_en": "Neos Panteleimonas",
+  "aka": [
+   "Σκοτίνα",
+   "Παντελεήμονας",
+   "Ν Παντελεήμων",
+   "Σκοτίνα 2",
+   "Skotina"
+  ]
+ },
+ "cluster20-001786": {
+  "name_el": "Χανιώτη",
+  "name_en": "Chanioti",
+  "aka": [
+   "Χανιώτης",
+   "Χανιώτη 3",
+   "Χανιώτη 4",
+   "Χανιώτη 9",
+   "Χανιώτη 1Β",
+   "Χανιώτη 7",
+   "Χανιώτη 5Β",
+   "Χανιώτη 8",
+   "Χανιώτη 6",
+   "Polychrono - Chanioti - Pefkochori"
+  ]
+ },
+ "cluster20-001787": {
+  "name_el": "Χανιώτη",
+  "name_en": "Chanioti",
+  "aka": [
+   "Δυτική Χανιώτης",
+   "Χανιώτη 5Β",
+   "Χανιώτη 8",
+   "Χανιώτη 6",
+   "Nisos Halkidiki"
+  ]
+ },
+ "cluster20-001788": {
+  "name_el": "Πευκοχώρι 1 Θέση Άμπαρα",
+  "name_en": "Pefkochori 1 Thesi Ampara",
+  "aka": []
+ },
+ "cluster20-001789": {
+  "name_el": "Παλιούρι 1 - Άγιος Νικόλαος",
+  "name_en": "Paliouri 1 - Agios Nikolaos",
+  "aka": [
+   "Πευκοχώρι 4",
+   "Πευκοχώρι 8",
+   "Πευκοχώρι Yalla-Flegra"
+  ]
+ },
+ "cluster20-001792": {
+  "name_el": null,
+  "name_en": null,
+  "aka": []
+ },
+ "cluster20-001797": {
+  "name_el": "Κάβος Λιχάδας",
+  "name_en": "Kavos Lichadas",
+  "aka": []
+ },
+ "cluster20-001798": {
+  "name_el": "Φιδάνη Λάκκα Γερακινή",
+  "name_en": "Fidani Lakka Gerakini",
+  "aka": []
+ },
+ "cluster20-001801": {
+  "name_el": "Μονοδένδρι",
+  "name_en": "Monodendri",
+  "aka": [
+   "Βραχναίικα – Μονοδένδρι",
+   "Βραχναίικων",
+   "Vrachneika - Monodendri"
+  ]
+ },
+ "cluster20-001804": {
+  "name_el": null,
+  "name_en": "Porto Paradiso",
+  "aka": []
+ },
+ "cluster20-001821": {
+  "name_el": "Ακτή Καλογριάς",
+  "name_en": "Akti Kalogrias",
+  "aka": []
+ },
+ "cluster20-001824": {
+  "name_el": "Κασσάνδρεια 1 - Σίβηρη",
+  "name_en": "Kassandreia 1 - Siviri",
+  "aka": []
+ },
+ "cluster20-001833": {
+  "name_el": "Άγιος Γεώργιος 55",
+  "name_en": "Agios Georgios 55",
+  "aka": [
+   "Νικήτη",
+   "Λαγομάνδρα 4"
+  ]
+ },
+ "cluster20-001842": {
+  "name_el": "Κασσάνδρεια 1 - Σίβηρη",
+  "name_en": "Kassandreia 1 - Siviri",
+  "aka": []
+ },
+ "cluster20-001843": {
+  "name_el": null,
+  "name_en": null,
+  "aka": []
+ },
+ "cluster20-001847": {
+  "name_el": null,
+  "name_en": "Crystal",
+  "aka": []
+ },
+ "cluster20-001854": {
+  "name_el": "Βαλτί",
+  "name_en": "Valti",
+  "aka": [
+   "Σάρτης",
+   "Πλατανίτσι",
+   "Καβουρότρυπες",
+   "Σάρτη Χείμαρος",
+   "Σάρτη Ψιλές Αμμούδες"
+  ]
+ },
+ "cluster20-001855": {
+  "name_el": "Συκιά",
+  "name_en": "Sykia",
+  "aka": [
+   "Συκιάς 3",
+   "Συκιάς 4",
+   "Συκιάς 2",
+   "Αγριδιά",
+   "Topless"
+  ]
+ },
+ "cluster20-001871": {
+  "name_el": "Ουρανούπολη",
+  "name_en": "Ouranoupoli",
+  "aka": [
+   "Καμπούδι 2",
+   "Kampoudi 2"
+  ]
+ },
+ "cluster20-001879": {
+  "name_el": null,
+  "name_en": "Kriopigi",
+  "aka": []
+ },
+ "cluster20-001882": {
+  "name_el": "Νικήτη",
+  "name_en": "Nikiti",
+  "aka": [
+   "Άγιος Γεώργιος 55",
+   "Άγιος Γεώργιος 2",
+   "Λαγομάνδρα 4",
+   "Κοινοτική Πλαζ Νικήτης",
+   "Agios Georgios 2"
+  ]
+ },
+ "cluster20-001887": {
+  "name_el": "Πύργοι Θερμής",
+  "name_en": "Pyrgoi Thermis",
+  "aka": []
+ },
+ "cluster20-001889": {
+  "name_el": "Σινδωνία",
+  "name_en": "Sindonia",
+  "aka": [
+   "Ψαρή Φοράδα Βιάννου"
+  ]
+ },
+ "cluster20-001890": {
+  "name_el": "Καλύβες",
+  "name_en": "Kalyves",
+  "aka": [
+   "Μολυβδόπυργος",
+   "Καλυβών",
+   "Μπάρα-Τσαϊρι Καλυβών-Πολυγύρου",
+   "Τσαϊρι Καλυβών-Πολυγύρου",
+   "Ανεμόμυλος / Καλυβών",
+   "Kalyvon"
+  ]
+ },
+ "cluster20-001892": {
+  "name_el": "Τρικόρφου / Περιοχή Καλογέρου Λάκκος",
+  "name_en": "Trikorfou / Periochi Kalogerou Lakkos",
+  "aka": []
+ },
+ "cluster20-001899": {
+  "name_el": "Νέα Μουδανιά",
+  "name_en": "Nea Moudania",
+  "aka": [
+   "Ελαιώνες",
+   "Elaiona",
+   "Diamond"
+  ]
+ },
+ "cluster20-001906": {
+  "name_el": "Τρικόρφου / Περιοχή Καλογέρου Λάκκος",
+  "name_en": "Trikorfou / Periochi Kalogerou Lakkos",
+  "aka": [
+   "Ορμυλίας / Εντός Οικισμού Τοποθεσία Καλογήρου Λάκος",
+   "Kaloeros",
+   "Ormylias / entos Oikismou Topothesia Kalogirou Lakos"
+  ]
+ },
+ "cluster20-001913": {
+  "name_el": "Τάγιο",
+  "name_en": "Tagio",
+  "aka": [
+   "Χαλικούνα",
+   "Χαλικούνας 3"
+  ]
+ },
+ "cluster20-001919": {
+  "name_el": "Μικρό Φαναράκι",
+  "name_en": "Mikro Fanaraki",
+  "aka": [
+   "Μικρό Φανάρι",
+   "Μεγάλο Φαναράκι",
+   "Μεγάλο Φαναράκι 2",
+   "Φαναράκι",
+   "Mikro Fanari",
+   "Megalo Fanaraki",
+   "Fanaraki",
+   "Katanopodhi"
+  ]
+ },
+ "cluster20-001929": {
+  "name_el": "Νέα Χηλή",
+  "name_en": "Nea Chili",
+  "aka": []
+ },
+ "cluster20-001934": {
+  "name_el": "Τολοφώνα",
+  "name_en": "Tolofona",
+  "aka": []
+ },
+ "cluster20-001935": {
+  "name_el": null,
+  "name_en": null,
+  "aka": []
+ },
+ "cluster20-001942": {
+  "name_el": "Μακραμέ Βούλισμα",
+  "name_en": "Makrame Voulisma",
+  "aka": [
+   "Golden",
+   "Voulisma Secret"
+  ]
+ },
+ "cluster20-001957": {
+  "name_el": null,
+  "name_en": null,
+  "aka": []
+ },
+ "cluster20-001962": {
+  "name_el": "Βύρι",
+  "name_en": "Vyri",
+  "aka": []
+ },
+ "cluster20-001965": {
+  "name_el": "Κλαδισσού",
+  "name_en": "Kladissou",
+  "aka": [
+   "Αγία Πελαγία",
+   "Kladissos",
+   "Κλαδισσός"
+  ]
+ },
+ "cluster20-001972": {
+  "name_el": null,
+  "name_en": "Alkyona",
+  "aka": []
+ },
+ "cluster20-001983": {
+  "name_el": "Μίνως Παλάς",
+  "name_en": "Minos Palas",
+  "aka": [
+   "Agios Nikolaos 2",
+   "Άγιος Νικόλαος 2"
+  ]
+ },
+ "cluster20-001992": {
+  "name_el": "Μεταμόρφωσης/Θέση Μπάρα",
+  "name_en": "Metamorfosis/Thesi Bara",
+  "aka": [
+   "Settlement"
+  ]
+ },
+ "cluster20-001995": {
+  "name_el": "Εσταυρωμένος",
+  "name_en": "Estavromenos",
+  "aka": [
+   "Κοκκίνη Χάνι",
+   "Βαθειανός Κάμπος",
+   "Αρίνα",
+   "Kokkini Xani"
+  ]
+ },
+ "cluster20-001996": {
+  "name_el": "Γουρνοκούμασο",
+  "name_en": "Gournokoumaso",
+  "aka": []
+ },
+ "cluster20-001999": {
+  "name_el": "Μάλια",
+  "name_en": "Malia",
+  "aka": [
+   "Aelos"
+  ]
+ },
+ "cluster20-002012": {
+  "name_el": "Κηπουπόλη-Ν. Καλλικράτεια",
+  "name_en": "Kipoupoli-N. Kallikrateia",
+  "aka": []
+ },
+ "cluster20-002013": {
+  "name_el": "Μηλίνα",
+  "name_en": "Milina",
+  "aka": []
+ },
+ "cluster20-002017": {
+  "name_el": "Κρυοπηγή-Κασσάνδρα",
+  "name_en": "Kryopigi-Kassandra",
+  "aka": [
+   "Kryopigi - Kallithea 2",
+   "Lefki Peristera",
+   "Κρυοπηγή – Καλλιθέα 2"
+  ]
+ },
+ "cluster20-002021": {
+  "name_el": null,
+  "name_en": null,
+  "aka": []
+ },
+ "cluster20-002027": {
+  "name_el": "Μηλίνα",
+  "name_en": "Milina",
+  "aka": [
+   "Hroo Mhlinas",
+   "Ηρώο Μηλίνας"
+  ]
+ },
+ "cluster20-002040": {
+  "name_el": "Μυλοπότα",
+  "name_en": "Mylopota",
+  "aka": []
+ },
+ "cluster20-002045": {
+  "name_el": "Ψαρομούρα",
+  "name_en": "Psaromoura",
+  "aka": [
+   "Συκιάς Αγία Πελαγία",
+   "Παραλία Γυμνιστών Ψαρομούρας"
+  ]
+ },
+ "cluster20-002050": {
+  "name_el": "Πολύχρονο",
+  "name_en": "Polychrono",
+  "aka": [
+   "Kryopigi - Polychrono 2",
+   "Miracle Polyxrono",
+   "Polihrono",
+   "Perla Nera",
+   "Salty",
+   "Κρυοπηγή – Πολύχρονο 2"
+  ]
+ },
+ "cluster20-002057": {
+  "name_el": "Κατηγιώργης",
+  "name_en": "Katigiorgis",
+  "aka": []
+ },
+ "cluster20-002064": {
+  "name_el": "Σιφέρι",
+  "name_en": "Siferi",
+  "aka": []
+ },
+ "cluster20-002065": {
+  "name_el": "Κάτω Γατζέα",
+  "name_en": "Kato Gatzea",
+  "aka": []
+ },
+ "cluster20-002073": {
+  "name_el": null,
+  "name_en": null,
+  "aka": []
+ },
+ "cluster20-002076": {
+  "name_el": "Πλαταμώνας",
+  "name_en": "Platamonas",
+  "aka": [
+   "Νέος Παντελεήμονας"
+  ]
+ },
+ "cluster20-002082": {
+  "name_el": "Ράμνος",
+  "name_en": "Ramnos",
+  "aka": []
+ },
+ "cluster20-002084": {
+  "name_el": "Χαλιγκάν",
+  "name_en": "Chaligkan",
+  "aka": [
+   "Αγία Θυμιά, Λεφόκαστρο",
+   "Αγιά Θυμιά"
+  ]
+ },
+ "cluster20-002089": {
+  "name_el": "Ουρανούπολη",
+  "name_en": "Ouranoupoli",
+  "aka": [
+   "Καμπούδι / Άκραθως",
+   "Καμπούδι Ουρανούπολης",
+   "Καμπούδι Ιερισσού",
+   "Kampoudi Ouranoupolis",
+   "Καμπούδι 1/Ακτή Ουρανούπολη",
+   "Kampoudi 2"
+  ]
+ },
+ "cluster20-002092": {
+  "name_el": "Μηλίνα",
+  "name_en": "Milina",
+  "aka": [
+   "Hroo Mhlinas",
+   "Ηρώο Μηλίνας"
+  ]
+ },
+ "cluster20-002103": {
+  "name_el": null,
+  "name_en": "Kai",
+  "aka": [
+   "Bora Bora",
+   "Kotsifos"
+  ]
+ },
+ "cluster20-002115": {
+  "name_el": "Βουρκάρι 2",
+  "name_en": "Vourkari 2",
+  "aka": [
+   "Βουρκάρι 3",
+   "Βουρκάρι 1"
+  ]
+ },
+ "cluster20-002139": {
+  "name_el": "Νήσος Δρένια",
+  "name_en": "Nisos Drenia",
+  "aka": []
+ },
+ "cluster20-002151": {
+  "name_el": "Πορθμείο Αρκίτσας",
+  "name_en": "Porthmeio Arkitsas",
+  "aka": []
+ },
+ "cluster20-002161": {
+  "name_el": "Σάνη Κυψά",
+  "name_en": "Sani Kypsa",
+  "aka": [
+   "Sani 2",
+   "Σάνη 2",
+   "Simantro"
+  ]
+ },
+ "cluster20-002176": {
+  "name_el": "Σκλιθρί",
+  "name_en": "Sklithri",
+  "aka": []
+ },
+ "cluster20-002199": {
+  "name_el": "Παλιούρι 2α Θέση Τσαγκάρι Πηγάδι Κάνιστρο",
+  "name_en": "Paliouri 2a Thesi Tsagkari Pigadi Kanistro",
+  "aka": []
+ },
+ "cluster20-002210": {
+  "name_el": "Νικούρια",
+  "name_en": "Nikouria",
+  "aka": [
+   "Nikoyria"
+  ]
+ },
+ "cluster20-002218": {
+  "name_el": "Μάλια",
+  "name_en": "Malia",
+  "aka": [
+   "Ποταμός",
+   "Potamos",
+   "Ποταμός 1",
+   "Potamos 1",
+   "Strand Malia"
+  ]
+ },
+ "cluster20-002221": {
+  "name_el": "Ανάληψη",
+  "name_en": "Analipsi",
+  "aka": [
+   "Ανισσαράς",
+   "Anisara",
+   "Serita",
+   "Captain's"
+  ]
+ },
+ "cluster20-002240": {
+  "name_el": "Κούνδουρος",
+  "name_en": "Koundouros",
+  "aka": [
+   "Κούνδουρος-Μπούρη 2",
+   "Κούνδουρος-Μπούρη 1",
+   "Φρέας",
+   "Koundouraki",
+   "Playa de Bouri",
+   "Ακτή Κούνδουρου",
+   "Akti Koundourou",
+   "Φρέαρ Κούνδουρος",
+   "Χυλιαμόδου"
+  ]
+ },
+ "cluster20-002241": {
+  "name_el": "Λαούτι",
+  "name_en": "Laouti",
+  "aka": [
+   "Αγία Κυριακή",
+   "Αγία Κυριακή-Τριαντάρου"
+  ]
+ },
+ "cluster20-002244": {
+  "name_el": "Μυλοπότα",
+  "name_en": "Mylopota",
+  "aka": [
+   "FarOut Club Waterside"
+  ]
+ },
+ "cluster20-002248": {
+  "name_el": "Άγιος Φωκάς",
+  "name_en": "Agios Fokas",
+  "aka": [
+   "Βρεκάστρο"
+  ]
+ },
+ "cluster20-002249": {
+  "name_el": "Άγιος Ιωάννης Πόρτο",
+  "name_en": "Agios Ioannis Porto",
+  "aka": [
+   "Άι Γιάννης Πόρτο",
+   "Agios Giannis",
+   "Άγιος Γιάννης"
+  ]
+ },
+ "cluster20-002250": {
+  "name_el": "Οτζιά",
+  "name_en": "Otzia",
+  "aka": [
+   "Οτζιάς",
+   "Οτζιάς 1",
+   "Οτζιάς 2",
+   "Οτζιάς 3",
+   "Sunny",
+   "Smile On the"
+  ]
+ },
+ "cluster20-002254": {
+  "name_el": "Βουρκάρι 1",
+  "name_en": "Vourkari 1",
+  "aka": [
+   "Βουρκάρι 2",
+   "Vourkari 2",
+   "Βουρκάρι 3"
+  ]
+ },
+ "cluster20-002258": {
+  "name_el": "Αγία Κυριακή-Τριαντάρου",
+  "name_en": "Agia Kyriaki-Triantarou",
+  "aka": []
+ },
+ "cluster20-002276": {
+  "name_el": "Λαούτι-Σκυλαντάρ Τριαντάρου",
+  "name_en": "Laouti-Skylantar Triantarou",
+  "aka": []
+ },
+ "cluster20-002284": {
+  "name_el": "Δράπανος",
+  "name_en": "Drapanos",
+  "aka": [
+   "Δράπανος Χερσονήσου",
+   "Drapanos Chersonisou",
+   "Vlychada Sand"
+  ]
+ },
+ "cluster20-002296": {
+  "name_el": "Μαγγανάρι",
+  "name_en": "Manganari",
+  "aka": [
+   "Μεγάλη Μαγγανάρι",
+   "Μικρή Μαγγανάρι",
+   "Μαγγανάρι 1",
+   "Magganari 1",
+   "Μαγγανάρι 2",
+   "Magganari 2",
+   "Μαγγανάρι Ανατολικά",
+   "Magganari Anatolika",
+   "Σαντοριναίϊκο"
+  ]
+ },
+ "cluster20-002297": {
+  "name_el": "Κολυμπήθρα",
+  "name_en": "Kolympithra",
+  "aka": [
+   "Μεγάλη Άμμος",
+   "Μικρή Κολυμπήθρα",
+   "Mikri Kolympithra",
+   "Μικρή Άμμος",
+   "Mikri Ammos"
+  ]
+ },
+ "cluster20-002304": {
+  "name_el": "Εσταυρωμένος",
+  "name_en": "Estavromenos",
+  "aka": [
+   "Βαθειανός Κάμπος",
+   "Κόκκινη Χάνι",
+   "Αρίνα",
+   "Arina",
+   "Bikini",
+   "Makai",
+   "Tobrouk",
+   "Пляж Гувес"
+  ]
+ },
+ "cluster20-002306": {
+  "name_el": "Κλαδισσού",
+  "name_en": "Kladissou",
+  "aka": []
+ },
+ "cluster20-002310": {
+  "name_el": "Φετούρη-Ποσειδωνίας",
+  "name_en": "Fetouri-Poseidonias",
+  "aka": [
+   "Posidonia",
+   "Fetouri"
+  ]
+ },
+ "cluster20-002339": {
+  "name_el": "Ανατολική",
+  "name_en": "Anatoliki",
+  "aka": [
+   "Καλαμάτας",
+   "Kalamata",
+   "Kalamatas"
+  ]
+ },
+ "cluster20-002344": {
+  "name_el": null,
+  "name_en": "Kozi Summer",
+  "aka": []
+ },
+ "cluster20-002346": {
+  "name_el": "Ψαθόπυργος",
+  "name_en": "Psathopyrgos",
+  "aka": [
+   "Cayo"
+  ]
+ },
+ "cluster20-002351": {
+  "name_el": "Αγίου Νικολάου Πάχης Μεγάρων",
+  "name_en": "Agios Nikolaos Pachis Megaron",
+  "aka": []
+ },
+ "cluster20-002353": {
+  "name_el": null,
+  "name_en": "Panorama View",
+  "aka": []
+ },
+ "cluster20-002389": {
+  "name_el": null,
+  "name_en": "Kardamili",
+  "aka": []
+ },
+ "cluster20-002390": {
+  "name_el": "Τρεις Εκκλησίες",
+  "name_en": "Treis Ekklisies",
+  "aka": []
+ },
+ "cluster20-002396": {
+  "name_el": null,
+  "name_en": "Velika Anatolika",
+  "aka": [
+   "Xrisi Ammos"
+  ]
+ },
+ "cluster20-002408": {
+  "name_el": "Κολοπάνα",
+  "name_en": "Kolopana",
+  "aka": [
+   "Καπινίστρα",
+   "Πετροχώρι",
+   "Αμμοθίνες"
+  ]
+ },
+ "cluster20-002414": {
+  "name_el": "Ντουράκο Αλεποχωρίου",
+  "name_en": "Ntourako Alepochoriou",
+  "aka": []
+ },
+ "cluster20-002429": {
+  "name_el": "Ψαθόπυργος",
+  "name_en": "Psathopyrgos",
+  "aka": []
+ },
+ "cluster20-002432": {
+  "name_el": "Νιφορέικα",
+  "name_en": "Niforeika",
+  "aka": []
+ },
+ "cluster20-002438": {
+  "name_el": "Σάντοβα",
+  "name_en": "Santova",
+  "aka": [
+   "Σαντάβα"
+  ]
+ },
+ "cluster20-002444": {
+  "name_el": "Όρμος",
+  "name_en": "Ormos",
+  "aka": []
+ },
+ "cluster20-002450": {
+  "name_el": null,
+  "name_en": null,
+  "aka": []
+ },
+ "cluster20-002451": {
+  "name_el": "Σάντοβα",
+  "name_en": "Santova",
+  "aka": []
+ },
+ "cluster20-002463": {
+  "name_el": "Κοκκάρι",
+  "name_en": "Kokkari",
+  "aka": [
+   "Άμμος Κοκκαρίου",
+   "Κοκκάρι Σάμος",
+   "Ταρσανάς Κοκκαρίου",
+   "Μικρά Λεμονάκια Κοκκαρίου",
+   "Malagari - Poseidon",
+   "Small Lemonákia",
+   "Μαλαγάρι – Ποσειδών",
+   "Sunrise"
+  ]
+ },
+ "cluster20-002484": {
+  "name_el": "Συκίτσα Βιβαρίου",
+  "name_en": "Sykitsa Vivariou",
+  "aka": [
+   "Vivari-Small Beaches",
+   "Βιβάρι-Μικρές Παραλίες"
+  ]
+ },
+ "cluster20-002516": {
+  "name_el": "Μπλόκια Ποτοκάκι Χώρας",
+  "name_en": "Blokia Potokaki Choras",
+  "aka": [
+   "Pondios, Potokaki"
+  ]
+ },
+ "cluster20-002519": {
+  "name_el": "Ποτοκάκι",
+  "name_en": "Potokaki",
+  "aka": [
+   "Ποτοκάκι Πυθαγορείου",
+   "Ποτοκάκι Χώρας Πυθαγορείου",
+   "Μπλόκια Ποτοκάκι Χώρας",
+   "Pondios, Potokaki",
+   "Volley 1993",
+   "Πυθαγόρειο Σάμου",
+   "Pythagoreio Samou",
+   "Mare Deus"
+  ]
+ },
+ "cluster20-002528": {
+  "name_el": "Λιμανάκι Μαγγανίτη",
+  "name_en": "Limanaki Manganiti",
+  "aka": [
+   "Μαγγανίτης Ευδήλου",
+   "Στο Γιαλό Κάνει Φουρτούνα"
+  ]
+ },
+ "cluster20-002540": {
+  "name_el": "Τολου-Ακτής 50",
+  "name_en": "Tolou-Aktis 50",
+  "aka": [
+   "Τολου Ακτής 52",
+   "Tolo Port"
+  ]
+ },
+ "cluster20-002543": {
+  "name_el": null,
+  "name_en": "on Nafpliou Neas Kiou",
+  "aka": []
+ },
+ "cluster20-002569": {
+  "name_el": "Πυθαγόρειο",
+  "name_en": "Pythagorio",
+  "aka": [
+   "Τρία Δόντια Πυθαγόρειο",
+   "Verano Samos",
+   "Δημοτικό Σχολείο Πυθαγορείου",
+   "Δημοτικό Σχολείο Πυθαγόρειο",
+   "Pythagoreio Public Parking",
+   "Ποτοκάκι Πυθαγορείου",
+   "Πυθαγόρειο Σάμου"
+  ]
+ },
+ "cluster20-002577": {
+  "name_el": "Γιαλισκάρι Ικαρίας",
+  "name_en": "Gialiskari Ikarias",
+  "aka": []
+ },
+ "cluster20-002578": {
+  "name_el": "Αλιώτου",
+  "name_en": "Aliotou",
+  "aka": [
+   "Νέα Επίδαυρος",
+   "Nea Epidavros",
+   "Ακρογιάλι"
+  ]
+ },
+ "cluster20-002579": {
+  "name_el": "Ηραίον",
+  "name_en": "Iraion",
+  "aka": [
+   "Ηραίον Σάμου",
+   "Iraio",
+   "İreo",
+   "Paris"
+  ]
+ },
+ "cluster20-002583": {
+  "name_el": "Μπλόκια Ποτοκάκι Χώρας",
+  "name_en": "Blokia Potokaki Choras",
+  "aka": []
+ },
+ "cluster20-002588": {
+  "name_el": "Φάρος Αγίου Κηρύκου",
+  "name_en": "Faros Agiou Kirykou",
+  "aka": [
+   "Φάρος",
+   "Faros"
+  ]
+ },
+ "cluster20-002594": {
+  "name_el": null,
+  "name_en": null,
+  "aka": []
+ },
+ "cluster20-002620": {
+  "name_el": "Καράβια",
+  "name_en": "Karavia",
+  "aka": []
+ },
+ "cluster20-002621": {
+  "name_el": "Λιάκα",
+  "name_en": "Liaka",
+  "aka": []
+ },
+ "cluster20-002623": {
+  "name_el": "Πηγάδια",
+  "name_en": "Pigadia",
+  "aka": [
+   "Πηγάδια-Άφωτη",
+   "Πηγάδια-Λιμιάτης",
+   "Λυμνιάτης",
+   "Άφωτη",
+   "Άφωτη-Πηγάδια",
+   "Ξενώνας-Πηγάδια",
+   "Πηγάδια-Ξενώνας"
+  ]
+ },
+ "cluster20-002625": {
+  "name_el": "Cachaca",
+  "name_en": "Cachaca",
+  "aka": []
+ },
+ "cluster20-002630": {
+  "name_el": "Βαθά",
+  "name_en": "Vatha",
+  "aka": []
+ },
+ "cluster20-002636": {
+  "name_el": "Ραπανιανά",
+  "name_en": "Rapaniana",
+  "aka": [
+   "Κολυμβάρι Γιαννόλης Αβετνέ",
+   "Βόρεια Ξενοδοχείου Cavo Spatha",
+   "Ταυρωνίτης",
+   "Ταυρωνίτης Τομαδάκης Παναγιώτης Αλμυρίκια",
+   "Tomes AE",
+   "Κολυμπάρι",
+   "Σκουτελώνας",
+   "Καμισιανών"
+  ]
+ },
+ "cluster20-002638": {
+  "name_el": null,
+  "name_en": null,
+  "aka": []
+ },
+ "cluster20-002649": {
+  "name_el": "Άη Θώρος",
+  "name_en": "Ai Thoros",
+  "aka": [
+   "Άγιος Θεόδωρος"
+  ]
+ },
+ "cluster20-002658": {
+  "name_el": "Μικρή Αμμοπή",
+  "name_en": "Mikri Ammopi",
+  "aka": [
+   "Little Amoopi",
+   "Μικρή Αμμώπη"
+  ]
+ },
+ "cluster20-002666": {
+  "name_el": "Τιμάρι",
+  "name_en": "Timari",
+  "aka": []
+ },
+ "cluster20-002676": {
+  "name_el": null,
+  "name_en": null,
+  "aka": []
+ },
+ "cluster20-002681": {
+  "name_el": "Αμμώπη",
+  "name_en": "Amopi",
+  "aka": [
+   "Βοτσαλάκια",
+   "Μεγάλη Αμμοπή",
+   "Μεγάλη Αμμώπη",
+   "Καστέλλια",
+   "Kastellia",
+   "Kastelia",
+   "Καστέλια",
+   "Votsalakia"
+  ]
+ },
+ "cluster20-002692": {
+  "name_el": "Λάρδος 3",
+  "name_en": "Lardos 3",
+  "aka": [
+   "Κοκκινόγεια",
+   "Λυνδίας",
+   "Καρδάμης"
+  ]
+ },
+ "cluster20-002698": {
+  "name_el": "Μάλεμε",
+  "name_en": "Maleme",
+  "aka": [
+   "Πύργος Ψηλονερού",
+   "Γεράνι",
+   "Caretta",
+   "GT"
+  ]
+ },
+ "cluster20-002702": {
+  "name_el": "Καστέλλια",
+  "name_en": "Kastellia",
+  "aka": []
+ },
+ "cluster20-002703": {
+  "name_el": "Βαθά",
+  "name_en": "Vatha",
+  "aka": []
+ },
+ "cluster20-002704": {
+  "name_el": "Ξενώνας-Πηγάδια",
+  "name_en": "Xenonas-Pigadia",
+  "aka": []
+ },
+ "cluster20-002711": {
+  "name_el": null,
+  "name_en": "Keramoti",
+  "aka": []
+ },
+ "cluster20-002718": {
+  "name_el": "Νικολάκη Πούντα",
+  "name_en": "Nikolaki Pounta",
+  "aka": []
+ },
+ "cluster20-002729": {
+  "name_el": "Φαληράκι",
+  "name_en": "Faliraki",
+  "aka": [
+   "Καστρί",
+   "Μοναξιά 2",
+   "Μοναξιά 1",
+   "Faliraki 1",
+   "Φαληράκι 1",
+   "Faliraki 3",
+   "Φαληράκι 3"
+  ]
+ },
+ "cluster20-002732": {
+  "name_el": "Περίσσα",
+  "name_en": "Perissa",
+  "aka": [
+   "Περίσσα Εμπορείου",
+   "Atlantis Island",
+   "Perissa 2",
+   "Περίσσα 2"
+  ]
+ },
+ "cluster20-002737": {
+  "name_el": "Περίσσα Εμπορείου",
+  "name_en": "Perissa Emporeiou",
+  "aka": [
+   "Perissa 2",
+   "Περίσσα 2"
+  ]
+ },
+ "cluster20-002739": {
+  "name_el": "Αλμυροπόταμος Όαση",
+  "name_en": "Almyropotamos Oasis",
+  "aka": []
+ },
+ "cluster20-002742": {
+  "name_el": "Μελιτσαχάς",
+  "name_en": "Melitsachas",
+  "aka": []
+ },
+ "cluster20-002746": {
+  "name_el": "Βροντής-Πηγάδια",
+  "name_en": "Vrontis-Pigadia",
+  "aka": []
+ },
+ "cluster20-002747": {
+  "name_el": "Μερικιά",
+  "name_en": "Merikia",
+  "aka": []
+ },
+ "cluster20-002753": {
+  "name_el": "Βροντής-Πηγάδια",
+  "name_en": "Vrontis-Pigadia",
+  "aka": []
+ },
+ "cluster20-002772": {
+  "name_el": "Αδελιανός Κάμπος",
+  "name_en": "Adelianos Kampos",
+  "aka": [
+   "Πλατ-Ε1",
+   "Πλατανιά",
+   "Πλατανές",
+   "Achladi",
+   "Αρκάδι"
+  ]
+ },
+ "cluster20-002797": {
+  "name_el": "Παροικιά",
+  "name_en": "Paroikia",
+  "aka": [
+   "Κάτω Γυαλός Παροικίας Πάρου",
+   "Μπουνταράκι Παροικίας Πάρου",
+   "Παραλιακή Ζώνη Παροικίας Πάρου",
+   "Κάτω Γυαλός"
+  ]
+ },
+ "cluster20-002802": {
+  "name_el": null,
+  "name_en": null,
+  "aka": []
+ },
+ "cluster20-002804": {
+  "name_el": "Δεύτερα Παρουσία Πάρου",
+  "name_en": "Deftera Parousia Parou",
+  "aka": []
+ },
+ "cluster20-002807": {
+  "name_el": "Αγία Παρασκευή Βόθωνα",
+  "name_en": "Agia Paraskevi Vothona",
+  "aka": [
+   "Pepè"
+  ]
+ },
+ "cluster20-002810": {
+  "name_el": "Κριός Παροικίας Πάρου",
+  "name_en": "Krios Paroikias Parou",
+  "aka": [
+   "Krios"
+  ]
+ },
+ "cluster20-002834": {
+  "name_el": "Γαρουμπένα - Καλαφάτης - Καραλής",
+  "name_en": "Garoumpena - Kalafatis - Karalis",
+  "aka": []
+ },
+ "cluster20-002842": {
+  "name_el": "Χαρά Κουλούμπος Οίας",
+  "name_en": "Chara Kouloumpos Oias",
+  "aka": [
+   "Capo Colombo"
+  ]
+ },
+ "cluster20-002845": {
+  "name_el": "Περίσσα Εμπορείου",
+  "name_en": "Perissa Emporeiou",
+  "aka": [
+   "Δενδράκια Περίσσας",
+   "Black"
+  ]
+ },
+ "cluster20-002859": {
+  "name_el": "Παντάνασσα",
+  "name_en": "Pantanassa",
+  "aka": []
+ },
+ "cluster20-002860": {
+  "name_el": null,
+  "name_en": "North Alinda",
+  "aka": []
+ },
+ "cluster20-002878": {
+  "name_el": "Βουνό",
+  "name_en": "Vouno",
+  "aka": []
+ },
+ "cluster20-002881": {
+  "name_el": null,
+  "name_en": "Gaia Royal",
+  "aka": []
+ },
+ "cluster20-002884": {
+  "name_el": null,
+  "name_en": "Victor",
+  "aka": []
+ },
+ "cluster20-002892": {
+  "name_el": "Ελαιώνας",
+  "name_en": "Elaionas",
+  "aka": [
+   "Τρυπιά",
+   "Elaiona"
+  ]
+ },
+ "cluster20-002895": {
+  "name_el": null,
+  "name_en": "Malibu",
+  "aka": []
+ },
+ "cluster20-002916": {
+  "name_el": null,
+  "name_en": "Peters",
+  "aka": []
+ },
+ "cluster20-002926": {
+  "name_el": "Αγνή",
+  "name_en": "Agni",
+  "aka": []
+ },
+ "cluster20-002942": {
+  "name_el": "Αλαμπέικα Αμαρύνθου",
+  "name_en": "Alampeika Amarynthou",
+  "aka": [
+   "Αμάρυνθος",
+   "Αλαμπέικα",
+   "Βαθειά Μεριά",
+   "Amarynthos 1",
+   "Cavo Amarynthos"
+  ]
+ },
+ "cluster20-002946": {
+  "name_el": "Συβότων",
+  "name_en": "Syvoton",
+  "aka": []
+ },
+ "cluster20-002950": {
+  "name_el": null,
+  "name_en": "Theros",
+  "aka": []
+ },
+ "cluster20-002953": {
+  "name_el": null,
+  "name_en": "Lambi",
+  "aka": []
+ },
+ "cluster20-002965": {
+  "name_el": "Νεφτίνα",
+  "name_en": "Neftina",
+  "aka": []
+ },
+ "cluster20-002975": {
+  "name_el": "Πρασούδι",
+  "name_en": "Prasoudi",
+  "aka": [
+   "Άγιος Ματθαίος",
+   "Agios Mathaios"
+  ]
+ },
+ "cluster20-002980": {
+  "name_el": "Πάλαιρος",
+  "name_en": "Palairos",
+  "aka": [
+   "Νεροκράτημα",
+   "Nerokratima"
+  ]
+ },
+ "cluster20-003001": {
+  "name_el": "Τρεις Μύλοι",
+  "name_en": "Treis Myloi",
+  "aka": []
+ },
+ "cluster20-003006": {
+  "name_el": "Καραπατά",
+  "name_en": "Karapata",
+  "aka": []
+ },
+ "cluster20-003013": {
+  "name_el": "Άγιοι Θεόδωροι",
+  "name_en": "Agioi Theodoroi",
+  "aka": [
+   "Πευκάκια",
+   "Άγιοι Θεόδωροι 1",
+   "Agioi Theodoroi 1",
+   "Αγ. Θεόδωροι",
+   "Ag. Theodoroi"
+  ]
+ },
+ "cluster20-003017": {
+  "name_el": "ΔΕΗ",
+  "name_en": "DEI",
+  "aka": [
+   "ΔΕΗ Συβότων"
+  ]
+ },
+ "cluster20-003019": {
+  "name_el": "Τολοφώνα",
+  "name_en": "Tolofona",
+  "aka": []
+ },
+ "cluster20-003024": {
+  "name_el": "Σκίδι",
+  "name_en": "Skidi",
+  "aka": [
+   "Παρθενόμυτος"
+  ]
+ },
+ "cluster20-003028": {
+  "name_el": null,
+  "name_en": "Delfinia",
+  "aka": []
+ },
+ "cluster20-003034": {
+  "name_el": "Κάτω Ζάκρος",
+  "name_en": "Kato Zakros",
+  "aka": []
+ },
+ "cluster20-003044": {
+  "name_el": "Ιρίων",
+  "name_en": "Irion",
+  "aka": [
+   "Iria"
+  ]
+ },
+ "cluster20-003048": {
+  "name_el": "Φλάμπουρο Πορτοχελίου",
+  "name_en": "Flampouro Portocheliou",
+  "aka": [
+   "Petrothalassa"
+  ]
+ },
+ "cluster20-003055": {
+  "name_el": "Κρυονέρι-Καβουρότρυπα",
+  "name_en": "Kryoneri-Kavourotrypa",
+  "aka": []
+ },
+ "cluster20-003058": {
+  "name_el": "Λυκοποριά",
+  "name_en": "Lykoporia",
+  "aka": []
+ },
+ "cluster20-003059": {
+  "name_el": "Λυκοποριά",
+  "name_en": "Lykoporia",
+  "aka": []
+ },
+ "cluster20-003069": {
+  "name_el": "Παλιοχώρα",
+  "name_en": "Paliochora",
+  "aka": []
+ },
+ "cluster20-003077": {
+  "name_el": "Καρνάγιο",
+  "name_en": "Karnagio",
+  "aka": [
+   "Πούντα",
+   "Kato Lechonia - Pounta"
+  ]
+ },
+ "cluster20-003099": {
+  "name_el": null,
+  "name_en": "Sirene Blue Luxury",
+  "aka": []
+ },
+ "cluster20-003109": {
+  "name_el": "Τολοφώνα",
+  "name_en": "Tolofona",
+  "aka": [
+   "Holiday Tolofona",
+   "Τολοφώνας",
+   "Tolofonas 1",
+   "Τολοφώνας 1",
+   "Tolofonas 2",
+   "Τολοφώνας 2"
+  ]
+ },
+ "cluster20-003113": {
+  "name_el": "Πεζούλια Πευκάκι Λουτράκι",
+  "name_en": "Pezoulia Pefkaki Loutraki",
+  "aka": []
+ },
+ "cluster20-003125": {
+  "name_el": "Αλυκανάς",
+  "name_en": "Alykanas",
+  "aka": [
+   "Αλυκάνα",
+   "Αλυκές",
+   "Alykas"
+  ]
+ },
+ "cluster20-003134": {
+  "name_el": "Καλαμάκι",
+  "name_en": "Kalamaki",
+  "aka": [
+   "Καλαμάκι-Πάστρα",
+   "Καλαμάκι 1",
+   "Kalamaki 1",
+   "Καλαμάκι 2",
+   "Kalamaki 2",
+   "Καλαμακίου",
+   "Kalamakiou"
+  ]
+ },
+ "cluster20-003146": {
+  "name_el": "Τυφλός",
+  "name_en": "Tyflos",
+  "aka": []
+ },
+ "cluster20-003147": {
+  "name_el": null,
+  "name_en": "Μαύρη Μύτη",
+  "aka": []
+ },
+ "cluster20-003156": {
+  "name_el": "Χαλικούνα",
+  "name_en": "Chalikouna",
+  "aka": [
+   "Χαλικούνας",
+   "Chalikounas",
+   "Χαλικούνας 2",
+   "Χάλκουνας",
+   "Chalkounas"
+  ]
+ },
+ "cluster20-003160": {
+  "name_el": "Παπιάς",
+  "name_en": "Papias",
+  "aka": [
+   "Άγιος Βασίλειος",
+   "Λιμένας",
+   "Άγιος Βασίλειος Λιμένα"
+  ]
+ },
+ "cluster20-003161": {
+  "name_el": "Μικρό Λιχαδονήσι",
+  "name_en": "Mikro Lichadonisi",
+  "aka": []
+ },
+ "cluster20-003167": {
+  "name_el": "Λαόπετρα",
+  "name_en": "Laopetra",
+  "aka": [
+   "Μανέση",
+   "Emerald"
+  ]
+ },
+ "cluster20-003175": {
+  "name_el": "Μπενίτσες",
+  "name_en": "Benitses",
+  "aka": []
+ },
+ "cluster20-003181": {
+  "name_el": "Μαρμάρι",
+  "name_en": "Marmari",
+  "aka": []
+ },
+ "cluster20-003185": {
+  "name_el": null,
+  "name_en": "SunRose Aparthotel Acharavi Corfu - Kerkyra",
+  "aka": []
+ },
+ "cluster20-003202": {
+  "name_el": "Αχινός",
+  "name_en": "Achinos",
+  "aka": [
+   "Pefkokefali"
+  ]
+ },
+ "cluster20-003205": {
+  "name_el": "Ακουασάντα",
+  "name_en": "Acquasanta",
+  "aka": []
+ },
+ "cluster20-003267": {
+  "name_el": "Καμάρι",
+  "name_en": "Kamari",
+  "aka": [
+   "Καμάρα Καμαρίου",
+   "Nostos",
+   "Avis"
+  ]
+ },
+ "cluster20-003268": {
+  "name_el": "Ακρογιάλι",
+  "name_en": "Akrogiali",
+  "aka": []
+ },
+ "cluster20-003280": {
+  "name_el": "Μουτσούνα Απειράνθου",
+  "name_en": "Moutsouna Apeiranthou",
+  "aka": []
+ },
+ "cluster20-003283": {
+  "name_el": "Κέιπ Δράστης",
+  "name_en": "Cape Drastis",
+  "aka": []
+ },
+ "cluster20-003294": {
+  "name_el": "Γκολφ Ρέζιντενσις ΑΕΞΤΕ",
+  "name_en": "Golf Residences AEXTE",
+  "aka": []
+ },
+ "cluster20-003297": {
+  "name_el": "Θέρος Μεγαλοχωρίου",
+  "name_en": "Theros Megalochoriou",
+  "aka": [
+   "Βασιλική Λέσχη Σαντορίνη"
+  ]
+ },
+ "cluster20-003300": {
+  "name_el": "Παναγοπούλα",
+  "name_en": "Panagopoula",
+  "aka": [
+   "Catamaran Panagopoula"
+  ]
+ },
+ "cluster20-003309": {
+  "name_el": null,
+  "name_en": "Blue Lagoon Village",
+  "aka": []
+ },
+ "cluster20-003313": {
+  "name_el": "Ακρογιάλι",
+  "name_en": "Akrogiali",
+  "aka": []
+ },
+ "cluster20-003317": {
+  "name_el": "Ορκός Βίβλου",
+  "name_en": "Orkos Vivlou",
+  "aka": [
+   "Orkos"
+  ]
+ },
+ "cluster20-003334": {
+  "name_el": "Ποριά",
+  "name_en": "Poria",
+  "aka": []
+ },
+ "cluster20-003337": {
+  "name_el": "Πλάκα",
+  "name_en": "Plaka",
+  "aka": [
+   "Πλάκα Αγίου Αρσενίου",
+   "Πλάκα Νάξου 1",
+   "Πλάκα Νάξου 3",
+   "Πλάκα Νάξου 4",
+   "Πλάκα Νάξου 5",
+   "Πλάκα Νάξου 11",
+   "Πλάκα Νάξου ΔΠΛ24"
+  ]
+ },
+ "cluster20-003342": {
+  "name_el": "Διακοπτό",
+  "name_en": "Diakopto",
+  "aka": [
+   "Αγίου Νικολάου Διακοπτού"
+  ]
+ },
+ "cluster20-003347": {
+  "name_el": "Θέση Λιμνοθάλασσα Βερβερόντας",
+  "name_en": "Thesi Limnothalassa Ververontas",
+  "aka": []
+ },
+ "cluster20-003348": {
+  "name_el": null,
+  "name_en": "Blue",
+  "aka": []
+ },
+ "cluster20-003367": {
+  "name_el": "Καστράκι Σαγκρίου",
+  "name_en": "Kastraki Sagkriou",
+  "aka": [
+   "Ακτή Καστράκι"
+  ]
+ },
+ "cluster20-003368": {
+  "name_el": null,
+  "name_en": "Lakitira",
+  "aka": [
+   "Porto Bello"
+  ]
+ },
+ "cluster20-003371": {
+  "name_el": "Πυργάκι Δαμαριώνα",
+  "name_en": "Pyrgaki Damariona",
+  "aka": [
+   "Ψιλή Άμμος Πυργάκι"
+  ]
+ },
+ "cluster20-003373": {
+  "name_el": "Καστράκι Σαγκρίου",
+  "name_en": "Kastraki Sagkriou",
+  "aka": [
+   "Glyfada"
+  ]
+ },
+ "cluster20-003417": {
+  "name_el": "Ελαιοχώρι",
+  "name_en": "Elaiochori",
+  "aka": []
+ },
+ "cluster20-003418": {
+  "name_el": "Άβυθος",
+  "name_en": "Avythos",
+  "aka": [
+   "Μεγάλη Πέτρα",
+   "Megali Petra"
+  ]
+ },
+ "cluster20-003429": {
+  "name_el": null,
+  "name_en": "Bora Bora",
+  "aka": []
+ },
+ "cluster20-003432": {
+  "name_el": null,
+  "name_en": "Episkopos",
+  "aka": []
+ },
+ "cluster20-003437": {
+  "name_el": "Λιμανάκι Κεκρίνης",
+  "name_en": "Limanaki Kekrinis",
+  "aka": [
+   "Λιμανάκι Κερκίνης"
+  ]
+ },
+ "cluster20-003446": {
+  "name_el": "Βράχος",
+  "name_en": "Vrachos",
+  "aka": []
+ },
+ "cluster20-003455": {
+  "name_el": null,
+  "name_en": "Chomati",
+  "aka": [
+   "Akti Peroulia"
+  ]
+ },
+ "cluster20-003464": {
+  "name_el": null,
+  "name_en": null,
+  "aka": []
+ },
+ "cluster20-003468": {
+  "name_el": "Οικισμός Κάστου",
+  "name_en": "Oikismos Kastou",
+  "aka": []
+ },
+ "cluster20-003475": {
+  "name_el": "Ράμνος",
+  "name_en": "Ramnos",
+  "aka": [
+   "Παράδεισος Πήλιο"
+  ]
+ },
+ "cluster20-003476": {
+  "name_el": null,
+  "name_en": null,
+  "aka": []
+ },
+ "cluster20-003478": {
+  "name_el": "Αχλαδοχώρι",
+  "name_en": "Achladochori",
+  "aka": []
+ },
+ "cluster20-003482": {
+  "name_el": "Παλαιάπολη",
+  "name_en": "Palaiapoli",
+  "aka": [
+   "Palaiopoli",
+   "Παλαιόπολη"
+  ]
+ },
+ "cluster20-003483": {
+  "name_el": "Κάτω Γατζέα",
+  "name_en": "Kato Gatzea",
+  "aka": []
+ },
+ "cluster20-003489": {
+  "name_el": "Αλογόπορος",
+  "name_en": "Alogoporos",
+  "aka": []
+ },
+ "cluster20-003490": {
+  "name_el": "Βιβάρι",
+  "name_en": "Vivari",
+  "aka": [
+   "Συκίτσα Βιβαρίου",
+   "Sykitsa Vivariou"
+  ]
+ },
+ "cluster20-003494": {
+  "name_el": null,
+  "name_en": "Island Trizonia",
+  "aka": []
+ },
+ "cluster20-003504": {
+  "name_el": "Φρεαττύδα",
+  "name_en": "Freattyda",
+  "aka": []
+ },
+ "cluster20-003519": {
+  "name_el": "Δηνάκ",
+  "name_en": "Dinak",
+  "aka": [
+   "Kastoria Beach Volley Club"
+  ]
+ },
+ "cluster20-003526": {
+  "name_el": "Παλιόκαμπος Άγιος Ανδρέας",
+  "name_en": "Paliokampos Agios Andreas",
+  "aka": []
+ },
+ "cluster20-003532": {
+  "name_el": "Αδ. Παπαϊωάννου-Αγ. Γεώργιος Κουνουπίτσα Μεθάνων",
+  "name_en": "Ad. Papaioannou-Ag. Georgios Kounoupitsa Methanon",
+  "aka": []
+ },
+ "cluster20-003534": {
+  "name_el": null,
+  "name_en": "Negroponte Resort Eretria",
+  "aka": []
+ },
+ "cluster20-003555": {
+  "name_el": "Κρυονέρι-Καβουρότρυπα",
+  "name_en": "Kryoneri-Kavourotrypa",
+  "aka": []
+ },
+ "cluster20-003557": {
+  "name_el": "Κιάτο",
+  "name_en": "Kiato",
+  "aka": [
+   "Praxilio",
+   "Κάτω Διμήνιο",
+   "Kato Diminio",
+   "Δυτική Διμήνιο",
+   "Dytiki Diminio"
+  ]
+ },
+ "cluster20-003569": {
+  "name_el": null,
+  "name_en": null,
+  "aka": []
+ },
+ "cluster20-003570": {
+  "name_el": "Εσταυρωμένος",
+  "name_en": "Estavromenos",
+  "aka": [
+   "Αρίνα",
+   "Κόκκινη Χάνι",
+   "Βαθειανός Κάμπος",
+   "Bikini",
+   "Makai",
+   "Tobrouk"
+  ]
+ },
+ "cluster20-003572": {
+  "name_el": "Αργάσι",
+  "name_en": "Argasi",
+  "aka": []
+ },
+ "cluster20-003581": {
+  "name_el": "Πογωνιά Παλαίρου",
+  "name_en": "Pogonia Palairou",
+  "aka": []
+ },
+ "cluster20-003586": {
+  "name_el": "Βρύση Ψευτή",
+  "name_en": "Vrysi Psefti",
+  "aka": [
+   "Tropical Triton",
+   "Tropical Orion"
+  ]
+ },
+ "cluster20-003591": {
+  "name_el": "Χαλιώτη – ΔΕΗ",
+  "name_en": "Chalioti - DEH",
+  "aka": []
+ },
+ "cluster20-003598": {
+  "name_el": "Κυανή Ακτή",
+  "name_en": "Kiani Akti",
+  "aka": [
+   "Χρυσή Ακτή",
+   "Golden Beach",
+   "Ευκάλυπτοι",
+   "Κυανή Ακτή 1",
+   "Kyani Akti 1",
+   "Κυανή Ακτή 2",
+   "Kyani Akti 2"
+  ]
+ },
+ "cluster20-003601": {
+  "name_el": null,
+  "name_en": "Jungle Paradise",
+  "aka": []
+ },
+ "cluster20-003603": {
+  "name_el": "Κουτσούρι",
+  "name_en": "Koutsouri",
+  "aka": []
+ },
+ "cluster20-003618": {
+  "name_el": "Απάντημα",
+  "name_en": "Apantima",
+  "aka": []
+ },
+ "cluster20-003620": {
+  "name_el": "Χαράνι",
+  "name_en": "Charani",
+  "aka": []
+ },
+ "cluster20-003625": {
+  "name_el": null,
+  "name_en": null,
+  "aka": []
+ },
+ "cluster20-003627": {
+  "name_el": "Ποταμός Αχέρων",
+  "name_en": "Potamos Acheron",
+  "aka": [
+   "Ποταμός Αχέροντας"
+  ]
+ },
+ "cluster20-003632": {
+  "name_el": null,
+  "name_en": "Xiropotamos",
+  "aka": []
+ },
+ "cluster20-003633": {
+  "name_el": "Πάλαιρος",
+  "name_en": "Palairos",
+  "aka": [
+   "Ακτή Παλαίρου",
+   "Akti Palairou"
+  ]
+ },
+ "cluster20-003669": {
+  "name_el": "Όρμος Ζώσκα",
+  "name_en": "Ormos Zoska",
+  "aka": []
+ },
+ "cluster20-003684": {
+  "name_el": "Αργάσι",
+  "name_en": "Argasi",
+  "aka": []
+ },
+ "cluster20-003694": {
+  "name_el": "Νέα Κερδύλλια",
+  "name_en": "Nea Kerdyllia",
+  "aka": []
+ },
+ "cluster20-003696": {
+  "name_el": "Άλισσος",
+  "name_en": "Alissos",
+  "aka": [
+   "Ταραντέλλα",
+   "Tarantella",
+   "Castella"
+  ]
+ },
+ "cluster20-003703": {
+  "name_el": "Αλύπα",
+  "name_en": "Alipa",
+  "aka": [
+   "Αλύπα 2",
+   "Παλαιοκαστρίτσα",
+   "Palaiokastritsa Anatolika",
+   "Παλαιοκαστρίτσα Ανατολικά",
+   "Palaiokastritsa Dytika",
+   "Παλαιοκαστρίτσα Δυτικά",
+   "Άγιος Σπυρίδωνας"
+  ]
+ },
+ "cluster20-003709": {
+  "name_el": "Κολυμπάρι",
+  "name_en": "Kolympari",
+  "aka": [
+   "Κολυμβάρι Χρηστίδη -Σχετάκη - Κανατάκης ΟΕ ΘΜΑ Σημείο 3",
+   "Κολυμπάρια – Ραπανιανά",
+   "Kolymparia - Rapaniana"
+  ]
+ },
+ "cluster20-003712": {
+  "name_el": null,
+  "name_en": "Tiny Pink Sand",
+  "aka": []
+ },
+ "cluster20-003722": {
+  "name_el": null,
+  "name_en": null,
+  "aka": []
+ },
+ "cluster20-003745": {
+  "name_el": "Νέος Μαρμαράς",
+  "name_en": "Neos Marmaras",
+  "aka": [
+   "Ν. Μαρμαράς",
+   "N. Marmaras",
+   "Fun",
+   "Kohi",
+   "Πόρτο Καρράς 2",
+   "Porto Karras 2"
+  ]
+ },
+ "cluster20-003758": {
+  "name_el": "Φαλάσαρνα",
+  "name_en": "Falasarna",
+  "aka": [
+   "Playa Paraiso",
+   "Φαλάσαρνα-Πεταλίδα",
+   "Falasarna-Petalida",
+   "Karkatsouli",
+   "Φαλάσαρνα - Αγία Παρασκευή"
+  ]
+ },
+ "cluster20-003795": {
+  "name_el": null,
+  "name_en": "Komitsa",
+  "aka": []
+ },
+ "cluster20-003802": {
+  "name_el": null,
+  "name_en": null,
+  "aka": []
+ },
+ "cluster20-003822": {
+  "name_el": null,
+  "name_en": "DeepBlue",
+  "aka": []
+ },
+ "cluster20-003824": {
+  "name_el": null,
+  "name_en": "Pustușag",
+  "aka": []
+ },
+ "cluster20-003832": {
+  "name_el": null,
+  "name_en": "Plakia",
+  "aka": []
+ },
+ "cluster20-003858": {
+  "name_el": "Χρουσώ",
+  "name_en": "Chrouso",
+  "aka": [
+   "Παλιούρι-Καναπίτσα",
+   "Παλιούρι",
+   "Χρουσό Παλιουρίου",
+   "Paliouri",
+   "Ξενία Παλιουρίου",
+   "Golden Beach",
+   "Λευκή Άμμος",
+   "Hroussou"
+  ]
+ },
+ "cluster20-003863": {
+  "name_el": "Στραβά",
+  "name_en": "Strava",
+  "aka": [
+   "Πλαζ Αλκυονίδας",
+   "Πλαζ Αλκυονίδος"
+  ]
+ },
+ "cluster20-003866": {
+  "name_el": null,
+  "name_en": "White House",
+  "aka": []
+ },
+ "cluster20-003868": {
+  "name_el": "Χαλικουνάς 3",
+  "name_en": "Chalikounas 3",
+  "aka": []
+ },
+ "cluster20-003873": {
+  "name_el": "Παλαιρός",
+  "name_en": "Palairos",
+  "aka": []
+ },
+ "cluster20-003882": {
+  "name_el": "Καμάρες",
+  "name_en": "Kamares",
+  "aka": [
+   "Πλατύς Γιαλός",
+   "Platys Gialos",
+   "Platis Gialos",
+   "Πλατύς Γυαλός",
+   "Πλατύς Γιαλλός"
+  ]
+ },
+ "cluster20-003884": {
+  "name_el": null,
+  "name_en": null,
+  "aka": []
+ },
+ "cluster20-003885": {
+  "name_el": "Νταμούλη Πάρου",
+  "name_en": "Damuli Parou",
+  "aka": [
+   "Damuli"
+  ]
+ },
+ "cluster20-003888": {
+  "name_el": "Ιερισσός",
+  "name_en": "Ierissos",
+  "aka": [
+   "Δημοτική Πλαζ 3",
+   "Πλαζ Ιερισσός",
+   "Δημοτική Πλαζ 2",
+   "Καρνάγιο",
+   "Δημοτική Πλαζ 1"
+  ]
+ },
+ "cluster20-003894": {
+  "name_el": "Κυανή Ακτή",
+  "name_en": "Kyani Akti",
+  "aka": [
+   "Ματσίκι",
+   "Bratsaki",
+   "Λογκαρίου"
+  ]
+ },
+ "cluster20-003896": {
+  "name_el": "Μεγάλου Καβουριού",
+  "name_en": "Megalou Kavouriou",
+  "aka": [
+   "Μεγάλο Καβούρι Νότια"
+  ]
+ },
+ "cluster20-003899": {
+  "name_el": "Αργασίου",
+  "name_en": "Argasiou",
+  "aka": []
+ },
+ "cluster20-003906": {
+  "name_el": "Περιβόλι-Καλυβιώτη",
+  "name_en": "Perivoli-Kalyvioti",
+  "aka": []
+ },
+ "cluster20-003915": {
+  "name_el": null,
+  "name_en": "Vatera",
+  "aka": []
+ },
+ "cluster20-003953": {
+  "name_el": "Γιαλάκι",
+  "name_en": "Gialaki",
+  "aka": [
+   "Gialaki 2",
+   "Γυαλάκι 2"
+  ]
+ },
+ "cluster20-003955": {
+  "name_el": "Νικήτη",
+  "name_en": "Nikiti",
+  "aka": [
+   "Ελιά 1",
+   "Elia 1",
+   "Κοβιού-3",
+   "Ελιά- Νικήτη",
+   "Elia- Nikiti",
+   "Περιγιάλι",
+   "Perigiali"
+  ]
+ },
+ "cluster20-003967": {
+  "name_el": null,
+  "name_en": "Mount Athos Ierissou",
+  "aka": []
+ },
+ "cluster20-004017": {
+  "name_el": "Πετρέλαια",
+  "name_en": "Petrelaia",
+  "aka": [
+   "Λουτρά Κυλλήνης – Κάστρο 2",
+   "Loutra Kyllinis - Kastro 2",
+   "Καλαμιάς Αριστερά Καντίνας",
+   "Καλαμιάς Δεξιά Καντίνας",
+   "Καλαμιάς Ομπρέλες",
+   "Λουτρά Κυλλήνης",
+   "Loutra Kyllinis",
+   "Loutra Kyllinis - Kastro 1",
+   "Λουτρά Κυλλήνης – Κάστρο 1"
+  ]
+ },
+ "cluster20-004021": {
+  "name_el": "Τημένιο",
+  "name_en": "Timenio",
+  "aka": [
+   "Αλμυρός – Τημένιο",
+   "Almyros - Timenio",
+   "Μπλε Ακτή Seaside"
+  ]
+ },
+ "cluster20-004072": {
+  "name_el": "Ριτσά",
+  "name_en": "Ritsa",
+  "aka": [
+   "Καρδαμύλη – Ρίτσα",
+   "Kardamyli - Ritsa",
+   "Καρδαμύλη",
+   "Ριτσά Καρδαμύλης",
+   "Ριτσά 2η"
+  ]
+ },
+ "cluster20-004082": {
+  "name_el": "Αστέρας Γλυφάδας",
+  "name_en": "Asteras Glyfadas",
+  "aka": [
+   "Asteria Glyfadas",
+   "Asteras Beach Γλυφαδας"
+  ]
+ },
+ "cluster20-004086": {
+  "name_el": "Αστέρας",
+  "name_en": "Asteras",
+  "aka": [
+   "Βουλιαγμένη",
+   "Vouliagmeni",
+   "Ακτή Βουλιαγμένης",
+   "Αστέρας Βουλιαγμένης",
+   "Asteras Vouliagmenis",
+   "Astir"
+  ]
+ },
+ "cluster20-004092": {
+  "name_el": "Λαγονήσι",
+  "name_en": "Lagonisi",
+  "aka": [
+   "Λαγονήσι – Mediterraneo 1",
+   "Lagonisi - Mediterraneo 1",
+   "Λαγονήσι – Mediterraneo 2",
+   "Lagonisi - Mediterraneo 2",
+   "Λαγονήσι – Grand Beach",
+   "Lagonisi - Grand Beach",
+   "Grand Beach Lagonissi"
+  ]
+ },
+ "cluster20-004162": {
+  "name_el": "Νάτο",
+  "name_en": "Nato",
+  "aka": []
+ },
+ "cluster20-004167": {
+  "name_el": "Χαλιώτη – ΔΕΗ",
+  "name_en": "Chalioti - DEI",
+  "aka": []
+ },
+ "cluster20-004182": {
+  "name_el": null,
+  "name_en": "Xenia - Vigla 2",
+  "aka": []
+ },
+ "cluster20-004191": {
+  "name_el": null,
+  "name_en": "Psiriara",
+  "aka": []
+ },
+ "cluster20-004240": {
+  "name_el": "Μίνως Παλάς",
+  "name_en": "Minos Palas",
+  "aka": [
+   "Άγιος Νικόλαος 1",
+   "Agios Nikolaos 1",
+   "Άγιος Νικόλαος 2",
+   "Agios Nikolaos 2"
+  ]
+ },
+ "cluster20-004253": {
+  "name_el": "Ανάληψη",
+  "name_en": "Analipsi",
+  "aka": [
+   "Μακρύγιαλος",
+   "Μακρύ-Γιαλός"
+  ]
+ },
+ "cluster20-004263": {
+  "name_el": "Κυανή Ακτή",
+  "name_en": "Kyani Akti",
+  "aka": [
+   "Blue Coast",
+   "Kiani",
+   "Κολάτσος",
+   "Kolatsos",
+   "Γλάρος",
+   "Ellotis"
+  ]
+ },
+ "cluster20-004265": {
+  "name_el": "Γλάρος",
+  "name_en": "Glaros",
+  "aka": [
+   "Άγιοι Απόστολοι",
+   "Agioi Apostoloi - EOT Dytika",
+   "Iguana",
+   "Agioi Apostoloi - EOT Anatolika",
+   "Eastern Gulf",
+   "Καλαμάκι",
+   "Kalamaki",
+   "Sunset"
+  ]
+ },
+ "cluster20-004281": {
+  "name_el": "Τραχήλος",
+  "name_en": "Trachilos",
+  "aka": [
+   "Gramvousa - Biglia",
+   "Γραμβούσα - Βιγλιά"
+  ]
+ },
+ "cluster20-004334": {
+  "name_el": "Οναρ",
+  "name_en": "Onar",
+  "aka": [
+   "Παναγιά",
+   "Panagia",
+   "Φτελιό",
+   "Ftelio"
+  ]
+ },
+ "cluster20-004377": {
+  "name_el": "Ναοκ",
+  "name_en": "NAOK",
+  "aka": []
+ },
+ "cluster20-004380": {
+  "name_el": null,
+  "name_en": "Canal D'Amour",
+  "aka": []
+ },
+ "cluster20-004389": {
+  "name_el": "Δασιά 2",
+  "name_en": "Dasia 2",
+  "aka": [
+   "Δασσιά",
+   "Dassia"
+  ]
+ },
+ "cluster20-004407": {
+  "name_el": "Αθέρας",
+  "name_en": "Atheras",
+  "aka": [
+   "Αθέρας Port Atheras"
+  ]
+ },
+ "cluster20-004411": {
+  "name_el": null,
+  "name_en": "Nikiana",
+  "aka": [
+   "Nikiana 1"
+  ]
+ },
+ "cluster20-004451": {
+  "name_el": "Νέα Αρτάκη",
+  "name_en": "Nea Artaki",
+  "aka": []
+ },
+ "cluster20-004460": {
+  "name_el": "Μοτέλ Λεβέντη",
+  "name_en": "Motel Leventi",
+  "aka": []
+ },
+ "cluster20-004474": {
+  "name_el": null,
+  "name_en": null,
+  "aka": []
+ },
+ "cluster20-004605": {
+  "name_el": null,
+  "name_en": "Tropical",
+  "aka": []
+ },
+ "cluster20-004609": {
+  "name_el": null,
+  "name_en": "Pebblestone",
+  "aka": []
+ },
+ "cluster20-004613": {
+  "name_el": "Μύλος",
+  "name_en": "Mylos",
+  "aka": []
+ },
+ "cluster20-004620": {
+  "name_el": "Αγία Μαρίνα",
+  "name_en": "Agia Marina",
+  "aka": []
+ },
+ "cluster20-004623": {
+  "name_el": "Αλωνάκι",
+  "name_en": "Alonaki Bay",
+  "aka": []
+ },
+ "cluster20-004632": {
+  "name_el": "Μάλτας",
+  "name_en": "Maltas",
+  "aka": []
+ },
+ "cluster20-004633": {
+  "name_el": "Αμμούα",
+  "name_en": "Ammoua",
+  "aka": [
+   "Amoua"
+  ]
+ },
+ "cluster20-004657": {
+  "name_el": null,
+  "name_en": null,
+  "aka": []
+ },
+ "cluster20-004659": {
+  "name_el": "Λίμνες",
+  "name_en": "Limnes",
+  "aka": []
+ },
+ "cluster20-004676": {
+  "name_el": "Χιλιαδού",
+  "name_en": "Chiliadou",
+  "aka": [
+   "Hiliadou Nudist",
+   "Ξιλιάδο"
+  ]
+ },
+ "cluster20-004683": {
+  "name_el": null,
+  "name_en": "Noname",
+  "aka": []
+ },
+ "cluster20-004684": {
+  "name_el": null,
+  "name_en": null,
+  "aka": []
+ },
+ "cluster20-004685": {
+  "name_el": null,
+  "name_en": null,
+  "aka": []
+ },
+ "cluster20-004686": {
+  "name_el": null,
+  "name_en": "Sotos Grotto",
+  "aka": []
+ },
+ "cluster20-004689": {
+  "name_el": "Κάβος",
+  "name_en": "Kavos",
+  "aka": [
+   "Αφαίας",
+   "Afaias",
+   "Αγία Μαρίνα Βόρεια",
+   "Agia Marina Voreia",
+   "Sotos Grotto",
+   "Kiriakakis"
+  ]
+ },
+ "cluster20-004698": {
+  "name_el": "Καμινάκι",
+  "name_en": "Kaminaki",
+  "aka": []
+ },
+ "cluster20-004700": {
+  "name_el": null,
+  "name_en": "Maoyna",
+  "aka": []
+ },
+ "cluster20-004707": {
+  "name_el": null,
+  "name_en": "Kite Surfing",
+  "aka": [
+   "Drepano Kite Surfer's Paradise"
+  ]
+ },
+ "cluster20-004712": {
+  "name_el": "Λιμανάκια",
+  "name_en": "Limanakia",
+  "aka": []
+ },
+ "cluster20-004717": {
+  "name_el": null,
+  "name_en": "Highly Salted Sea",
+  "aka": []
+ },
+ "cluster20-004721": {
+  "name_el": null,
+  "name_en": "Velonas",
+  "aka": []
+ },
+ "cluster20-004728": {
+  "name_el": null,
+  "name_en": "Kalo Avlaki",
+  "aka": []
+ },
+ "cluster20-004733": {
+  "name_el": null,
+  "name_en": "Skliri",
+  "aka": []
+ },
+ "cluster20-004756": {
+  "name_el": null,
+  "name_en": "Tokmakia",
+  "aka": []
+ },
+ "cluster20-004760": {
+  "name_el": null,
+  "name_en": "Monastiraki",
+  "aka": []
+ },
+ "cluster20-004769": {
+  "name_el": null,
+  "name_en": "Little Polis",
+  "aka": []
+ },
+ "cluster20-004774": {
+  "name_el": "Σαψιλά",
+  "name_en": "Sapsila",
+  "aka": []
+ },
+ "cluster20-004775": {
+  "name_el": null,
+  "name_en": "Aspri",
+  "aka": []
+ },
+ "cluster20-004776": {
+  "name_el": null,
+  "name_en": "Small",
+  "aka": []
+ },
+ "cluster20-004777": {
+  "name_el": null,
+  "name_en": "Nikiana",
+  "aka": [
+   "Nikiana 1",
+   "Nikiana South",
+   "Breath of Zorbas",
+   "Daniel",
+   "Secret A",
+   "Secret B"
+  ]
+ },
+ "cluster20-004781": {
+  "name_el": null,
+  "name_en": "Dymitry",
+  "aka": []
+ },
+ "cluster20-004784": {
+  "name_el": null,
+  "name_en": "Ani",
+  "aka": []
+ },
+ "cluster20-004808": {
+  "name_el": null,
+  "name_en": "White",
+  "aka": []
+ },
+ "cluster20-004809": {
+  "name_el": null,
+  "name_en": "Fkk",
+  "aka": [
+   "Nudist Alikis"
+  ]
+ },
+ "cluster20-004812": {
+  "name_el": null,
+  "name_en": "Voulolimni",
+  "aka": []
+ },
+ "cluster20-004816": {
+  "name_el": null,
+  "name_en": "Korakonisi",
+  "aka": []
+ },
+ "cluster20-004819": {
+  "name_el": null,
+  "name_en": null,
+  "aka": []
+ },
+ "cluster20-004822": {
+  "name_el": "Λυκοποριά",
+  "name_en": "Lykoporia",
+  "aka": []
+ },
+ "cluster20-004830": {
+  "name_el": null,
+  "name_en": null,
+  "aka": []
+ },
+ "cluster20-004850": {
+  "name_el": null,
+  "name_en": "Skafi",
+  "aka": []
+ },
+ "cluster20-004863": {
+  "name_el": "Χαλιγκαν",
+  "name_en": "Chaligkan",
+  "aka": [
+   "Αγία Θυμιά"
+  ]
+ },
+ "cluster20-004865": {
+  "name_el": "Φυκιάδας",
+  "name_en": "Fykiadas",
+  "aka": []
+ },
+ "cluster20-004880": {
+  "name_el": null,
+  "name_en": "Karavi",
+  "aka": []
+ },
+ "cluster20-004891": {
+  "name_el": null,
+  "name_en": "Skafi",
+  "aka": []
+ },
+ "cluster20-004904": {
+  "name_el": null,
+  "name_en": "Alimounda",
+  "aka": []
+ },
+ "cluster20-004914": {
+  "name_el": null,
+  "name_en": "Ionio",
+  "aka": [
+   "Banana"
+  ]
+ },
+ "cluster20-004919": {
+  "name_el": null,
+  "name_en": null,
+  "aka": []
+ },
+ "cluster20-004938": {
+  "name_el": null,
+  "name_en": "Antinioti West",
+  "aka": []
+ },
+ "cluster20-004940": {
+  "name_el": null,
+  "name_en": "Arias",
+  "aka": []
+ },
+ "cluster20-004974": {
+  "name_el": "Καρβουνόλακας",
+  "name_en": "Karvounolakas",
+  "aka": []
+ },
+ "cluster20-004988": {
+  "name_el": null,
+  "name_en": "Parthenomythos",
+  "aka": []
+ },
+ "cluster20-004989": {
+  "name_el": "Μύρτος",
+  "name_en": "Myrtos",
+  "aka": []
+ },
+ "cluster20-004997": {
+  "name_el": null,
+  "name_en": "Trygi",
+  "aka": []
+ },
+ "cluster20-004998": {
+  "name_el": null,
+  "name_en": "Trygi",
+  "aka": []
+ },
+ "cluster20-005014": {
+  "name_el": null,
+  "name_en": "Southern Cove",
+  "aka": []
+ },
+ "cluster20-005034": {
+  "name_el": "Φοίνικας",
+  "name_en": "Finikas",
+  "aka": []
+ },
+ "cluster20-005051": {
+  "name_el": null,
+  "name_en": "Aghios Pavlos",
+  "aka": []
+ },
+ "cluster20-005052": {
+  "name_el": "Ζωής",
+  "name_en": "Zois",
+  "aka": []
+ },
+ "cluster20-005107": {
+  "name_el": null,
+  "name_en": "Athiki",
+  "aka": []
+ },
+ "cluster20-005114": {
+  "name_el": "Κάντια",
+  "name_en": "Kantia",
+  "aka": [
+   "Κάντια 1",
+   "Kantia 1",
+   "Χανδάκια",
+   "Βάλτος"
+  ]
+ },
+ "cluster20-005116": {
+  "name_el": null,
+  "name_en": "Katarti",
+  "aka": []
+ },
+ "cluster20-005117": {
+  "name_el": null,
+  "name_en": "Eftalou",
+  "aka": []
+ },
+ "cluster20-005124": {
+  "name_el": "Άγιος Ιωάννης",
+  "name_en": "Agios Ioannis",
+  "aka": [
+   "Le Kris"
+  ]
+ },
+ "cluster20-005166": {
+  "name_el": null,
+  "name_en": null,
+  "aka": []
+ },
+ "cluster20-005170": {
+  "name_el": "Λεχούνι",
+  "name_en": "Lechouni",
+  "aka": [
+   "Νικοτσάρα",
+   "Nikotsara"
+  ]
+ },
+ "cluster20-005171": {
+  "name_el": null,
+  "name_en": "Rakopotamos",
+  "aka": []
+ },
+ "cluster20-005182": {
+  "name_el": null,
+  "name_en": "Paradise",
+  "aka": []
+ },
+ "cluster20-005207": {
+  "name_el": null,
+  "name_en": "Miliondas",
+  "aka": []
+ },
+ "cluster20-005222": {
+  "name_el": null,
+  "name_en": "Kouloura",
+  "aka": []
+ },
+ "cluster20-005239": {
+  "name_el": null,
+  "name_en": "Kendrodasos",
+  "aka": []
+ },
+ "cluster20-005265": {
+  "name_el": "Πέρδικας",
+  "name_en": "Perdikas",
+  "aka": []
+ },
+ "cluster20-005266": {
+  "name_el": "ΚΑΠΕ",
+  "name_en": "KAPE",
+  "aka": []
+ },
+ "cluster20-005283": {
+  "name_el": null,
+  "name_en": "Triopetra",
+  "aka": []
+ },
+ "cluster20-005315": {
+  "name_el": null,
+  "name_en": "Abra Cat Abra",
+  "aka": []
+ },
+ "cluster20-005321": {
+  "name_el": "Άμπελος",
+  "name_en": "Ampelos",
+  "aka": [
+   "Chiona",
+   "Γεροντόλακος",
+   "Gerondolakkos",
+   "Άργιλος",
+   "Argilos",
+   "Βουρλιά",
+   "Vourlia"
+  ]
+ },
+ "cluster20-005331": {
+  "name_el": "Άμμος",
+  "name_en": "Ammos",
+  "aka": []
+ },
+ "cluster20-005337": {
+  "name_el": null,
+  "name_en": "Timios Stavros",
+  "aka": []
+ },
+ "cluster20-005348": {
+  "name_el": null,
+  "name_en": "Karynta",
+  "aka": []
+ },
+ "cluster20-005353": {
+  "name_el": null,
+  "name_en": "Tripotamos",
+  "aka": []
+ },
+ "cluster20-005362": {
+  "name_el": null,
+  "name_en": "Climati",
+  "aka": []
+ },
+ "cluster20-005413": {
+  "name_el": "Σίσια",
+  "name_en": "Sisia",
+  "aka": []
+ },
+ "cluster20-005433": {
+  "name_el": null,
+  "name_en": "Zorbas",
+  "aka": []
+ },
+ "cluster20-005439": {
+  "name_el": "Φούρκα",
+  "name_en": "Fourka",
+  "aka": [
+   "Φούρκας",
+   "Fourkas",
+   "Σκάλα Φούρκας",
+   "Παλιούρι 2",
+   "Κόλπος Καναπιτσας"
+  ]
+ },
+ "cluster20-005442": {
+  "name_el": null,
+  "name_en": "Siviri",
+  "aka": []
+ },
+ "cluster20-005445": {
+  "name_el": null,
+  "name_en": "Alonaki",
+  "aka": []
+ },
+ "cluster20-005451": {
+  "name_el": null,
+  "name_en": "Handaki",
+  "aka": []
+ },
+ "cluster20-005452": {
+  "name_el": null,
+  "name_en": "Aspres",
+  "aka": []
+ },
+ "cluster20-005462": {
+  "name_el": null,
+  "name_en": "Kato Mezapos",
+  "aka": []
+ },
+ "cluster20-005469": {
+  "name_el": "Καλαμίτσι",
+  "name_en": "Kalamitsi",
+  "aka": [
+   "Γυμνιστιών Καλαμίτσι",
+   "Καλαμίτσι-1",
+   "Καλαμίτσι-4",
+   "Καλαμίτσι-5",
+   "Καλαμίτσι-6",
+   "Καλαμίτσι-7",
+   "Καλαμίτσι-8",
+   "Καλαμίτσι-9",
+   "Καλαμίτσι-10",
+   "Συκιάς 1"
+  ]
+ },
+ "cluster20-005479": {
+  "name_el": "Ψιλές Αμμούδες",
+  "name_en": "Psiles Amoudes",
+  "aka": [
+   "Achlada"
+  ]
+ },
+ "cluster20-005487": {
+  "name_el": null,
+  "name_en": null,
+  "aka": []
+ },
+ "cluster20-005492": {
+  "name_el": null,
+  "name_en": null,
+  "aka": []
+ },
+ "cluster20-005498": {
+  "name_el": null,
+  "name_en": "Vourvourou North",
+  "aka": []
+ },
+ "cluster20-005509": {
+  "name_el": null,
+  "name_en": "Tamara",
+  "aka": [
+   "Tamaris"
+  ]
+ },
+ "cluster20-005514": {
+  "name_el": null,
+  "name_en": "Likithos",
+  "aka": []
+ },
+ "cluster20-005520": {
+  "name_el": null,
+  "name_en": "Stiladari",
+  "aka": []
+ },
+ "cluster20-005551": {
+  "name_el": null,
+  "name_en": "Skandali",
+  "aka": []
+ },
+ "cluster20-005556": {
+  "name_el": null,
+  "name_en": "Avlonas",
+  "aka": []
+ },
+ "cluster20-005558": {
+  "name_el": null,
+  "name_en": "Panaghias Pighadheli",
+  "aka": []
+ },
+ "cluster20-005573": {
+  "name_el": null,
+  "name_en": "Diapori",
+  "aka": []
+ },
+ "cluster20-005575": {
+  "name_el": null,
+  "name_en": "Northern Coves",
+  "aka": []
+ },
+ "cluster20-005576": {
+  "name_el": null,
+  "name_en": "Central",
+  "aka": []
+ },
+ "cluster20-005579": {
+  "name_el": null,
+  "name_en": "Central",
+  "aka": []
+ },
+ "cluster20-005581": {
+  "name_el": null,
+  "name_en": "Central",
+  "aka": []
+ },
+ "cluster20-005632": {
+  "name_el": null,
+  "name_en": "Agios Sostis",
+  "aka": []
+ },
+ "cluster20-005639": {
+  "name_el": "Πλατιά Άμμος",
+  "name_en": "Platia Ammos",
+  "aka": []
+ },
+ "cluster20-005652": {
+  "name_el": "Τρεις Αμμουδιές",
+  "name_en": "Treis Ammoudies",
+  "aka": []
+ },
+ "cluster20-005692": {
+  "name_el": null,
+  "name_en": "Kokkina",
+  "aka": []
+ },
+ "cluster20-005699": {
+  "name_el": "Σπαραγγάριο",
+  "name_en": "Sparagario",
+  "aka": []
+ },
+ "cluster20-005752": {
+  "name_el": "Σιμουσί",
+  "name_en": "Simousi",
+  "aka": []
+ },
+ "cluster20-005761": {
+  "name_el": "Τούρκου Άμμος",
+  "name_en": "Tourkou Ammos",
+  "aka": []
+ },
+ "cluster20-005763": {
+  "name_el": "Καλάμια",
+  "name_en": "Kalamia",
+  "aka": []
+ },
+ "cluster20-005770": {
+  "name_el": null,
+  "name_en": "Eventual",
+  "aka": []
+ },
+ "cluster20-005774": {
+  "name_el": "Πάστελος",
+  "name_en": "Pastelos",
+  "aka": []
+ },
+ "cluster20-005785": {
+  "name_el": "Κάπη",
+  "name_en": "Kápi",
+  "aka": []
+ },
+ "cluster20-005789": {
+  "name_el": null,
+  "name_en": "Araki Nudist Side",
+  "aka": []
+ },
+ "cluster20-005792": {
+  "name_el": "Φύσσες",
+  "name_en": "Físses",
+  "aka": []
+ },
+ "cluster20-005810": {
+  "name_el": "Πικρή",
+  "name_en": "Pikri",
+  "aka": [
+   "Νερατζιώνα",
+   "Νεραντζιώνα-Παναγίτσα"
+  ]
+ },
+ "cluster20-005812": {
+  "name_el": "Κάτω Λάκκος",
+  "name_en": "Kato Lakkos",
+  "aka": [
+   "Σπήλαιο Κάτω Λάκκος"
+  ]
+ },
+ "cluster20-005826": {
+  "name_el": "Το Μολάκι",
+  "name_en": "To Molaki",
+  "aka": []
+ },
+ "cluster20-005841": {
+  "name_el": null,
+  "name_en": "Lagoon",
+  "aka": []
+ },
+ "cluster20-005842": {
+  "name_el": "Κακή Σκάλα",
+  "name_en": "Kaki Skala",
+  "aka": []
+ },
+ "cluster20-005846": {
+  "name_el": null,
+  "name_en": null,
+  "aka": [
+   "Дикий пляж"
+  ]
+ },
+ "cluster20-005849": {
+  "name_el": "Σουσούνια",
+  "name_en": "Sousounia",
+  "aka": []
+ },
+ "cluster20-005854": {
+  "name_el": "Χερόμυλος",
+  "name_en": "Cheromylos",
+  "aka": [
+   "Χερομύλι"
+  ]
+ },
+ "cluster20-005877": {
+  "name_el": "Λιμνιώνας",
+  "name_en": "Limnionas",
+  "aka": []
+ },
+ "cluster20-005898": {
+  "name_el": "Καρτερός",
+  "name_en": "Karteros",
+  "aka": [
+   "Ξενία",
+   "Τομπρούκ",
+   "Αμνισσός",
+   "Akti Municipal"
+  ]
+ },
+ "cluster20-005908": {
+  "name_el": "Καλάμια",
+  "name_en": "Kalamia",
+  "aka": [
+   "Montezuma",
+   "Freedom",
+   "Κεραμιδάκι",
+   "Maya"
+  ]
+ },
+ "cluster20-005918": {
+  "name_el": "Βρυσίτσα",
+  "name_en": "Vrysitsa",
+  "aka": []
+ },
+ "cluster20-005919": {
+  "name_el": "Τζώρτζη Γιαλός",
+  "name_en": "Tzortzi Gialos",
+  "aka": [
+   "Τζώρτζη"
+  ]
+ },
+ "cluster20-005927": {
+  "name_el": "Φτελιά",
+  "name_en": "Ftelia",
+  "aka": [
+   "Nivak"
+  ]
+ },
+ "cluster20-005938": {
+  "name_el": "Ψαρόχωμα",
+  "name_en": "Psarochoma",
+  "aka": []
+ },
+ "cluster20-005944": {
+  "name_el": null,
+  "name_en": "Nice",
+  "aka": []
+ },
+ "cluster20-005952": {
+  "name_el": null,
+  "name_en": "Piggy",
+  "aka": []
+ },
+ "cluster20-005956": {
+  "name_el": "Σκάλα Πασατέμπο",
+  "name_en": "Skala Passatempo",
+  "aka": []
+ },
+ "cluster20-005983": {
+  "name_el": "Άβυθος",
+  "name_en": "Avithos",
+  "aka": []
+ },
+ "cluster20-005984": {
+  "name_el": "Καρύδι",
+  "name_en": "Karidi",
+  "aka": []
+ },
+ "cluster20-005987": {
+  "name_el": "Σωζόπολης",
+  "name_en": "Sozopolis",
+  "aka": []
+ },
+ "cluster20-005990": {
+  "name_el": "Σωζόπολη Χαβάη",
+  "name_en": "Sozopoli Hawaii",
+  "aka": []
+ },
+ "cluster20-006002": {
+  "name_el": null,
+  "name_en": "Kera",
+  "aka": []
+ },
+ "cluster20-006006": {
+  "name_el": null,
+  "name_en": "Karavi",
+  "aka": []
+ },
+ "cluster20-006008": {
+  "name_el": null,
+  "name_en": "PaGi",
+  "aka": []
+ },
+ "cluster20-006033": {
+  "name_el": "Γιορμπαλίδης",
+  "name_en": "Giormpalidis",
+  "aka": [
+   "Salonikiou",
+   "Πύργος-2"
+  ]
+ },
+ "cluster20-006040": {
+  "name_el": "Μεταμόρφωσης/Θέση Μπάρα",
+  "name_en": "Metamorfosis/Thesi Bara",
+  "aka": [
+   "Μεταμόρφωσης/Θέση Ακτή Σαργκάνη",
+   "Blue Flag",
+   "Blue Dolphin"
+  ]
+ },
+ "cluster20-006041": {
+  "name_el": null,
+  "name_en": null,
+  "aka": []
+ },
+ "cluster20-006042": {
+  "name_el": null,
+  "name_en": "Delfinia Naturist",
+  "aka": []
+ },
+ "cluster20-006084": {
+  "name_el": null,
+  "name_en": "Little Apella",
+  "aka": []
+ },
+ "cluster20-006089": {
+  "name_el": null,
+  "name_en": "Almira",
+  "aka": []
+ },
+ "cluster20-006097": {
+  "name_el": null,
+  "name_en": "Aetos",
+  "aka": []
+ },
+ "cluster20-006110": {
+  "name_el": "Του Κοντού το Λάκωμα",
+  "name_en": "Tou Kontou to Lakoma",
+  "aka": []
+ },
+ "cluster20-006113": {
+  "name_el": null,
+  "name_en": "BenRey Agapi Dive",
+  "aka": []
+ },
+ "cluster20-006134": {
+  "name_el": null,
+  "name_en": "Astropelekita",
+  "aka": []
+ },
+ "cluster20-006143": {
+  "name_el": "Στου Κούτουλου-Κεραμωτής",
+  "name_en": "Stou Koutoulou-Keramotis",
+  "aka": []
+ },
+ "cluster20-006148": {
+  "name_el": "Σκουτάρι",
+  "name_en": "Skoutari",
+  "aka": [
+   "Vordonas",
+   "Βορδόνια",
+   "Kalamakia",
+   "Καλαμάκια",
+   "Αγία Βαρβάρα",
+   "Agia Varvara",
+   "Agia Barbara"
+  ]
+ },
+ "cluster20-006152": {
+  "name_el": null,
+  "name_en": "Sebi's",
+  "aka": []
+ },
+ "cluster20-006165": {
+  "name_el": null,
+  "name_en": "Danielou",
+  "aka": []
+ },
+ "cluster20-006216": {
+  "name_el": "Καλογριά",
+  "name_en": "Kalogria",
+  "aka": [
+   "Sandhill",
+   "Κουνουπέλο - Καλογριά",
+   "Kounoupelo - Kalogria",
+   "Μπούκα",
+   "Μπούκα Καλόγριας",
+   "La Mer"
+  ]
+ },
+ "cluster20-006230": {
+  "name_el": "Σκάλα Μιστεγνών",
+  "name_en": "Skala Mistegnon",
+  "aka": [
+   "Μιστέγνα",
+   "Σκ. Μιστεγνών",
+   "Mistegnon"
+  ]
+ },
+ "cluster20-006234": {
+  "name_el": null,
+  "name_en": "Glyfada",
+  "aka": []
+ },
+ "cluster20-006248": {
+  "name_el": null,
+  "name_en": "Vlihi Nero",
+  "aka": []
+ },
+ "cluster20-006290": {
+  "name_el": null,
+  "name_en": "Kanouli",
+  "aka": []
+ },
+ "cluster20-006295": {
+  "name_el": null,
+  "name_en": "Elia Nudist",
+  "aka": []
+ },
+ "cluster20-006319": {
+  "name_el": "Λυδή",
+  "name_en": "Lydi",
+  "aka": []
+ },
+ "cluster20-006320": {
+  "name_el": "Γριχέζα",
+  "name_en": "Gricheza",
+  "aka": [
+   "Γιαννίτσι",
+   "Γιαννίτσι (Λιμνιώνα)"
+  ]
+ },
+ "cluster20-006329": {
+  "name_el": "Πευκοχώρι",
+  "name_en": "Pefkochori",
+  "aka": [
+   "Πευκοχώρι 3 Ακρωτήρι",
+   "Γλαρόκαβος – Πευκοχώρι",
+   "Glarokavos - Pefkochori",
+   "Πευκοχώρι 9-Ακρωτήρι",
+   "Πευκοχώρι 2-Αμπαρίτσα",
+   "Πευκοχώρι 1 Θέση Αμπαρα",
+   "Παλιούρι 1- Αγ. Νικόλαος",
+   "Paliouri 1- Ag. Nikolaos",
+   "Πευκοχώρι 4 Όμορο του Γλαρόκαβος"
+  ]
+ },
+ "cluster20-006335": {
+  "name_el": null,
+  "name_en": "Mandraki",
+  "aka": []
+ },
+ "cluster20-006337": {
+  "name_el": null,
+  "name_en": "Dekko",
+  "aka": []
+ },
+ "cluster20-006361": {
+  "name_el": "Αγγαθιά",
+  "name_en": "Angathia",
+  "aka": []
+ },
+ "cluster20-006369": {
+  "name_el": null,
+  "name_en": "Mela Wild",
+  "aka": []
+ },
+ "cluster20-006371": {
+  "name_el": null,
+  "name_en": "Lefka",
+  "aka": []
+ },
+ "cluster20-006374": {
+  "name_el": null,
+  "name_en": "Peninsula Private",
+  "aka": []
+ },
+ "cluster20-006389": {
+  "name_el": "Γούδουρα",
+  "name_en": "Goudouras",
+  "aka": [
+   "Λιμανάκι - Γούδουρα",
+   "Ελληνικό Καρνάγιο",
+   "Limanaki - Goudoura"
+  ]
+ },
+ "cluster20-006400": {
+  "name_el": null,
+  "name_en": "Livaditis",
+  "aka": []
+ },
+ "cluster20-006434": {
+  "name_el": "Καράφλος Γιαλός",
+  "name_en": "Karaflos Gialos",
+  "aka": []
+ },
+ "cluster20-006446": {
+  "name_el": "Της Πέρδικας Ποταμός",
+  "name_en": "Tis Perdikas Potamos",
+  "aka": []
+ },
+ "cluster20-006481": {
+  "name_el": "Βαγιωνιά",
+  "name_en": "Vagionia",
+  "aka": [
+   "Βαγωνιά"
+  ]
+ },
+ "cluster20-006507": {
+  "name_el": "Βανάδα",
+  "name_en": "Vanada",
+  "aka": [
+   "Vanánda"
+  ]
+ },
+ "cluster20-006514": {
+  "name_el": "Λάρες",
+  "name_en": "Lares",
+  "aka": []
+ },
+ "cluster20-006516": {
+  "name_el": "Όψη",
+  "name_en": "Ópsi",
+  "aka": []
+ },
+ "cluster20-006517": {
+  "name_el": "Ποντικάλια",
+  "name_en": "Pontikalia",
+  "aka": [
+   "Pontikália"
+  ]
+ },
+ "cluster20-006518": {
+  "name_el": "Καμινάκι",
+  "name_en": "Kaminaki",
+  "aka": [
+   "Kámináki"
+  ]
+ },
+ "cluster20-006519": {
+  "name_el": "Μακριά",
+  "name_en": "Makria",
+  "aka": [
+   "Makriá"
+  ]
+ },
+ "cluster20-006529": {
+  "name_el": "Καστέλλι",
+  "name_en": "Kastelli",
+  "aka": []
+ },
+ "cluster20-006530": {
+  "name_el": "Αλιμιάς",
+  "name_en": "Alimias",
+  "aka": []
+ },
+ "cluster20-006545": {
+  "name_el": "Ασπροπόταμος",
+  "name_en": "Aspropotamos",
+  "aka": []
+ },
+ "cluster20-006552": {
+  "name_el": "Σάντα Μπάρμπαρα",
+  "name_en": "Santa Barbara",
+  "aka": [
+   "Santa Barbara Beach, Martas"
+  ]
+ },
+ "cluster20-006557": {
+  "name_el": "Γιαλός",
+  "name_en": "Yialos",
+  "aka": []
+ },
+ "cluster20-006588": {
+  "name_el": null,
+  "name_en": "Watchtower",
+  "aka": []
+ },
+ "cluster20-006597": {
+  "name_el": "Νησάκι",
+  "name_en": "Nissaki",
+  "aka": []
+ },
+ "cluster20-006602": {
+  "name_el": "Γαλιά Πογωνιάς",
+  "name_en": "Galia Pogonias",
+  "aka": []
+ },
+ "cluster20-006609": {
+  "name_el": "Μύλος",
+  "name_en": "Milos",
+  "aka": []
+ },
+ "cluster20-006634": {
+  "name_el": "Λάκκι",
+  "name_en": "Lakki",
+  "aka": []
+ },
+ "cluster20-006641": {
+  "name_el": "Λάπι",
+  "name_en": "Lapi",
+  "aka": []
+ },
+ "cluster20-006649": {
+  "name_el": null,
+  "name_en": "Sueño Playa",
+  "aka": [
+   "Eretria Urban"
+  ]
+ },
+ "cluster20-006666": {
+  "name_el": "Βασιλίτσι",
+  "name_en": "Vasilitsi",
+  "aka": []
+ },
+ "cluster20-006674": {
+  "name_el": "Ευγνώμιμος",
+  "name_en": "Evgnomimos",
+  "aka": [
+   "Evgónimos",
+   "Evgonymos"
+  ]
+ },
+ "cluster20-006676": {
+  "name_el": "Λάλα",
+  "name_en": "Lala",
+  "aka": [
+   "Lála"
+  ]
+ },
+ "cluster20-006685": {
+  "name_el": "Φιλοξενία",
+  "name_en": "Filoxenia",
+  "aka": []
+ },
+ "cluster20-006688": {
+  "name_el": "Νησίζα",
+  "name_en": "Nisiza",
+  "aka": []
+ },
+ "cluster20-006691": {
+  "name_el": null,
+  "name_en": "Apo",
+  "aka": []
+ },
+ "cluster20-006695": {
+  "name_el": null,
+  "name_en": "Julias",
+  "aka": []
+ },
+ "cluster20-006696": {
+  "name_el": null,
+  "name_en": "Ludiko",
+  "aka": [
+   "Spillia"
+  ]
+ },
+ "cluster20-006708": {
+  "name_el": null,
+  "name_en": null,
+  "aka": []
+ },
+ "cluster20-006718": {
+  "name_el": "Αλυγαριά Κάμπος",
+  "name_en": "Alygaria Kampos",
+  "aka": []
+ },
+ "cluster20-006719": {
+  "name_el": null,
+  "name_en": "Agios Petros",
+  "aka": []
+ },
+ "cluster20-006723": {
+  "name_el": null,
+  "name_en": "Portokali",
+  "aka": []
+ },
+ "cluster20-006727": {
+  "name_el": null,
+  "name_en": "Lares",
+  "aka": []
+ },
+ "cluster20-006739": {
+  "name_el": null,
+  "name_en": "Exo Almyres",
+  "aka": []
+ },
+ "cluster20-006754": {
+  "name_el": null,
+  "name_en": "Marathias",
+  "aka": []
+ },
+ "cluster20-006766": {
+  "name_el": null,
+  "name_en": "Fokia",
+  "aka": []
+ },
+ "cluster20-006778": {
+  "name_el": "Στου Μαλαθρίτη Μπαμπακιές",
+  "name_en": "Stou Malathriti Bampakies",
+  "aka": []
+ },
+ "cluster20-006827": {
+  "name_el": "Μαρκούλη",
+  "name_en": "Markouli",
+  "aka": []
+ },
+ "cluster20-006836": {
+  "name_el": "Στύφος",
+  "name_en": "Styfos",
+  "aka": [
+   "Stifo"
+  ]
+ },
+ "cluster20-006862": {
+  "name_el": null,
+  "name_en": null,
+  "aka": []
+ },
+ "cluster20-006905": {
+  "name_el": "ΔΕΗ Plus",
+  "name_en": "DEI Plus",
+  "aka": []
+ },
+ "cluster20-006912": {
+  "name_el": "Καβατζά",
+  "name_en": "Kavatza",
+  "aka": []
+ },
+ "cluster20-006936": {
+  "name_el": "Καλόγηρος",
+  "name_en": "Kalogiros",
+  "aka": []
+ },
+ "cluster20-006963": {
+  "name_el": null,
+  "name_en": "Karalis",
+  "aka": [
+   "Limnioniza"
+  ]
+ },
+ "cluster20-007001": {
+  "name_el": "Παπού",
+  "name_en": "Papou",
+  "aka": []
+ },
+ "cluster20-007054": {
+  "name_el": null,
+  "name_en": "Fokas",
+  "aka": []
+ },
+ "cluster20-007085": {
+  "name_el": null,
+  "name_en": "Crocodile FKK",
+  "aka": []
+ },
+ "cluster20-007105": {
+  "name_el": null,
+  "name_en": "Dolphin",
+  "aka": []
+ },
+ "cluster20-007136": {
+  "name_el": null,
+  "name_en": "Asmini",
+  "aka": []
+ },
+ "cluster20-007143": {
+  "name_el": null,
+  "name_en": "Garbis",
+  "aka": []
+ },
+ "cluster20-007149": {
+  "name_el": "Αρτάκι",
+  "name_en": "Artaki",
+  "aka": []
+ },
+ "cluster20-007179": {
+  "name_el": null,
+  "name_en": "Secret",
+  "aka": []
+ },
+ "cluster20-007190": {
+  "name_el": null,
+  "name_en": "Alatsolimni",
+  "aka": []
+ },
+ "cluster20-007191": {
+  "name_el": null,
+  "name_en": "Romvi",
+  "aka": [
+   "Romvi Secret"
+  ]
+ },
+ "cluster20-007194": {
+  "name_el": null,
+  "name_en": "Legrena",
+  "aka": []
+ },
+ "cluster20-007209": {
+  "name_el": "Γεράνι",
+  "name_en": "Gerani",
+  "aka": []
+ },
+ "cluster20-007219": {
+  "name_el": "Φονιαδικό",
+  "name_en": "Foniadiko",
+  "aka": []
+ },
+ "cluster20-007220": {
+  "name_el": null,
+  "name_en": null,
+  "aka": []
+ },
+ "cluster20-007234": {
+  "name_el": "Φαπρικεζαίνα",
+  "name_en": "Faprikezaina",
+  "aka": []
+ },
+ "cluster20-007254": {
+  "name_el": "Κούτρος",
+  "name_en": "Koutros",
+  "aka": []
+ },
+ "cluster20-007272": {
+  "name_el": "Μαραθάκη",
+  "name_en": "Marathaki",
+  "aka": []
+ },
+ "cluster20-007275": {
+  "name_el": "Αλκυόνη",
+  "name_en": "Alkioni",
+  "aka": []
+ },
+ "cluster20-007288": {
+  "name_el": "Πογωνιά",
+  "name_en": "Pogonia",
+  "aka": [
+   "Ποταμάκι",
+   "Βαθυαβάλη 2",
+   "Vathiavali",
+   "Βαθυαβάλι"
+  ]
+ },
+ "cluster20-007293": {
+  "name_el": "Πόρτο Λαφία",
+  "name_en": "Porto Lafia",
+  "aka": []
+ },
+ "cluster20-007297": {
+  "name_el": "Παναγία",
+  "name_en": "Panagia",
+  "aka": []
+ },
+ "cluster20-007311": {
+  "name_el": "Κρητικός",
+  "name_en": "Kritikos",
+  "aka": []
+ },
+ "cluster20-007317": {
+  "name_el": "Άγιος Σώστης",
+  "name_en": "Agios Sostis",
+  "aka": []
+ },
+ "cluster20-007322": {
+  "name_el": "Βάθα",
+  "name_en": "Vatha",
+  "aka": [
+   "Βάθια"
+  ]
+ },
+ "cluster20-007330": {
+  "name_el": "Βαθύ Λαγκάδι",
+  "name_en": "Vathi Lagadi",
+  "aka": []
+ },
+ "cluster20-007342": {
+  "name_el": "Μικρή Βίγλα Hidden",
+  "name_en": "Mikri Vigla Hidden",
+  "aka": []
+ },
+ "cluster20-007357": {
+  "name_el": "Πλάκες",
+  "name_en": "Plakes",
+  "aka": []
+ },
+ "cluster20-007372": {
+  "name_el": "White",
+  "name_en": "White",
+  "aka": [
+   "Meattie Buir's"
+  ]
+ },
+ "cluster20-007375": {
+  "name_el": "Πεπέ",
+  "name_en": "Pepè",
+  "aka": []
+ },
+ "cluster20-007378": {
+  "name_el": "White",
+  "name_en": "White",
+  "aka": [
+   "Myrsini"
+  ]
+ },
+ "cluster20-007425": {
+  "name_el": "Νανούρας",
+  "name_en": "Nanouras",
+  "aka": []
+ },
+ "cluster20-007427": {
+  "name_el": null,
+  "name_en": "Plaja care mi-a placut",
+  "aka": []
+ },
+ "cluster20-007428": {
+  "name_el": null,
+  "name_en": null,
+  "aka": []
+ },
+ "cluster20-007430": {
+  "name_el": "Άγγελος Μετά",
+  "name_en": "Angelos Meta",
+  "aka": []
+ },
+ "cluster20-007431": {
+  "name_el": null,
+  "name_en": "Spiaggia Ieratica",
+  "aka": []
+ },
+ "cluster20-007433": {
+  "name_el": "Νικολαίικα",
+  "name_en": "Nikolaiika",
+  "aka": [
+   "Νικολαιϊκα Διακοπτού",
+   "Νικολεϊκα",
+   "Nikoleikon",
+   "Βαλιμίτικα",
+   "Νικολεΐκων"
+  ]
+ },
+ "cluster20-007451": {
+  "name_el": "Παρθένα",
+  "name_en": "Parthena",
+  "aka": [
+   "Κουτσουπιά"
+  ]
+ },
+ "cluster20-007474": {
+  "name_el": "Κασόνια",
+  "name_en": "Kasonia",
+  "aka": []
+ },
+ "cluster20-007476": {
+  "name_el": "Τίχη",
+  "name_en": "Tichi",
+  "aka": []
+ },
+ "cluster20-007486": {
+  "name_el": "Ακτή",
+  "name_en": "Hali",
+  "aka": []
+ },
+ "cluster20-007499": {
+  "name_el": "Ουμπίνι Καλλονής",
+  "name_en": "Ubini Kalloni",
+  "aka": []
+ },
+ "cluster20-007526": {
+  "name_el": null,
+  "name_en": "Throne",
+  "aka": []
+ },
+ "cluster20-007541": {
+  "name_el": null,
+  "name_en": "Erisos",
+  "aka": []
+ },
+ "cluster20-007551": {
+  "name_el": "Σούρζα Μπουτ",
+  "name_en": "Sourza Bout",
+  "aka": []
+ },
+ "cluster20-007553": {
+  "name_el": null,
+  "name_en": "Limeniskos Palon",
+  "aka": []
+ },
+ "cluster20-007558": {
+  "name_el": null,
+  "name_en": "Mafalda",
+  "aka": []
+ },
+ "cluster20-007578": {
+  "name_el": null,
+  "name_en": "Africa",
+  "aka": []
+ },
+ "cluster20-007590": {
+  "name_el": null,
+  "name_en": "Lachanou",
+  "aka": []
+ },
+ "cluster20-007591": {
+  "name_el": null,
+  "name_en": "Gargarou",
+  "aka": []
+ },
+ "cluster20-007600": {
+  "name_el": null,
+  "name_en": "Spetses",
+  "aka": []
+ },
+ "cluster20-007612": {
+  "name_el": null,
+  "name_en": "Halikoura",
+  "aka": []
+ },
+ "cluster20-007615": {
+  "name_el": "Κάτω Λάκκος",
+  "name_en": "Kato Lakkos",
+  "aka": []
+ },
+ "cluster20-007617": {
+  "name_el": null,
+  "name_en": "Marina",
+  "aka": []
+ },
+ "cluster20-007618": {
+  "name_el": null,
+  "name_en": "Agios Georgios",
+  "aka": []
+ },
+ "cluster20-007625": {
+  "name_el": null,
+  "name_en": "Fokiada",
+  "aka": []
+ },
+ "cluster20-007641": {
+  "name_el": null,
+  "name_en": "Serfiotiko",
+  "aka": []
+ },
+ "cluster20-007657": {
+  "name_el": null,
+  "name_en": "Synaxi",
+  "aka": []
+ },
+ "cluster20-007660": {
+  "name_el": "Χαβαρή",
+  "name_en": "Havari",
+  "aka": []
+ },
+ "cluster20-007663": {
+  "name_el": null,
+  "name_en": "Bataria",
+  "aka": []
+ },
+ "cluster20-007671": {
+  "name_el": null,
+  "name_en": "Ani",
+  "aka": []
+ },
+ "cluster20-007673": {
+  "name_el": null,
+  "name_en": "Thermal",
+  "aka": []
+ },
+ "cluster20-007675": {
+  "name_el": null,
+  "name_en": "Kamari",
+  "aka": []
+ },
+ "cluster20-007681": {
+  "name_el": "Καλαμάκι Ισθμία",
+  "name_en": "Kalamaki Isthmia",
+  "aka": [
+   "Καλαμάκια Ισθμία"
+  ]
+ },
+ "cluster20-007685": {
+  "name_el": null,
+  "name_en": "Frangokastello",
+  "aka": []
+ },
+ "cluster20-007691": {
+  "name_el": "Κόκκινο Αμμουτσάκι",
+  "name_en": "Kokkino Ammoutsaki",
+  "aka": []
+ },
+ "cluster20-007718": {
+  "name_el": null,
+  "name_en": "Antikufos",
+  "aka": []
+ },
+ "cluster20-007732": {
+  "name_el": null,
+  "name_en": "Lechouni",
+  "aka": []
+ },
+ "cluster20-007783": {
+  "name_el": null,
+  "name_en": "Angelik",
+  "aka": []
+ },
+ "cluster20-007792": {
+  "name_el": null,
+  "name_en": "Mikra Bay",
+  "aka": []
+ },
+ "cluster20-007795": {
+  "name_el": null,
+  "name_en": "Pantieronisi",
+  "aka": []
+ },
+ "cluster20-007796": {
+  "name_el": null,
+  "name_en": "Nino",
+  "aka": []
+ },
+ "cluster20-007827": {
+  "name_el": "Παού",
+  "name_en": "Paou",
+  "aka": []
+ },
+ "cluster20-007829": {
+  "name_el": null,
+  "name_en": null,
+  "aka": []
+ },
+ "cluster20-007849": {
+  "name_el": "Κολοκύθα",
+  "name_en": "Kolokitha",
+  "aka": []
+ },
+ "cluster20-007860": {
+  "name_el": "Βολκάνα",
+  "name_en": "Volcana",
+  "aka": [
+   "Volcania"
+  ]
+ },
+ "cluster20-007888": {
+  "name_el": "Αγνάντι",
+  "name_en": "Agnanti",
+  "aka": []
+ },
+ "cluster20-007896": {
+  "name_el": "Ακρωτήρι",
+  "name_en": "Akrotiri",
+  "aka": []
+ },
+ "cluster20-007897": {
+  "name_el": "Αλεχάνδρο",
+  "name_en": "Alechandro",
+  "aka": []
+ },
+ "cluster20-007899": {
+  "name_el": "Μαυρούδης",
+  "name_en": "Mavroudis",
+  "aka": []
+ },
+ "cluster20-007932": {
+  "name_el": null,
+  "name_en": null,
+  "aka": []
+ },
+ "cluster20-007954": {
+  "name_el": "Αρχάγγελος",
+  "name_en": "Archangelos",
+  "aka": [
+   "Archaggelos"
+  ]
+ },
+ "cluster20-007971": {
+  "name_el": null,
+  "name_en": "Porto Timoni",
+  "aka": []
+ },
+ "cluster20-007996": {
+  "name_el": "Λύκος",
+  "name_en": "Lykos",
+  "aka": []
+ },
+ "cluster20-008001": {
+  "name_el": "Μπέντζι",
+  "name_en": "Benji",
+  "aka": []
+ },
+ "cluster20-008006": {
+  "name_el": "Εραστών",
+  "name_en": "Lovers",
+  "aka": [
+   "Agios Sostis"
+  ]
+ },
+ "cluster20-008010": {
+  "name_el": "Ρομπόλα",
+  "name_en": "Robolla",
+  "aka": []
+ },
+ "cluster20-008032": {
+  "name_el": "Κερατέα, Βγεθι",
+  "name_en": "Keratea, Vgethi",
+  "aka": []
+ },
+ "cluster20-008067": {
+  "name_el": null,
+  "name_en": null,
+  "aka": []
+ },
+ "cluster20-008073": {
+  "name_el": "Διαπόρτι",
+  "name_en": "Diaporti",
+  "aka": []
+ },
+ "cluster20-008079": {
+  "name_el": "Πικπα",
+  "name_en": "Pikpa",
+  "aka": []
+ },
+ "cluster20-008084": {
+  "name_el": null,
+  "name_en": "Long",
+  "aka": []
+ },
+ "cluster20-008085": {
+  "name_el": null,
+  "name_en": "Itea",
+  "aka": []
+ },
+ "cluster20-008119": {
+  "name_el": "Μπρουνού",
+  "name_en": "Brounou",
+  "aka": []
+ },
+ "cluster20-008122": {
+  "name_el": "Σεβεν Παλμς",
+  "name_en": "Seven Palms",
+  "aka": []
+ },
+ "cluster20-008148": {
+  "name_el": "Χούλα",
+  "name_en": "Hulla",
+  "aka": []
+ },
+ "cluster20-008167": {
+  "name_el": null,
+  "name_en": "Nisos",
+  "aka": []
+ },
+ "cluster20-008170": {
+  "name_el": "Τραπεζάκι",
+  "name_en": "Trapezaki",
+  "aka": []
+ },
+ "cluster20-008194": {
+  "name_el": "Τζιτζικας",
+  "name_en": "Tzitzikas",
+  "aka": [
+   "Kalamata"
+  ]
+ },
+ "cluster20-008208": {
+  "name_el": null,
+  "name_en": "Fisheye",
+  "aka": []
+ },
+ "cluster20-008209": {
+  "name_el": "Βίγλα",
+  "name_en": "Vigla",
+  "aka": [
+   "Xenia - Vigla 1"
+  ]
+ },
+ "cluster20-008211": {
+  "name_el": "Αγκάλη",
+  "name_en": "Agali",
+  "aka": []
+ },
+ "cluster20-008220": {
+  "name_el": null,
+  "name_en": "My Kiosky",
+  "aka": []
+ },
+ "cluster20-008226": {
+  "name_el": null,
+  "name_en": "Avithos South",
+  "aka": []
+ },
+ "cluster20-008227": {
+  "name_el": "Λεύκα",
+  "name_en": "Lefka",
+  "aka": []
+ },
+ "cluster20-008228": {
+  "name_el": null,
+  "name_en": "Mouda",
+  "aka": []
+ },
+ "cluster20-008247": {
+  "name_el": null,
+  "name_en": "Kanoni",
+  "aka": []
+ },
+ "cluster20-008252": {
+  "name_el": "Αστέρι",
+  "name_en": "Asteri",
+  "aka": []
+ },
+ "cluster20-008265": {
+  "name_el": null,
+  "name_en": "Nikiana South",
+  "aka": [
+   "Breath of Zorbas"
+  ]
+ },
+ "cluster20-008266": {
+  "name_el": null,
+  "name_en": "Daniel",
+  "aka": [
+   "Nikiana South",
+   "Breath of Zorbas"
+  ]
+ },
+ "cluster20-008282": {
+  "name_el": null,
+  "name_en": "Ampelaki",
+  "aka": []
+ },
+ "cluster20-008283": {
+  "name_el": null,
+  "name_en": "Ona Drepano",
+  "aka": []
+ },
+ "cluster20-008294": {
+  "name_el": null,
+  "name_en": "Thilia",
+  "aka": []
+ },
+ "cluster20-008300": {
+  "name_el": "Παραλία Γυμνιστών",
+  "name_en": "Nudist",
+  "aka": [
+   "Pepples of St. George"
+  ]
+ },
+ "cluster20-008305": {
+  "name_el": "Εκατοπενηντάρι",
+  "name_en": "Ekatopenintari",
+  "aka": []
+ },
+ "cluster20-008307": {
+  "name_el": null,
+  "name_en": "Kalogeri",
+  "aka": []
+ },
+ "cluster20-008316": {
+  "name_el": null,
+  "name_en": "Elias Cove",
+  "aka": []
+ },
+ "cluster20-008318": {
+  "name_el": null,
+  "name_en": "Ohana Saloon",
+  "aka": []
+ },
+ "cluster20-008331": {
+  "name_el": null,
+  "name_en": "Gerondolakkos",
+  "aka": []
+ },
+ "cluster20-008333": {
+  "name_el": null,
+  "name_en": "Kerkira",
+  "aka": []
+ },
+ "cluster20-008336": {
+  "name_el": null,
+  "name_en": "Pana",
+  "aka": []
+ },
+ "cluster20-008340": {
+  "name_el": null,
+  "name_en": "Gorgona",
+  "aka": []
+ },
+ "cluster20-008351": {
+  "name_el": null,
+  "name_en": "Leyki Bay",
+  "aka": []
+ },
+ "cluster20-008354": {
+  "name_el": null,
+  "name_en": "Heaven's",
+  "aka": []
+ },
+ "cluster20-008355": {
+  "name_el": null,
+  "name_en": "Joana",
+  "aka": []
+ },
+ "cluster20-008356": {
+  "name_el": null,
+  "name_en": "Amatos",
+  "aka": [
+   "Xerobia"
+  ]
+ },
+ "cluster20-008371": {
+  "name_el": null,
+  "name_en": "Metaxa",
+  "aka": []
+ },
+ "cluster20-008394": {
+  "name_el": null,
+  "name_en": "Despotiko",
+  "aka": []
+ },
+ "cluster20-008405": {
+  "name_el": null,
+  "name_en": "Varka",
+  "aka": []
+ },
+ "cluster20-008407": {
+  "name_el": null,
+  "name_en": "Kedros",
+  "aka": []
+ },
+ "cluster20-008410": {
+  "name_el": null,
+  "name_en": "Katharina",
+  "aka": []
+ },
+ "cluster20-008426": {
+  "name_el": null,
+  "name_en": "Rhamnous",
+  "aka": []
+ },
+ "cluster20-008428": {
+  "name_el": null,
+  "name_en": "Koutsomiti",
+  "aka": []
+ },
+ "cluster20-008439": {
+  "name_el": null,
+  "name_en": "Apollo",
+  "aka": []
+ },
+ "cluster20-008452": {
+  "name_el": null,
+  "name_en": "Elaionas",
+  "aka": []
+ },
+ "cluster20-008460": {
+  "name_el": "Διακοφτή",
+  "name_en": "Diakofti",
+  "aka": []
+ },
+ "cluster20-008487": {
+  "name_el": null,
+  "name_en": "Athytos",
+  "aka": []
+ },
+ "cluster20-008503": {
+  "name_el": null,
+  "name_en": "Lakka",
+  "aka": []
+ },
+ "cluster20-008529": {
+  "name_el": null,
+  "name_en": null,
+  "aka": []
+ },
+ "cluster20-008549": {
+  "name_el": null,
+  "name_en": "Azul",
+  "aka": []
+ },
+ "cluster20-008553": {
+  "name_el": null,
+  "name_en": "Vigla",
+  "aka": [
+   "Xenia - Vigla 1"
+  ]
+ },
+ "cluster20-008598": {
+  "name_el": null,
+  "name_en": "Fteri Ovest",
+  "aka": []
+ },
+ "cluster20-008600": {
+  "name_el": null,
+  "name_en": "Hilia",
+  "aka": []
+ },
+ "cluster20-008614": {
+  "name_el": null,
+  "name_en": "Secret",
+  "aka": []
+ },
+ "cluster20-008623": {
+  "name_el": null,
+  "name_en": "Anni",
+  "aka": []
+ },
+ "cluster20-008651": {
+  "name_el": null,
+  "name_en": "Beautiful",
+  "aka": []
+ },
+ "cluster20-008656": {
+  "name_el": null,
+  "name_en": null,
+  "aka": []
+ },
+ "cluster20-008681": {
+  "name_el": null,
+  "name_en": "Ioannis",
+  "aka": []
+ },
+ "cluster20-008682": {
+  "name_el": null,
+  "name_en": null,
+  "aka": []
+ },
+ "cluster20-008683": {
+  "name_el": "Άγιος Νικόλαος",
+  "name_en": "Agios Nikolaos",
+  "aka": [
+   "Ag. Nikolaos"
+  ]
+ },
+ "cluster20-008688": {
+  "name_el": null,
+  "name_en": "Agia Petros",
+  "aka": []
+ },
+ "cluster20-008697": {
+  "name_el": null,
+  "name_en": "Papa",
+  "aka": []
+ },
+ "cluster20-008703": {
+  "name_el": null,
+  "name_en": "Kasteli",
+  "aka": []
+ },
+ "cluster20-008710": {
+  "name_el": null,
+  "name_en": "Lagoudi",
+  "aka": []
+ },
+ "cluster20-008728": {
+  "name_el": null,
+  "name_en": "Riviera Virgin",
+  "aka": [
+   "Riviera"
+  ]
+ },
+ "cluster20-008732": {
+  "name_el": null,
+  "name_en": "Fari",
+  "aka": []
+ },
+ "cluster20-008735": {
+  "name_el": null,
+  "name_en": "Emerald",
+  "aka": []
+ },
+ "cluster20-008739": {
+  "name_el": "Τρεις Κλισιές",
+  "name_en": "Treis Klisies",
+  "aka": [
+   "Τρεις Κλεισιές Μικρή"
+  ]
+ },
+ "cluster20-008740": {
+  "name_el": "Πλακωτός",
+  "name_en": "Plakotos",
+  "aka": [
+   "Gero Aggeli"
+  ]
+ },
+ "cluster20-008755": {
+  "name_el": null,
+  "name_en": "Artolithia",
+  "aka": []
+ },
+ "cluster20-008765": {
+  "name_el": null,
+  "name_en": "Samiopoula",
+  "aka": []
+ },
+ "cluster20-008781": {
+  "name_el": "Λάκοι",
+  "name_en": "Lakoi",
+  "aka": [
+   "Laki",
+   "Λάκκοι"
+  ]
+ },
+ "cluster20-008787": {
+  "name_el": "Λεωνίδας",
+  "name_en": "Leonidas",
+  "aka": []
+ },
+ "cluster20-008825": {
+  "name_el": "Τρεις Εκκλησίες",
+  "name_en": "Treis Ekklisies",
+  "aka": [
+   "Τρεις Κλεισιές Μεγάλη"
+  ]
+ },
+ "cluster20-008834": {
+  "name_el": "Βαλιμίτικα",
+  "name_en": "Valimitika",
+  "aka": []
+ },
+ "cluster20-008854": {
+  "name_el": null,
+  "name_en": null,
+  "aka": []
+ },
+ "cluster20-008877": {
+  "name_el": null,
+  "name_en": "San’luca",
+  "aka": []
+ },
+ "cluster20-008881": {
+  "name_el": null,
+  "name_en": "Mirtia Strand",
+  "aka": []
+ },
+ "cluster20-008882": {
+  "name_el": null,
+  "name_en": "Agrapidia",
+  "aka": []
+ },
+ "cluster20-008886": {
+  "name_el": null,
+  "name_en": "Abelakia",
+  "aka": []
+ },
+ "cluster20-008924": {
+  "name_el": "Τρεις Κλεισιές Βόρειος",
+  "name_en": "Treis Kleisies Voreios",
+  "aka": []
+ },
+ "cluster20-008968": {
+  "name_el": "ΕΟΤ Επανομής",
+  "name_en": "EOT Epanomis",
+  "aka": [
+   "Πάρκο Παραλίας Επανομής"
+  ]
+ },
+ "cluster20-008974": {
+  "name_el": "Πλαταμώνας",
+  "name_en": "Platamonas",
+  "aka": [
+   "Πλαταμώνας 1",
+   "Πλαταμών",
+   "Πλαταμώνα",
+   "Platamona",
+   "Platamonas 1",
+   "Πλαυαμωνας",
+   "Πλσαταμων"
+  ]
+ },
+ "cluster20-008986": {
+  "name_el": "Ψακούδια Δυτικά",
+  "name_en": "Psakoudia Dytika",
+  "aka": [
+   "Ψακούδια Πολυγύρου"
+  ]
+ },
+ "cluster20-009059": {
+  "name_el": "Βράχος",
+  "name_en": "Vrachos",
+  "aka": [
+   "Βραχου",
+   "Vrachou",
+   "Θέση Κοτσια"
+  ]
+ },
+ "cluster20-009067": {
+  "name_el": "Μπανάνα",
+  "name_en": "Banana",
+  "aka": [
+   "Ιόνιο - Μπανάνα",
+   "Ionio - Banana",
+   "Πλάκα/Περιβολάκια",
+   "Πλάκα",
+   "Ionio"
+  ]
+ },
+ "cluster20-009132": {
+  "name_el": "Άγιος Ιωάννης",
+  "name_en": "Agios Ioannis",
+  "aka": [
+   "Άγιος Ιωάννης - Μύλοι",
+   "Βαρκό Άγιος Ιωάννης",
+   "Ai Giannis - Myloi",
+   "Μύλοι Αγ Μαρίνα",
+   "Άη Γιάννης",
+   "Ai Giannis",
+   "Ανεμόμυλος Λευκάδας"
+  ]
+ },
+ "cluster20-009167": {
+  "name_el": "Αλαμπεϊκα Αμαρύνθου",
+  "name_en": "Alampeika Amarynthou",
+  "aka": [
+   "Αμάρυνθος 1",
+   "Αμάρυνθος",
+   "Αλαμπεϊκα",
+   "Βαθεια Μεριά, Αλαμπεϊκα",
+   "Amarynthos 1",
+   "Cavo Amarynthos"
+  ]
+ },
+ "cluster20-009175": {
+  "name_el": null,
+  "name_en": "Eretria South Tip",
+  "aka": []
+ },
+ "cluster20-009199": {
+  "name_el": "Κεντρί",
+  "name_en": "Kentri",
+  "aka": [
+   "Κεντρί 2",
+   "Kentri 1",
+   "Skoules Mikri Megali",
+   "Monia",
+   "Κεντρί 1",
+   "Kendri 2",
+   "Μόνια"
+  ]
+ },
+ "cluster20-009232": {
+  "name_el": "Λουτρά Ωραίας Ελένης",
+  "name_en": "Loutra Oraias Elenis",
+  "aka": [
+   "Λουτρά Ελένης 1",
+   "Λουτρά Ωρ. Ελένης",
+   "Loutra Elenis 1",
+   "Προβλήτα Λουτρά Ωραίας Ελένης",
+   "Loutra Elenis 2",
+   "Λουτρά Ελένης 2"
+  ]
+ },
+ "cluster20-009254": {
+  "name_el": "Ανάληψη - Αεροπορία",
+  "name_en": "Analipsi - Aeroporia",
+  "aka": []
+ },
+ "cluster20-009269": {
+  "name_el": "Απολλώνιες Ακτές Βούλας Βόρεια",
+  "name_en": "Apollonies Aktes Voulas Voreia",
+  "aka": [
+   "Απολλώνιες Βούλας Α",
+   "Βούλας",
+   "Α' Πλαζ Βούλας",
+   "Α' Βούλας",
+   "A' Voulas",
+   "Ακτή Α Βούλας",
+   "Κάμπινγκ Βούλας",
+   "Voula",
+   "Κούλ Ξαδέρφου",
+   "Koul Xaderfou"
+  ]
+ },
+ "cluster20-009291": {
+  "name_el": "Σκάλα Ερεσού",
+  "name_en": "Skala Eresou",
+  "aka": [
+   "Σκάλα Ερεσσού",
+   "Beach of Eresos",
+   "Αφεντελι",
+   "Παραλία Γυμνιστών"
+  ]
+ },
+ "cluster20-009332": {
+  "name_el": "Έλλη",
+  "name_en": "Elli",
+  "aka": [
+   "Ενυδρείου 2",
+   "Enydreiou 2",
+   "Ακτή Μιαούλη",
+   "Pelar",
+   "Ενυδρείου 3",
+   "Enydreiou 3",
+   "Diving platform Elli"
+  ]
+ },
+ "cluster20-009368": {
+  "name_el": "Λίνδος",
+  "name_en": "Lindos",
+  "aka": [
+   "Μεγάλος Γιαλός",
+   "Μεγάλη Παραλία Λίνδου",
+   "Μεγάλη Παραλία Λίνδου 2",
+   "Megalos Gialos",
+   "Μικρή",
+   "Mikri",
+   "Μικρή Λινδου",
+   "Pallas"
+  ]
+ },
+ "cluster20-009398": {
+  "name_el": "Καμάρι",
+  "name_en": "Kamari",
+  "aka": [
+   "Nostos",
+   "Καμάρα Καμαρίου"
+  ]
+ },
+ "cluster20-009451": {
+  "name_el": "Αμμουδάρα",
+  "name_en": "Ammoudara",
+  "aka": [
+   "Αμουδάρα",
+   "Παραλία Γαζίου",
+   "Linoperamata",
+   "Παραλία Ξεροπόταμος",
+   "Ανάμεσα Theatro και Τεχνόπολις",
+   "Έμπροσθεν και Ανατολικά Theatro"
+  ]
+ },
+ "cluster20-009498": {
+  "name_el": "Ρέθυμνο",
+  "name_en": "Rethymno",
+  "aka": [
+   "Poseidon",
+   "Municipal Of Rethymno",
+   "Ρεθύμνης",
+   "Bio",
+   "Theo",
+   "Takis Place"
+  ]
+ },
+ "cluster20-009600": {
+  "name_el": "Κοχύλια",
+  "name_en": "Kochylia",
+  "aka": [
+   "Αεροδρόμιο Μυτιλήνης"
+  ]
+ },
+ "cluster20-009692": {
+  "name_el": "Σπιάντζα",
+  "name_en": "Spiantza",
+  "aka": [
+   "Σπιάτζα - Κατάκολο",
+   "Σπιάντζα (Θέση 1)",
+   "Νταραvery spiantza bech",
+   "Σπιάντζα Θέση 2",
+   "Σπιάντζα (Θέση 2)"
+  ]
+ },
+ "cluster20-009719": {
+  "name_el": "Γρα Λυγιάς",
+  "name_en": "Gra Lygias",
+  "aka": [
+   "Γρα Λυγιά Ιεράπετρας"
+  ]
+ },
+ "cluster20-009765": {
+  "name_el": "Αστέρας Γλυφάδας",
+  "name_en": "Asteras Glyfadas",
+  "aka": [
+   "Γλυφάδα 5",
+   "Asteria Glyfadas",
+   "Γλυφάδα 4",
+   "Glyfada 4"
+  ]
+ },
+ "new-1778515582371-36k6": {
+  "name_el": null,
+  "name_en": "Vulos",
+  "aka": []
+ },
+ "new-1778528536293-dcc2": {
+  "name_el": null,
+  "name_en": "Nakal State of Mind",
+  "aka": []
+ },
+ "gmaps-568702": {
+  "name_el": null,
+  "name_en": "Oriana's Bay",
+  "aka": []
+ },
+ "gmaps-717959": {
+  "name_el": null,
+  "name_en": "Sagredo Seaside",
+  "aka": []
+ },
+ "gmaps-625875": {
+  "name_el": null,
+  "name_en": "Ammos",
+  "aka": []
+ },
+ "gmaps-942150": {
+  "name_el": null,
+  "name_en": "Agios Focas",
+  "aka": []
+ },
+ "gmaps-535901": {
+  "name_el": "Απολάκια",
+  "name_en": "Apolakia",
+  "aka": [
+   "Απολακκιάς"
+  ]
+ },
+ "gmaps-152751": {
+  "name_el": "Παχιά Άμμος",
+  "name_en": "Pachia Ammos",
+  "aka": []
+ },
+ "gmaps-401589": {
+  "name_el": "Αγίου Αντωνίου",
+  "name_en": "Agiou Antoniou",
+  "aka": []
+ },
+ "gmaps-748104": {
+  "name_el": null,
+  "name_en": "PlayMaker",
+  "aka": []
+ },
+ "gmaps-940427": {
+  "name_el": null,
+  "name_en": "Joy",
+  "aka": []
+ },
+ "gmaps-636534": {
+  "name_el": null,
+  "name_en": "The Saint",
+  "aka": []
+ },
+ "gmaps-667464": {
+  "name_el": null,
+  "name_en": "Marmari View",
+  "aka": []
+ },
+ "gmaps-465081": {
+  "name_el": null,
+  "name_en": "Kolona Experience",
+  "aka": []
+ },
+ "gmaps-045338": {
+  "name_el": null,
+  "name_en": "Scorpios Santorini",
+  "aka": []
+ },
+ "gmaps-698169": {
+  "name_el": null,
+  "name_en": "Caldera",
+  "aka": []
+ },
+ "gmaps-060680": {
+  "name_el": null,
+  "name_en": "Sunset Kiparrisi",
+  "aka": []
+ },
+ "gmaps-895671": {
+  "name_el": null,
+  "name_en": "Pefkospilia",
+  "aka": []
+ },
+ "gmaps-221554": {
+  "name_el": "Μαρίνα",
+  "name_en": "Marina",
+  "aka": [
+   "Αλκυώνα",
+   "Alkyona",
+   "Κουνέλια",
+   "Kounelia",
+   "Ohana",
+   "Γλυφάδα",
+   "Καβούρι",
+   "Kavouri",
+   "Κατάκολο – Καβούρι",
+   "Katakolo - Kavouri"
+  ]
+ },
+ "gmaps-171376": {
+  "name_el": null,
+  "name_en": "Skala Rachoniou",
+  "aka": []
+ },
+ "gmaps-409499": {
+  "name_el": null,
+  "name_en": "Artaki",
+  "aka": []
+ },
+ "gmaps-085317": {
+  "name_el": null,
+  "name_en": "Banana",
+  "aka": []
+ },
+ "gmaps-789125": {
+  "name_el": null,
+  "name_en": "Psalidi",
+  "aka": []
+ },
+ "gmaps-687317": {
+  "name_el": null,
+  "name_en": "Maraboo",
+  "aka": []
+ },
+ "gmaps-274565": {
+  "name_el": "Αγίου Ηλία",
+  "name_en": "Agiou Ilia",
+  "aka": [
+   "Άγιος Ηλίας",
+   "Άγιος Ηλίας Θέση 1",
+   "Agios Ilias - Skafidia 1",
+   "Άγιος Ηλίας – Σκαφιδιά 1",
+   "Σκαφιδιάς",
+   "Skafidias",
+   "Aldemar",
+   "Agios Ilias - Skafidia 2",
+   "Άγιος Ηλίας – Σκαφιδιά 2",
+   "Άγιος Ηλίας Θέση 3"
+  ]
+ },
+ "gmaps-474928": {
+  "name_el": null,
+  "name_en": "Golden",
+  "aka": []
+ },
+ "gmaps-543561": {
+  "name_el": null,
+  "name_en": "Sunset Palouki",
+  "aka": []
+ },
+ "gmaps-077199": {
+  "name_el": null,
+  "name_en": "Sungate",
+  "aka": []
+ },
+ "gmaps-216516": {
+  "name_el": null,
+  "name_en": "Sungate",
+  "aka": []
+ },
+ "gmaps-658700": {
+  "name_el": null,
+  "name_en": "Gipedo Volley",
+  "aka": []
+ },
+ "gmaps-553040": {
+  "name_el": null,
+  "name_en": "Nami",
+  "aka": []
+ },
+ "gmaps-135525": {
+  "name_el": null,
+  "name_en": "Nissos",
+  "aka": [
+   "Yako"
+  ]
+ },
+ "gmaps-357919": {
+  "name_el": null,
+  "name_en": "Haven Bay",
+  "aka": []
+ },
+ "gmaps-942158": {
+  "name_el": null,
+  "name_en": "Apaggio",
+  "aka": []
+ },
+ "gmaps-741491": {
+  "name_el": null,
+  "name_en": "Adrianopholus",
+  "aka": []
+ },
+ "gmaps-752605": {
+  "name_el": null,
+  "name_en": "New",
+  "aka": []
+ },
+ "gmaps-345763": {
+  "name_el": null,
+  "name_en": "La Plage",
+  "aka": []
+ },
+ "gmaps-710776": {
+  "name_el": null,
+  "name_en": "La Plage",
+  "aka": []
+ },
+ "gmaps-812445": {
+  "name_el": null,
+  "name_en": "Elabeach",
+  "aka": []
+ },
+ "gmaps-852071": {
+  "name_el": null,
+  "name_en": "Sonar",
+  "aka": []
+ },
+ "gmaps-882692": {
+  "name_el": null,
+  "name_en": "Rivera",
+  "aka": []
+ },
+ "gmaps-073976": {
+  "name_el": null,
+  "name_en": "Secret",
+  "aka": []
+ },
+ "gmaps-466475": {
+  "name_el": null,
+  "name_en": "Acqua Blu",
+  "aka": []
+ },
+ "gmaps-782335": {
+  "name_el": null,
+  "name_en": "Gnospi",
+  "aka": []
+ },
+ "gmaps-763762": {
+  "name_el": null,
+  "name_en": "Pleiades",
+  "aka": []
+ },
+ "gmaps-325341": {
+  "name_el": "Σωτηρίτσας",
+  "name_en": "Sotiritsas",
+  "aka": []
+ },
+ "gmaps-964387": {
+  "name_el": "Βελίκας",
+  "name_en": "Velikas",
+  "aka": []
+ },
+ "gmaps-429427": {
+  "name_el": "Μυκάλη",
+  "name_en": "Mykali",
+  "aka": [
+   "Mikali",
+   "Μυκάλη Βαθέος",
+   "Μεσόκαμπος",
+   "Μικαλη Βαθεος",
+   "Καμπλάκι Μυκάλη Βαθέος",
+   "Mesokampos"
+  ]
+ },
+ "gmaps-149925": {
+  "name_el": null,
+  "name_en": "Magenta",
+  "aka": [
+   "Salty",
+   "Ververoda"
+  ]
+ },
+ "gmaps-174359": {
+  "name_el": null,
+  "name_en": "Asteria",
+  "aka": []
+ },
+ "gmaps-982554": {
+  "name_el": null,
+  "name_en": "Royal",
+  "aka": []
+ },
+ "gmaps-918099": {
+  "name_el": null,
+  "name_en": "Crystal Calma",
+  "aka": []
+ },
+ "gmaps-920295": {
+  "name_el": null,
+  "name_en": "Baiocco Kythnos",
+  "aka": []
+ },
+ "gmaps-405163": {
+  "name_el": null,
+  "name_en": "Sabbia",
+  "aka": []
+ },
+ "gmaps-977200": {
+  "name_el": null,
+  "name_en": "Romanikos",
+  "aka": []
+ },
+ "gmaps-849450": {
+  "name_el": null,
+  "name_en": "G Square",
+  "aka": []
+ },
+ "gmaps-497836": {
+  "name_el": null,
+  "name_en": "Blue Lagoon",
+  "aka": []
+ },
+ "gmaps-539024": {
+  "name_el": null,
+  "name_en": "Prasoudi",
+  "aka": []
+ },
+ "gmaps-573680": {
+  "name_el": null,
+  "name_en": "Dolphin Bay",
+  "aka": []
+ },
+ "gmaps-806217": {
+  "name_el": null,
+  "name_en": "King Scorpio",
+  "aka": []
+ },
+ "gmaps-233676": {
+  "name_el": null,
+  "name_en": "Gyrismata",
+  "aka": []
+ },
+ "gmaps-781589": {
+  "name_el": null,
+  "name_en": "Sidari Vibes On The",
+  "aka": []
+ },
+ "gmaps-700338": {
+  "name_el": null,
+  "name_en": "Glyko",
+  "aka": []
+ },
+ "gmaps-999822": {
+  "name_el": null,
+  "name_en": "Polyos",
+  "aka": []
+ },
+ "gmaps-955765": {
+  "name_el": null,
+  "name_en": "Boukari",
+  "aka": []
+ },
+ "gmaps-964925": {
+  "name_el": null,
+  "name_en": "Balimera Natural",
+  "aka": []
+ },
+ "gmaps-552485": {
+  "name_el": null,
+  "name_en": null,
+  "aka": []
+ },
+ "gmaps-985337": {
+  "name_el": null,
+  "name_en": "Agios Georgios",
+  "aka": []
+ },
+ "gmaps-590749": {
+  "name_el": null,
+  "name_en": "Limenaria",
+  "aka": []
+ },
+ "gmaps-865974": {
+  "name_el": null,
+  "name_en": null,
+  "aka": []
+ },
+ "gmaps-849073": {
+  "name_el": null,
+  "name_en": null,
+  "aka": []
+ },
+ "gmaps-891135": {
+  "name_el": "Άγιος Μάμας",
+  "name_en": "Agios Mamas",
+  "aka": [
+   "Αγίου Μάμα Χαλκιδική",
+   "Agjio Mama"
+  ]
+ },
+ "gmaps-359893": {
+  "name_el": null,
+  "name_en": null,
+  "aka": []
+ },
+ "gmaps-567354": {
+  "name_el": null,
+  "name_en": "Kiosk Sampson - Astakos",
+  "aka": []
+ },
+ "gmaps-490465": {
+  "name_el": null,
+  "name_en": "Banana Katakolo",
+  "aka": []
+ },
+ "gmaps-645426": {
+  "name_el": "Πλέπη",
+  "name_en": "Plepi",
+  "aka": []
+ },
+ "gmaps-338901": {
+  "name_el": null,
+  "name_en": "Therme Sea Luxury Lodges",
+  "aka": []
+ },
+ "gmaps-004208": {
+  "name_el": null,
+  "name_en": null,
+  "aka": []
+ },
+ "gmaps-666804": {
+  "name_el": null,
+  "name_en": null,
+  "aka": []
+ },
+ "gmaps-721417": {
+  "name_el": null,
+  "name_en": "Dexameni",
+  "aka": []
+ },
+ "gmaps-512581": {
+  "name_el": null,
+  "name_en": null,
+  "aka": []
+ },
+ "gmaps-576955": {
+  "name_el": null,
+  "name_en": "Casa Moderno near the - Entire Place",
+  "aka": []
+ },
+ "gmaps-656658": {
+  "name_el": null,
+  "name_en": "Peppy's",
+  "aka": [
+   "Kapsalis"
+  ]
+ },
+ "gmaps-576381": {
+  "name_el": null,
+  "name_en": "Riviera",
+  "aka": []
+ },
+ "gmaps-929021": {
+  "name_el": null,
+  "name_en": "Niki",
+  "aka": []
+ },
+ "gmaps-051235": {
+  "name_el": null,
+  "name_en": null,
+  "aka": []
+ },
+ "gmaps-727439": {
+  "name_el": null,
+  "name_en": null,
+  "aka": []
+ },
+ "gmaps-745430": {
+  "name_el": null,
+  "name_en": null,
+  "aka": []
+ },
+ "gmaps-536756": {
+  "name_el": "Τρελό Περίπτερο Αρτάκη",
+  "name_en": "Trelo Periptero Artaki",
+  "aka": []
+ },
+ "gmaps-625813": {
+  "name_el": "ΚΑΑΥ Κατασκηνώσεις Αναψυχής Αξιωματικών",
+  "name_en": "KAAY Kataskinoseis Anapsychis Axiomatikon",
+  "aka": []
+ },
+ "gmaps-877985": {
+  "name_el": "Κάμπινγκ Ιντερστέισον Στυλίδας",
+  "name_en": "Camping Interstation Stylidas",
+  "aka": []
+ },
+ "gmaps-939648": {
+  "name_el": null,
+  "name_en": "Lakki Village",
+  "aka": []
+ },
+ "gmaps-481285": {
+  "name_el": null,
+  "name_en": "Grotta",
+  "aka": []
+ },
+ "gmaps-563310": {
+  "name_el": null,
+  "name_en": null,
+  "aka": []
+ },
+ "gmaps-828765": {
+  "name_el": null,
+  "name_en": "Iraklia",
+  "aka": []
+ },
+ "gmaps-140068": {
+  "name_el": null,
+  "name_en": "Playa De OYA",
+  "aka": []
+ },
+ "gmaps-778579": {
+  "name_el": "Κροτηράκι",
+  "name_en": "Krotiraki",
+  "aka": []
+ },
+ "gmaps-130552": {
+  "name_el": null,
+  "name_en": null,
+  "aka": []
+ },
+ "gmaps-047463": {
+  "name_el": null,
+  "name_en": "Front Cabins",
+  "aka": [
+   "Skala Kalirachi"
+  ]
+ },
+ "gmaps-296693": {
+  "name_el": null,
+  "name_en": "Velonas",
+  "aka": []
+ },
+ "gmaps-444452": {
+  "name_el": null,
+  "name_en": null,
+  "aka": []
+ },
+ "gmaps-674699": {
+  "name_el": "Νταμιαλή",
+  "name_en": "Ntamiali",
+  "aka": []
+ },
+ "gmaps-872111": {
+  "name_el": null,
+  "name_en": "Nea Fokea",
+  "aka": []
+ },
+ "gmaps-657794": {
+  "name_el": null,
+  "name_en": null,
+  "aka": []
+ },
+ "gmaps-181736": {
+  "name_el": null,
+  "name_en": "Hidden",
+  "aka": []
+ },
+ "gmaps-572551": {
+  "name_el": null,
+  "name_en": null,
+  "aka": []
+ },
+ "gmaps-948283": {
+  "name_el": null,
+  "name_en": "Kohonna",
+  "aka": []
+ },
+ "gmaps-641582": {
+  "name_el": null,
+  "name_en": "Kysys",
+  "aka": []
+ },
+ "gmaps-190265": {
+  "name_el": null,
+  "name_en": "Mabella",
+  "aka": []
+ },
+ "gmaps-939891": {
+  "name_el": null,
+  "name_en": null,
+  "aka": []
+ },
+ "gmaps-271985": {
+  "name_el": "Κόλπος Θυμαρίου",
+  "name_en": "Kolpos Thymariou",
+  "aka": []
+ },
+ "gmaps-446906": {
+  "name_el": null,
+  "name_en": "Platanitsi Wild",
+  "aka": []
+ },
+ "gmaps-280427": {
+  "name_el": "Λουτράκι FKK",
+  "name_en": "Loutraki FKK",
+  "aka": []
+ },
+ "gmaps-995940": {
+  "name_el": "Κοντά στην Αγία Κυριακή",
+  "name_en": "Near Agia Kyriaki",
+  "aka": []
+ },
+ "gmaps-363309": {
+  "name_el": "Κοκκινόβραχος",
+  "name_en": "Kokkinovrachos",
+  "aka": []
+ },
+ "gmaps-597277": {
+  "name_el": null,
+  "name_en": "Dionisos",
+  "aka": []
+ },
+ "gmaps-137130": {
+  "name_el": null,
+  "name_en": null,
+  "aka": []
+ },
+ "gmaps-760917": {
+  "name_el": null,
+  "name_en": "Sani",
+  "aka": [
+   "Sunny Paradise"
+  ]
+ },
+ "gmaps-692943": {
+  "name_el": null,
+  "name_en": "Rodovani",
+  "aka": []
+ },
+ "gmaps-969635": {
+  "name_el": null,
+  "name_en": "Drakano",
+  "aka": []
+ },
+ "gmaps-007602": {
+  "name_el": null,
+  "name_en": "Leros Canyon",
+  "aka": []
+ },
+ "gmaps-545524": {
+  "name_el": null,
+  "name_en": "Mellow South",
+  "aka": []
+ },
+ "gmaps-582601": {
+  "name_el": null,
+  "name_en": "Plakaki",
+  "aka": []
+ },
+ "gmaps-142539": {
+  "name_el": "Φαράγγι",
+  "name_en": "Farangi",
+  "aka": []
+ },
+ "gmaps-996357": {
+  "name_el": null,
+  "name_en": "Little Paradise",
+  "aka": []
+ },
+ "gmaps-014828": {
+  "name_el": null,
+  "name_en": "Hondros Volakas",
+  "aka": []
+ },
+ "gmaps-163351": {
+  "name_el": "Ολυμπιακός",
+  "name_en": "Olympiacos",
+  "aka": []
+ },
+ "gmaps-324902": {
+  "name_el": null,
+  "name_en": null,
+  "aka": []
+ },
+ "gmaps-167564": {
+  "name_el": "Κερτής",
+  "name_en": "Kertis",
+  "aka": []
+ },
+ "gmaps-070425": {
+  "name_el": null,
+  "name_en": "Klido Bay",
+  "aka": []
+ },
+ "gmaps-209179": {
+  "name_el": null,
+  "name_en": "Babaya",
+  "aka": []
+ },
+ "gmaps-849399": {
+  "name_el": "Ίσαλος",
+  "name_en": "Isalos",
+  "aka": []
+ },
+ "gmaps-611815": {
+  "name_el": null,
+  "name_en": "Aetos",
+  "aka": []
+ },
+ "gmaps-626666": {
+  "name_el": null,
+  "name_en": "Riviera",
+  "aka": []
+ },
+ "gmaps-073142": {
+  "name_el": "Γιαλιά",
+  "name_en": "Yalia",
+  "aka": []
+ },
+ "gmaps-022064": {
+  "name_el": "Αγιασό",
+  "name_en": "Agiaso",
+  "aka": [
+   "Nudists"
+  ]
+ },
+ "gmaps-620214": {
+  "name_el": null,
+  "name_en": "Vrahi",
+  "aka": []
+ },
+ "gmaps-440767": {
+  "name_el": null,
+  "name_en": "Sarastko",
+  "aka": []
+ },
+ "gmaps-825121": {
+  "name_el": null,
+  "name_en": "Kostoula",
+  "aka": []
+ },
+ "gmaps-325950": {
+  "name_el": null,
+  "name_en": "Mally Dacha 2.0",
+  "aka": []
+ },
+ "gmaps-048060": {
+  "name_el": null,
+  "name_en": null,
+  "aka": []
+ },
+ "gmaps-289290": {
+  "name_el": null,
+  "name_en": null,
+  "aka": []
+ },
+ "gmaps-066534": {
+  "name_el": null,
+  "name_en": null,
+  "aka": []
+ },
+ "gmaps-388639": {
+  "name_el": null,
+  "name_en": null,
+  "aka": []
+ },
+ "gmaps-982918": {
+  "name_el": null,
+  "name_en": "Scenic Coastal Getaway",
+  "aka": []
+ },
+ "gmaps-545862": {
+  "name_el": null,
+  "name_en": "Kremidi",
+  "aka": []
+ },
+ "gmaps-602661": {
+  "name_el": null,
+  "name_en": "South Spot of Lesvos",
+  "aka": []
+ },
+ "gmaps-816366": {
+  "name_el": null,
+  "name_en": "Nudist",
+  "aka": []
+ },
+ "gmaps-784963": {
+  "name_el": null,
+  "name_en": null,
+  "aka": []
+ },
+ "gmaps-026538": {
+  "name_el": null,
+  "name_en": null,
+  "aka": []
+ },
+ "gmaps-731329": {
+  "name_el": null,
+  "name_en": "Lino",
+  "aka": []
+ },
+ "gmaps-909131": {
+  "name_el": null,
+  "name_en": "Bill's",
+  "aka": []
+ },
+ "gmaps-256587": {
+  "name_el": null,
+  "name_en": "Little",
+  "aka": []
+ },
+ "gmaps-843271": {
+  "name_el": null,
+  "name_en": "Petrali",
+  "aka": []
+ },
+ "gmaps-253622": {
+  "name_el": null,
+  "name_en": "Lefkada",
+  "aka": []
+ },
+ "gmaps-694133": {
+  "name_el": null,
+  "name_en": "Natural Bay",
+  "aka": []
+ },
+ "gmaps-416018": {
+  "name_el": "Μπουρνώντας",
+  "name_en": "Bournontas",
+  "aka": []
+ },
+ "gmaps-472716": {
+  "name_el": null,
+  "name_en": "Loutraki",
+  "aka": []
+ },
+ "gmaps-027230": {
+  "name_el": null,
+  "name_en": "Aspaki",
+  "aka": []
+ },
+ "gmaps-007905": {
+  "name_el": null,
+  "name_en": null,
+  "aka": []
+ },
+ "gmaps-782068": {
+  "name_el": null,
+  "name_en": "Pine & Sea",
+  "aka": []
+ },
+ "gmaps-685578": {
+  "name_el": "Μύλος",
+  "name_en": "Milos",
+  "aka": []
+ },
+ "gmaps-889101": {
+  "name_el": null,
+  "name_en": "Karagatsi",
+  "aka": []
+ },
+ "gmaps-183144": {
+  "name_el": null,
+  "name_en": "Porto Skrofa",
+  "aka": []
+ },
+ "gmaps-741145": {
+  "name_el": null,
+  "name_en": "Naturist",
+  "aka": []
+ },
+ "gmaps-731670": {
+  "name_el": null,
+  "name_en": "Dafni",
+  "aka": []
+ },
+ "gmaps-426761": {
+  "name_el": null,
+  "name_en": "Aginara",
+  "aka": []
+ },
+ "gmaps-989676": {
+  "name_el": null,
+  "name_en": "Amazing Small",
+  "aka": []
+ },
+ "gmaps-283247": {
+  "name_el": "Μπαλτζίκι",
+  "name_en": "Baltziki",
+  "aka": []
+ },
+ "gmaps-405629": {
+  "name_el": null,
+  "name_en": "Rodolithos",
+  "aka": []
+ },
+ "gmaps-822017": {
+  "name_el": null,
+  "name_en": "Ammolithos",
+  "aka": []
+ },
+ "gmaps-947395": {
+  "name_el": null,
+  "name_en": "Manto",
+  "aka": []
+ },
+ "gmaps-909016": {
+  "name_el": null,
+  "name_en": "Periklis'",
+  "aka": []
+ },
+ "gmaps-241641": {
+  "name_el": null,
+  "name_en": "Paraiso",
+  "aka": []
+ },
+ "gmaps-751034": {
+  "name_el": null,
+  "name_en": "Zoe Seaside",
+  "aka": []
+ },
+ "gmaps-434807": {
+  "name_el": null,
+  "name_en": "Gennadi Grand",
+  "aka": []
+ },
+ "gmaps-705260": {
+  "name_el": null,
+  "name_en": "Matoula",
+  "aka": []
+ },
+ "gmaps-247749": {
+  "name_el": null,
+  "name_en": "Stavromenos",
+  "aka": []
+ },
+ "gmaps-193172": {
+  "name_el": null,
+  "name_en": null,
+  "aka": []
+ },
+ "gmaps-646887": {
+  "name_el": null,
+  "name_en": "Beachfront Residence",
+  "aka": []
+ },
+ "gmaps-480599": {
+  "name_el": null,
+  "name_en": "Star Village & Water Park",
+  "aka": []
+ },
+ "gmaps-906652": {
+  "name_el": null,
+  "name_en": null,
+  "aka": []
+ },
+ "gmaps-187941": {
+  "name_el": null,
+  "name_en": "Kyparissia",
+  "aka": []
+ },
+ "gmaps-919480": {
+  "name_el": null,
+  "name_en": null,
+  "aka": []
+ },
+ "gmaps-933860": {
+  "name_el": null,
+  "name_en": "Path",
+  "aka": []
+ },
+ "gmaps-226033": {
+  "name_el": null,
+  "name_en": null,
+  "aka": []
+ },
+ "gmaps-856216": {
+  "name_el": null,
+  "name_en": "Costa Lindia",
+  "aka": []
+ },
+ "gmaps-512442": {
+  "name_el": null,
+  "name_en": "Chelidoni",
+  "aka": []
+ },
+ "gmaps-016201": {
+  "name_el": null,
+  "name_en": null,
+  "aka": []
+ },
+ "gmaps-143811": {
+  "name_el": null,
+  "name_en": "Barolo",
+  "aka": []
+ },
+ "gmaps-237549": {
+  "name_el": null,
+  "name_en": "Volleyball Kalimera",
+  "aka": []
+ },
+ "gmaps-190882": {
+  "name_el": null,
+  "name_en": null,
+  "aka": []
+ },
+ "gmaps-051838": {
+  "name_el": null,
+  "name_en": null,
+  "aka": []
+ },
+ "gmaps-690981": {
+  "name_el": null,
+  "name_en": "Hercules",
+  "aka": []
+ },
+ "gmaps-601693": {
+  "name_el": null,
+  "name_en": null,
+  "aka": []
+ },
+ "gmaps-395746": {
+  "name_el": "Ψαρή Φοράδα",
+  "name_en": "Paraiso Hall",
+  "aka": []
+ },
+ "gmaps-767010": {
+  "name_el": "Φαφλάγκος",
+  "name_en": "Faflagkos",
+  "aka": [
+   "Φαφλαγκο"
+  ]
+ },
+ "gmaps-544594": {
+  "name_el": "Ψαροχάρακο",
+  "name_en": "Psarocharako",
+  "aka": []
+ },
+ "gmaps-669215": {
+  "name_el": null,
+  "name_en": null,
+  "aka": []
+ },
+ "gmaps-649878": {
+  "name_el": null,
+  "name_en": "Basti",
+  "aka": []
+ },
+ "gmaps-841547": {
+  "name_el": "Όρμος",
+  "name_en": "Ormos",
+  "aka": []
+ },
+ "gmaps-075945": {
+  "name_el": "Βαρκοτόπι",
+  "name_en": "Varkotopi",
+  "aka": []
+ },
+ "gmaps-839129": {
+  "name_el": null,
+  "name_en": "Small Cave Kritamos",
+  "aka": []
+ },
+ "gmaps-591860": {
+  "name_el": null,
+  "name_en": "Mashali",
+  "aka": []
+ },
+ "gmaps-276261": {
+  "name_el": "Κοντούρα Πελεκάνου",
+  "name_en": "Kontoura Pelekanou",
+  "aka": []
+ },
+ "gmaps-260827": {
+  "name_el": null,
+  "name_en": "Secret",
+  "aka": []
+ },
+ "gmaps-672998": {
+  "name_el": null,
+  "name_en": "Tenda",
+  "aka": []
+ },
+ "gmaps-085788": {
+  "name_el": "ΣΟΕ-Τροχανά",
+  "name_en": "SOE-Trochana",
+  "aka": []
+ },
+ "gmaps-839169": {
+  "name_el": "Πατσαβρά",
+  "name_en": "Patsavra",
+  "aka": []
+ },
+ "gmaps-856584": {
+  "name_el": null,
+  "name_en": null,
+  "aka": []
+ },
+ "gmaps-520249": {
+  "name_el": null,
+  "name_en": "Delfina Tropic",
+  "aka": []
+ },
+ "gmaps-218437": {
+  "name_el": null,
+  "name_en": "Stone Beautiful",
+  "aka": []
+ },
+ "gmaps-452315": {
+  "name_el": null,
+  "name_en": "Nereas",
+  "aka": []
+ },
+ "gmaps-083738": {
+  "name_el": null,
+  "name_en": "Paralos Lifestyle",
+  "aka": []
+ },
+ "gmaps-782937": {
+  "name_el": null,
+  "name_en": "Elari",
+  "aka": []
+ },
+ "gmaps-900138": {
+  "name_el": null,
+  "name_en": "Exo Elaris",
+  "aka": []
+ },
+ "gmaps-545920": {
+  "name_el": null,
+  "name_en": "Nikoliou O Kolpos",
+  "aka": []
+ },
+ "gmaps-240031": {
+  "name_el": null,
+  "name_en": "Argilos",
+  "aka": []
+ },
+ "gmaps-247038": {
+  "name_el": "Αγριαλοπόταμος",
+  "name_en": "Agrialopotamos",
+  "aka": []
+ },
+ "gmaps-921621": {
+  "name_el": null,
+  "name_en": "Falassarna - Perigiali",
+  "aka": []
+ },
+ "gmaps-148718": {
+  "name_el": null,
+  "name_en": "Falasarna Big (North End)",
+  "aka": []
+ },
+ "gmaps-682314": {
+  "name_el": "Σικελαό",
+  "name_en": "Sikelao",
+  "aka": []
+ },
+ "gmaps-780604": {
+  "name_el": null,
+  "name_en": "Balo's",
+  "aka": []
+ },
+ "gmaps-607027": {
+  "name_el": null,
+  "name_en": "Delfini",
+  "aka": []
+ },
+ "gmaps-761268": {
+  "name_el": null,
+  "name_en": "Nopigia",
+  "aka": []
+ },
+ "gmaps-132763": {
+  "name_el": null,
+  "name_en": "Ravdoucha",
+  "aka": []
+ },
+ "gmaps-881758": {
+  "name_el": null,
+  "name_en": null,
+  "aka": []
+ },
+ "gmaps-786158": {
+  "name_el": null,
+  "name_en": "Kamares",
+  "aka": []
+ },
+ "gmaps-672677": {
+  "name_el": null,
+  "name_en": "Evangeline",
+  "aka": []
+ },
+ "gmaps-587327": {
+  "name_el": "Ιλιόντας",
+  "name_en": "Iliontas",
+  "aka": []
+ },
+ "gmaps-676821": {
+  "name_el": null,
+  "name_en": "Balos Trail",
+  "aka": []
+ },
+ "gmaps-463600": {
+  "name_el": null,
+  "name_en": null,
+  "aka": []
+ },
+ "gmaps-921039": {
+  "name_el": "Καμαρέλα",
+  "name_en": "Kamarela",
+  "aka": []
+ },
+ "gmaps-844300": {
+  "name_el": null,
+  "name_en": "My Secret",
+  "aka": []
+ },
+ "gmaps-493687": {
+  "name_el": null,
+  "name_en": "Dragon",
+  "aka": []
+ },
+ "gmaps-739051": {
+  "name_el": null,
+  "name_en": "Mare Blu 1",
+  "aka": []
+ },
+ "gmaps-493952": {
+  "name_el": null,
+  "name_en": "Alone",
+  "aka": []
+ },
+ "gmaps-125667": {
+  "name_el": null,
+  "name_en": "Fourni",
+  "aka": []
+ },
+ "gmaps-473339": {
+  "name_el": null,
+  "name_en": "Kaladi",
+  "aka": []
+ },
+ "gmaps-955767": {
+  "name_el": null,
+  "name_en": "Baths Of Helen",
+  "aka": []
+ },
+ "gmaps-173758": {
+  "name_el": null,
+  "name_en": "Red Sand",
+  "aka": []
+ },
+ "gmaps-655452": {
+  "name_el": null,
+  "name_en": "Grande Blue",
+  "aka": []
+ },
+ "gmaps-100413": {
+  "name_el": null,
+  "name_en": "Kythera",
+  "aka": [
+   "Kythira"
+  ]
+ },
+ "gmaps-509160": {
+  "name_el": null,
+  "name_en": "Kolimpia",
+  "aka": []
+ },
+ "gmaps-752649": {
+  "name_el": null,
+  "name_en": "Theologos",
+  "aka": []
+ },
+ "gmaps-540301": {
+  "name_el": null,
+  "name_en": "Public",
+  "aka": []
+ },
+ "gmaps-036857": {
+  "name_el": null,
+  "name_en": "Playa Negra",
+  "aka": []
+ },
+ "gmaps-103584": {
+  "name_el": "Μεζαλιμόνας",
+  "name_en": "Mezalimonas",
+  "aka": []
+ },
+ "gmaps-663550": {
+  "name_el": null,
+  "name_en": "Georgiou Gennimata Bay Promenade",
+  "aka": []
+ },
+ "gmaps-133539": {
+  "name_el": null,
+  "name_en": "Dentro",
+  "aka": []
+ },
+ "gmaps-602053": {
+  "name_el": null,
+  "name_en": "Kalamos",
+  "aka": []
+ },
+ "gmaps-349875": {
+  "name_el": null,
+  "name_en": "Quiet",
+  "aka": []
+ },
+ "gmaps-525061": {
+  "name_el": null,
+  "name_en": "Monemvasia Swimming Area",
+  "aka": []
+ },
+ "gmaps-417787": {
+  "name_el": null,
+  "name_en": "Kampos",
+  "aka": []
+ },
+ "gmaps-999168": {
+  "name_el": null,
+  "name_en": "Helona",
+  "aka": []
+ },
+ "gmaps-431881": {
+  "name_el": null,
+  "name_en": "Saint Fridays",
+  "aka": []
+ },
+ "gmaps-083673": {
+  "name_el": "Ασπράδες",
+  "name_en": "Asprades",
+  "aka": []
+ },
+ "gmaps-653507": {
+  "name_el": null,
+  "name_en": "Flamingo",
+  "aka": []
+ },
+ "gmaps-431569": {
+  "name_el": null,
+  "name_en": "Vangelis",
+  "aka": [
+   "Inbetweeners"
+  ]
+ },
+ "gmaps-513785": {
+  "name_el": null,
+  "name_en": "Happy Flamingo",
+  "aka": []
+ },
+ "gmaps-523472": {
+  "name_el": null,
+  "name_en": "Lambi",
+  "aka": []
+ },
+ "gmaps-649498": {
+  "name_el": null,
+  "name_en": "Hawaii",
+  "aka": []
+ },
+ "gmaps-217818": {
+  "name_el": null,
+  "name_en": null,
+  "aka": []
+ },
+ "gmaps-026326": {
+  "name_el": null,
+  "name_en": "Lazarou",
+  "aka": []
+ },
+ "gmaps-564481": {
+  "name_el": "Παναγία Πουλάτη",
+  "name_en": "Panagia Poulati",
+  "aka": []
+ },
+ "gmaps-835560": {
+  "name_el": null,
+  "name_en": "Romanos - South",
+  "aka": []
+ },
+ "gmaps-710618": {
+  "name_el": null,
+  "name_en": "First Despotiko",
+  "aka": []
+ },
+ "gmaps-049800": {
+  "name_el": null,
+  "name_en": "Mirties Mountain Path",
+  "aka": []
+ },
+ "gmaps-472595": {
+  "name_el": null,
+  "name_en": "Verga",
+  "aka": []
+ },
+ "gmaps-008244": {
+  "name_el": "Αλμυρός Ακτής",
+  "name_en": "Almyros Aktis",
+  "aka": []
+ },
+ "gmaps-738305": {
+  "name_el": "Μπούκα",
+  "name_en": "Bouka",
+  "aka": []
+ },
+ "gmaps-766851": {
+  "name_el": "Φλαμίνγκο",
+  "name_en": "Flamingo",
+  "aka": []
+ },
+ "gmaps-449414": {
+  "name_el": "Περικοπέτρα",
+  "name_en": "Perikopetra",
+  "aka": []
+ },
+ "gmaps-711260": {
+  "name_el": null,
+  "name_en": null,
+  "aka": []
+ },
+ "gmaps-935945": {
+  "name_el": null,
+  "name_en": "Little Paradise",
+  "aka": []
+ },
+ "gmaps-185551": {
+  "name_el": "Λυδία",
+  "name_en": "Lydia",
+  "aka": []
+ },
+ "gmaps-259142": {
+  "name_el": "Απόλλωνας",
+  "name_en": "Apollonas",
+  "aka": []
+ },
+ "gmaps-484858": {
+  "name_el": null,
+  "name_en": null,
+  "aka": []
+ },
+ "gmaps-478891": {
+  "name_el": "Κάτι-Σπηλιά",
+  "name_en": "Kati-Cave",
+  "aka": []
+ },
+ "gmaps-077065": {
+  "name_el": null,
+  "name_en": "Lovers Cove",
+  "aka": []
+ },
+ "gmaps-271751": {
+  "name_el": "Λίμνη",
+  "name_en": "Limni",
+  "aka": []
+ },
+ "gmaps-431256": {
+  "name_el": "Ξερόκαμπος",
+  "name_en": "Xerokambos",
+  "aka": []
+ },
+ "gmaps-135336": {
+  "name_el": "Χοχλαχούρα",
+  "name_en": "Hoclahoura",
+  "aka": []
+ },
+ "gmaps-570323": {
+  "name_el": "Κοίμηση",
+  "name_en": "Kimisi",
+  "aka": []
+ },
+ "gmaps-406639": {
+  "name_el": "Νησίζα",
+  "name_en": "Nisiza",
+  "aka": []
+ },
+ "gmaps-145971": {
+  "name_el": "Καουμίτη",
+  "name_en": "Kaoumiti",
+  "aka": []
+ },
+ "gmaps-846843": {
+  "name_el": "Μώλος Ναυάγιο",
+  "name_en": "Molos Shipwreck",
+  "aka": []
+ },
+ "gmaps-829647": {
+  "name_el": "Κλαμίνια",
+  "name_en": "Klaminia",
+  "aka": []
+ },
+ "gmaps-897371": {
+  "name_el": "Πετροθάλασσας",
+  "name_en": "Petrothalassas",
+  "aka": []
+ },
+ "gmaps-899226": {
+  "name_el": "Θολό",
+  "name_en": "Tholo",
+  "aka": []
+ },
+ "gmaps-339608": {
+  "name_el": "Κλιμάκι",
+  "name_en": "Klimaki",
+  "aka": []
+ },
+ "gmaps-066372": {
+  "name_el": "Κίμης",
+  "name_en": "Kimi's",
+  "aka": [
+   "Τηγανάκια Αρκοί",
+   "Tiganakia Arkoi"
+  ]
+ },
+ "gmaps-272513": {
+  "name_el": "Λιμνάρι",
+  "name_en": "Limnari",
+  "aka": []
+ },
+ "gmaps-916590": {
+  "name_el": "Στοκάτσο",
+  "name_en": "Stokatso",
+  "aka": []
+ },
+ "gmaps-682220": {
+  "name_el": null,
+  "name_en": "Hidden",
+  "aka": []
+ },
+ "gmaps-616789": {
+  "name_el": "Διβούνια",
+  "name_en": "Divounia",
+  "aka": []
+ },
+ "gmaps-148409": {
+  "name_el": "Κατσιγιαννέικα",
+  "name_en": "Katsigianneika",
+  "aka": []
+ },
+ "gmaps-190881": {
+  "name_el": "Μικρή",
+  "name_en": "Small",
+  "aka": []
+ },
+ "gmaps-281931": {
+  "name_el": null,
+  "name_en": null,
+  "aka": []
+ },
+ "gmaps-374147": {
+  "name_el": null,
+  "name_en": "Aspa",
+  "aka": []
+ },
+ "gmaps-956213": {
+  "name_el": null,
+  "name_en": "Nektaria on the",
+  "aka": []
+ },
+ "gmaps-625214": {
+  "name_el": null,
+  "name_en": "Elidaki",
+  "aka": []
+ },
+ "gmaps-700230": {
+  "name_el": null,
+  "name_en": "Koumarás",
+  "aka": []
+ },
+ "gmaps-322966": {
+  "name_el": null,
+  "name_en": "Poulios",
+  "aka": []
+ },
+ "gmaps-481905": {
+  "name_el": null,
+  "name_en": "Vitsilia",
+  "aka": []
+ },
+ "gmaps-570504": {
+  "name_el": null,
+  "name_en": "View Point",
+  "aka": []
+ },
+ "gmaps-715888": {
+  "name_el": null,
+  "name_en": "Blue Jai",
+  "aka": []
+ },
+ "gmaps-267008": {
+  "name_el": null,
+  "name_en": "Pyrgos Bay",
+  "aka": []
+ },
+ "gmaps-356720": {
+  "name_el": null,
+  "name_en": "Wild",
+  "aka": []
+ },
+ "gmaps-796469": {
+  "name_el": null,
+  "name_en": "Tasos Lizos Skinny Dipping",
+  "aka": []
+ },
+ "gmaps-602760": {
+  "name_el": null,
+  "name_en": "Mimoza",
+  "aka": []
+ },
+ "gmaps-659899": {
+  "name_el": null,
+  "name_en": "Kalamaki Plajı",
+  "aka": []
+ },
+ "gmaps-624343": {
+  "name_el": null,
+  "name_en": "Sweet Water",
+  "aka": []
+ },
+ "gmaps-540694": {
+  "name_el": null,
+  "name_en": "Long Kokkari Samos",
+  "aka": []
+ },
+ "gmaps-647383": {
+  "name_el": null,
+  "name_en": null,
+  "aka": []
+ },
+ "gmaps-254564": {
+  "name_el": null,
+  "name_en": "Vartholomio",
+  "aka": []
+ },
+ "gmaps-122149": {
+  "name_el": null,
+  "name_en": "Sfogio",
+  "aka": []
+ },
+ "gmaps-490084": {
+  "name_el": null,
+  "name_en": "Camilafka's",
+  "aka": [
+   "La Spiaggia Di Camilafca"
+  ]
+ },
+ "gmaps-478519": {
+  "name_el": null,
+  "name_en": "Diakoftis Paradise",
+  "aka": []
+ },
+ "gmaps-849078": {
+  "name_el": null,
+  "name_en": "Assos",
+  "aka": []
+ },
+ "gmaps-949305": {
+  "name_el": null,
+  "name_en": "Loutraki",
+  "aka": []
+ },
+ "gmaps-720290": {
+  "name_el": null,
+  "name_en": "Nicky FKK",
+  "aka": []
+ },
+ "gmaps-051237": {
+  "name_el": null,
+  "name_en": "Kamari",
+  "aka": []
+ },
+ "gmaps-782917": {
+  "name_el": null,
+  "name_en": "Amandakis",
+  "aka": []
+ },
+ "gmaps-323482": {
+  "name_el": null,
+  "name_en": "Dikastika Mini",
+  "aka": []
+ },
+ "gmaps-591241": {
+  "name_el": null,
+  "name_en": "Lakopetra",
+  "aka": []
+ },
+ "gmaps-015210": {
+  "name_el": "Βόλεϊ Ακράτας",
+  "name_en": "Volley Akratas",
+  "aka": []
+ },
+ "gmaps-930284": {
+  "name_el": "Βίρη",
+  "name_en": "Viri",
+  "aka": []
+ },
+ "gmaps-731780": {
+  "name_el": null,
+  "name_en": null,
+  "aka": []
+ },
+ "gmaps-082931": {
+  "name_el": null,
+  "name_en": "Γήπεδο Soccer «Σπύρος Αβράμης»",
+  "aka": []
+ },
+ "gmaps-093648": {
+  "name_el": null,
+  "name_en": "Volley Παμπελοποννησιακού",
+  "aka": []
+ },
+ "gmaps-483019": {
+  "name_el": "Άγιος Αιμιλιανός Καλλιμάς",
+  "name_en": "Agios Aimilianos Kallimas",
+  "aka": []
+ },
+ "gmaps-880400": {
+  "name_el": null,
+  "name_en": "Mini",
+  "aka": []
+ },
+ "gmaps-558590": {
+  "name_el": null,
+  "name_en": "Sea Star",
+  "aka": []
+ },
+ "gmaps-480709": {
+  "name_el": null,
+  "name_en": "Plaja Mira",
+  "aka": []
+ },
+ "gmaps-567250": {
+  "name_el": null,
+  "name_en": "Itia",
+  "aka": []
+ },
+ "gmaps-421726": {
+  "name_el": null,
+  "name_en": "Nici",
+  "aka": []
+ },
+ "gmaps-119626": {
+  "name_el": null,
+  "name_en": "OBI Seaside Venue",
+  "aka": []
+ },
+ "gmaps-175648": {
+  "name_el": null,
+  "name_en": "Psathopyrgou",
+  "aka": []
+ },
+ "gmaps-602743": {
+  "name_el": null,
+  "name_en": "Pigathakia, Chalkoutsi",
+  "aka": []
+ },
+ "gmaps-698175": {
+  "name_el": null,
+  "name_en": "Piglet Bear Bay",
+  "aka": []
+ },
+ "gmaps-649001": {
+  "name_el": null,
+  "name_en": "Sergoula",
+  "aka": []
+ },
+ "gmaps-419902": {
+  "name_el": null,
+  "name_en": "Limanaki",
+  "aka": []
+ },
+ "gmaps-404482": {
+  "name_el": null,
+  "name_en": "Ayia Triada",
+  "aka": []
+ },
+ "gmaps-343536": {
+  "name_el": null,
+  "name_en": "Kite Nafpaktos",
+  "aka": []
+ },
+ "gmaps-042359": {
+  "name_el": null,
+  "name_en": "Ithaki Wild",
+  "aka": []
+ },
+ "gmaps-515974": {
+  "name_el": null,
+  "name_en": "Managros Naturist",
+  "aka": []
+ },
+ "gmaps-085126": {
+  "name_el": null,
+  "name_en": "Kokossi",
+  "aka": []
+ },
+ "gmaps-541177": {
+  "name_el": "Καρδαμίλα",
+  "name_en": "Kardamila",
+  "aka": []
+ },
+ "gmaps-601101": {
+  "name_el": "Χρυσή",
+  "name_en": "Golden",
+  "aka": []
+ },
+ "gmaps-062600": {
+  "name_el": null,
+  "name_en": "Lila",
+  "aka": []
+ },
+ "gmaps-855685": {
+  "name_el": null,
+  "name_en": "Vasiliki",
+  "aka": []
+ },
+ "gmaps-673961": {
+  "name_el": null,
+  "name_en": "Steni Kablafka",
+  "aka": []
+ },
+ "gmaps-666960": {
+  "name_el": null,
+  "name_en": "Nylec",
+  "aka": []
+ },
+ "gmaps-908965": {
+  "name_el": null,
+  "name_en": "Elia",
+  "aka": []
+ },
+ "gmaps-815081": {
+  "name_el": null,
+  "name_en": "Theologos",
+  "aka": []
+ },
+ "gmaps-521427": {
+  "name_el": "Ευγενείας Α",
+  "name_en": "Evgeneias A",
+  "aka": []
+ },
+ "gmaps-244894": {
+  "name_el": null,
+  "name_en": "Kalamia",
+  "aka": []
+ },
+ "gmaps-336389": {
+  "name_el": null,
+  "name_en": "Kioski",
+  "aka": []
+ },
+ "gmaps-223432": {
+  "name_el": null,
+  "name_en": "Diapori",
+  "aka": []
+ },
+ "gmaps-019418": {
+  "name_el": null,
+  "name_en": "Ilia",
+  "aka": []
+ },
+ "gmaps-309689": {
+  "name_el": null,
+  "name_en": "Rancheros Farm",
+  "aka": []
+ },
+ "gmaps-116870": {
+  "name_el": null,
+  "name_en": "Napa",
+  "aka": []
+ },
+ "gmaps-593627": {
+  "name_el": "Του Παπά το Χούμα",
+  "name_en": "Papa To Houma",
+  "aka": []
+ },
+ "gmaps-563297": {
+  "name_el": null,
+  "name_en": "Monoliti",
+  "aka": [
+   "Miticas"
+  ]
+ },
+ "gmaps-627325": {
+  "name_el": null,
+  "name_en": "Melida",
+  "aka": []
+ },
+ "gmaps-011614": {
+  "name_el": "Καστινιά",
+  "name_en": "Kastinia",
+  "aka": []
+ },
+ "gmaps-824246": {
+  "name_el": null,
+  "name_en": "Golden",
+  "aka": []
+ },
+ "gmaps-525066": {
+  "name_el": "Σκάλα Συκούντος",
+  "name_en": "Skala Sykountos",
+  "aka": []
+ },
+ "gmaps-007396": {
+  "name_el": null,
+  "name_en": "Agia Kyriaki",
+  "aka": []
+ },
+ "gmaps-843543": {
+  "name_el": null,
+  "name_en": "Olar",
+  "aka": []
+ },
+ "gmaps-737840": {
+  "name_el": "Κουφάλα",
+  "name_en": "Kufala",
+  "aka": []
+ },
+ "gmaps-063617": {
+  "name_el": "Κουκουμός",
+  "name_en": "Koukoumos",
+  "aka": []
+ },
+ "gmaps-807195": {
+  "name_el": null,
+  "name_en": "Koukmos",
+  "aka": []
+ },
+ "gmaps-687851": {
+  "name_el": null,
+  "name_en": "Presidential Vila",
+  "aka": []
+ },
+ "gmaps-479303": {
+  "name_el": null,
+  "name_en": "Secret",
+  "aka": []
+ },
+ "gmaps-829229": {
+  "name_el": null,
+  "name_en": "Hidden",
+  "aka": []
+ },
+ "gmaps-101931": {
+  "name_el": null,
+  "name_en": "Stafiucha",
+  "aka": []
+ },
+ "gmaps-437706": {
+  "name_el": "Άκολη",
+  "name_en": "Akoli",
+  "aka": []
+ },
+ "gmaps-088534": {
+  "name_el": null,
+  "name_en": null,
+  "aka": []
+ },
+ "gmaps-899770": {
+  "name_el": null,
+  "name_en": null,
+  "aka": []
+ },
+ "gmaps-748307": {
+  "name_el": null,
+  "name_en": "Agios Sostis",
+  "aka": [
+   "Lefokastro"
+  ]
+ },
+ "gmaps-046694": {
+  "name_el": null,
+  "name_en": "Potoki",
+  "aka": []
+ },
+ "gmaps-243359": {
+  "name_el": null,
+  "name_en": "Costa Kouli",
+  "aka": []
+ },
+ "gmaps-056283": {
+  "name_el": null,
+  "name_en": "Pezoula",
+  "aka": []
+ },
+ "gmaps-595415": {
+  "name_el": null,
+  "name_en": null,
+  "aka": []
+ },
+ "gmaps-317525": {
+  "name_el": null,
+  "name_en": null,
+  "aka": []
+ },
+ "gmaps-288101": {
+  "name_el": null,
+  "name_en": "Plakero",
+  "aka": []
+ },
+ "gmaps-061081": {
+  "name_el": null,
+  "name_en": null,
+  "aka": []
+ },
+ "gmaps-875123": {
+  "name_el": "Γάρδενος",
+  "name_en": "Gardenos",
+  "aka": []
+ },
+ "gmaps-401218": {
+  "name_el": null,
+  "name_en": "Lulu’s",
+  "aka": []
+ },
+ "gmaps-512033": {
+  "name_el": null,
+  "name_en": "Drepano",
+  "aka": []
+ },
+ "gmaps-649334": {
+  "name_el": "Πετρομέλισσο",
+  "name_en": "Petromelisso",
+  "aka": []
+ },
+ "gmaps-624627": {
+  "name_el": null,
+  "name_en": "Spiros Paleokastritsa",
+  "aka": []
+ },
+ "gmaps-020482": {
+  "name_el": null,
+  "name_en": "Platanos",
+  "aka": []
+ },
+ "gmaps-484876": {
+  "name_el": null,
+  "name_en": "Lori",
+  "aka": [
+   "Paradise"
+  ]
+ },
+ "gmaps-360119": {
+  "name_el": null,
+  "name_en": "Ksamil",
+  "aka": []
+ },
+ "gmaps-154672": {
+  "name_el": null,
+  "name_en": null,
+  "aka": []
+ },
+ "gmaps-747696": {
+  "name_el": null,
+  "name_en": null,
+  "aka": []
+ },
+ "gmaps-096513": {
+  "name_el": null,
+  "name_en": "Sand Dunes",
+  "aka": []
+ },
+ "gmaps-500399": {
+  "name_el": null,
+  "name_en": "Secret",
+  "aka": []
+ },
+ "gmaps-139417": {
+  "name_el": null,
+  "name_en": "Ataraxia at Saravari",
+  "aka": []
+ },
+ "gmaps-599697": {
+  "name_el": null,
+  "name_en": "Agios Nikolaos Fourka",
+  "aka": []
+ },
+ "gmaps-795116": {
+  "name_el": null,
+  "name_en": "Gomati",
+  "aka": []
+ },
+ "gmaps-140298": {
+  "name_el": null,
+  "name_en": "Koutsoupia",
+  "aka": []
+ },
+ "gmaps-370738": {
+  "name_el": null,
+  "name_en": "Lptokaria",
+  "aka": []
+ },
+ "gmaps-272190": {
+  "name_el": null,
+  "name_en": "Chelona",
+  "aka": []
+ },
+ "gmaps-084714": {
+  "name_el": null,
+  "name_en": "Variko",
+  "aka": []
+ },
+ "gmaps-975298": {
+  "name_el": null,
+  "name_en": "ORCA Olympic",
+  "aka": []
+ },
+ "gmaps-169547": {
+  "name_el": null,
+  "name_en": "Fotini's",
+  "aka": []
+ },
+ "gmaps-682327": {
+  "name_el": null,
+  "name_en": "Golden",
+  "aka": []
+ },
+ "gmaps-048615": {
+  "name_el": null,
+  "name_en": "Metamorfossi",
+  "aka": []
+ },
+ "gmaps-690437": {
+  "name_el": null,
+  "name_en": "Agios Mamas",
+  "aka": []
+ },
+ "gmaps-603898": {
+  "name_el": null,
+  "name_en": "Nea Moudania",
+  "aka": [
+   "Chalkidiki"
+  ]
+ },
+ "gmaps-038424": {
+  "name_el": null,
+  "name_en": "Psakoudia",
+  "aka": []
+ },
+ "gmaps-409091": {
+  "name_el": null,
+  "name_en": "Luuma - Flogita Halkidiki",
+  "aka": []
+ },
+ "gmaps-222675": {
+  "name_el": null,
+  "name_en": "Psakoudia",
+  "aka": []
+ },
+ "gmaps-119508": {
+  "name_el": null,
+  "name_en": "Mikiverna",
+  "aka": []
+ },
+ "gmaps-435752": {
+  "name_el": null,
+  "name_en": "Olympic Bay",
+  "aka": []
+ },
+ "gmaps-879798": {
+  "name_el": null,
+  "name_en": "Agathoupoli",
+  "aka": []
+ },
+ "gmaps-169465": {
+  "name_el": null,
+  "name_en": "Akrogiali",
+  "aka": []
+ },
+ "gmaps-139928": {
+  "name_el": null,
+  "name_en": "Kipos",
+  "aka": []
+ },
+ "gmaps-724651": {
+  "name_el": null,
+  "name_en": "Residenza Monopati",
+  "aka": []
+ },
+ "gmaps-864725": {
+  "name_el": "Καμαριώτισας",
+  "name_en": "Kamariotisas",
+  "aka": []
+ },
+ "gmaps-740680": {
+  "name_el": null,
+  "name_en": "Chalet Samothraki",
+  "aka": []
+ },
+ "gmaps-228308": {
+  "name_el": null,
+  "name_en": "Giatrou",
+  "aka": []
+ },
+ "gmaps-734116": {
+  "name_el": null,
+  "name_en": "Eleftheron Bay",
+  "aka": []
+ },
+ "gmaps-440881": {
+  "name_el": null,
+  "name_en": "Argos Orestiko Volley",
+  "aka": []
+ },
+ "gmaps-356007": {
+  "name_el": null,
+  "name_en": "Mikra Volley",
+  "aka": []
+ },
+ "gmaps-430062": {
+  "name_el": null,
+  "name_en": "Saint George P.C.",
+  "aka": []
+ },
+ "gmaps-306500": {
+  "name_el": null,
+  "name_en": "Volley El Bandana B.V.C.",
+  "aka": []
+ },
+ "gmaps-784469": {
+  "name_el": null,
+  "name_en": "Pefkaria",
+  "aka": []
+ },
+ "gmaps-008439": {
+  "name_el": null,
+  "name_en": "Peristeres",
+  "aka": []
+ },
+ "gmaps-008161": {
+  "name_el": null,
+  "name_en": "Etisies",
+  "aka": []
+ },
+ "gmaps-052495": {
+  "name_el": null,
+  "name_en": "Golden",
+  "aka": []
+ },
+ "gmaps-250988": {
+  "name_el": null,
+  "name_en": "Golden Sand",
+  "aka": []
+ },
+ "gmaps-625348": {
+  "name_el": "Τα Πεύκα",
+  "name_en": "Ta Pefka",
+  "aka": [
+   "Gaitanas"
+  ]
+ },
+ "gmaps-245459": {
+  "name_el": null,
+  "name_en": "Enez Pırlanta Plajı",
+  "aka": []
+ },
+ "gmaps-012772": {
+  "name_el": null,
+  "name_en": "Pırlanta Plajı",
+  "aka": []
+ },
+ "gmaps-165107": {
+  "name_el": null,
+  "name_en": "Altınkum Sahili",
+  "aka": []
+ },
+ "gmaps-200851": {
+  "name_el": null,
+  "name_en": "Joya",
+  "aka": []
+ },
+ "gmaps-499589": {
+  "name_el": null,
+  "name_en": "Altınkum",
+  "aka": []
+ },
+ "gmaps-033298": {
+  "name_el": null,
+  "name_en": "Altunhan Çadır Kamp Alanı",
+  "aka": []
+ },
+ "gmaps-330107": {
+  "name_el": null,
+  "name_en": "Enez Sahil Engelli Plajı",
+  "aka": []
+ },
+ "gmaps-542866": {
+  "name_el": null,
+  "name_en": "Dama Enez Altınkum Plaj",
+  "aka": []
+ },
+ "gmaps-502034": {
+  "name_el": null,
+  "name_en": "Ofrinio Kart Kolovos",
+  "aka": []
+ },
+ "gmaps-479355": {
+  "name_el": null,
+  "name_en": "Faros & View",
+  "aka": []
+ },
+ "gmaps-569908": {
+  "name_el": null,
+  "name_en": "Palio View",
+  "aka": []
+ },
+ "gmaps-265571": {
+  "name_el": null,
+  "name_en": null,
+  "aka": []
+ },
+ "gmaps-673124": {
+  "name_el": "Κοντά Σε Ίμερο",
+  "name_en": "Konta Se Imero",
+  "aka": []
+ },
+ "gmaps-503769": {
+  "name_el": null,
+  "name_en": "SΛΝ",
+  "aka": []
+ },
+ "gmaps-641268": {
+  "name_el": null,
+  "name_en": "Rich Avdira",
+  "aka": []
+ }
+}
