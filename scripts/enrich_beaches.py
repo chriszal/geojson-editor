@@ -70,12 +70,20 @@ def main():
             p["beach_org"] = ["0"]; stats["org_from_nodata"] += 1
 
     # ---------- b) review bundles ----------
+    # merge BOTH files per key: the wide file re-scraped uids the narrow file
+    # failed on, so candidates must be concatenated (dedupe by href), never
+    # first-file-wins
     ver = {}
     for fn in ("gmaps_verification.json", "gmaps_verification_wide.json"):
         with open(rf"{ROOT}\{fn}", encoding="utf-8") as f:
             for k, v in json.load(f).items():
                 if k not in ver:
-                    ver[k] = v
+                    ver[k] = {"beaches": list(v.get("beaches") or [])}
+                else:
+                    have = {b.get("href") for b in ver[k]["beaches"] if b.get("href")}
+                    for b in v.get("beaches") or []:
+                        if not b.get("href") or b["href"] not in have:
+                            ver[k]["beaches"].append(b)
 
     byuid = {ft["properties"]["uid"]: ft for ft in feats}
 
@@ -89,13 +97,43 @@ def main():
                     pass
         return {k for k in keys if k}
 
+    # href -> candidates index (gmaps-added beaches keep gmaps-* uids that are NOT
+    # verification keys; their reviews live under the original query uid, match by href)
+    by_href = defaultdict(list)
+    for v in ver.values():
+        for b in v.get("beaches") or []:
+            if b.get("href") and b.get("reviews"):
+                by_href[b["href"]].append(b)
+
+    def feature_hrefs(p):
+        hrefs = set()
+        if p.get("href"):
+            hrefs.add(str(p["href"]))
+        for sid in p.get("source_id") or []:
+            if isinstance(sid, str) and sid.startswith("http"):
+                hrefs.add(sid)
+        return hrefs
+
     def reviews_for(uid, p):
         entry = ver.get(uid)
-        if not entry:
+        cands = list((entry.get("beaches") or [])) if entry else []
+        seen_href = {b.get("href") for b in cands if b.get("href")}
+        for h in feature_hrefs(p):
+            for b in by_href.get(h, []):
+                if b.get("href") not in seen_href:
+                    b = dict(b)
+                    b["_identity"] = True   # this IS the feature's own gmaps place
+                    cands.append(b)
+        # also mark in-place candidates whose href matches the feature as identity
+        fh = feature_hrefs(p)
+        for b in cands:
+            if b.get("href") and b["href"] in fh:
+                b["_identity"] = True
+        if not cands:
             return []
         nk = name_keys(p)
         out = []
-        for b in entry.get("beaches") or []:
+        for b in cands:
             revs = b.get("reviews") or []
             if not revs:
                 continue
@@ -108,10 +146,11 @@ def main():
             dist = b.get("distance_m")
             near = dist is not None and dist <= 300
             biz = looks_business(cname)
+            #  - identity candidates (feature's own gmaps place): always
             #  - name-matched candidates: always
             #  - non-business nearby candidates: yes
             #  - business candidates only if name-matched (feature named after it)
-            if name_match or (near and not biz):
+            if b.get("_identity") or name_match or (near and not biz):
                 for r in revs:
                     t = (r.get("text") or "").strip()
                     if len(t) >= 40:
